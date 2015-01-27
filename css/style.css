@@ -664,7 +664,7 @@ body {
   width: 22.5490196078431%;
   margin: 0 1.2254901960784%;
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0 0 40px;
+  padding: 0 0 20px;
 }
 @media (max-width: 768px) {
   #sidebar {
@@ -673,7 +673,7 @@ body {
 }
 .sidebar-title {
   display: block;
-  margin: 40px 0 10px;
+  margin: 5px 0 5px;
   color: #0e83cd;
   text-transform: uppercase;
   font-weight: bold;
@@ -696,7 +696,7 @@ body {
   text-decoration: none;
   display: block;
   font-weight: 300;
-  padding: 5px 15px;
+  padding: 1px 10px;
   border-left: 2px solid #ddd;
   margin-left: 3px;
 }

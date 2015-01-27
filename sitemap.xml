@@ -2,6 +2,496 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/979_Quantum_Squiggle.html</loc>
+    <lastmod>2015-01-27T10:23:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/991_Modify_Shape_Color_on_Click.html</loc>
+    <lastmod>2015-01-27T10:23:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/05_Line_-_Simple_Line.html</loc>
+    <lastmod>2015-01-27T10:23:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/04_Multi_Event.html</loc>
+    <lastmod>2015-01-27T10:23:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/996_Shape_Tooltips.html</loc>
+    <lastmod>2015-01-27T10:23:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/982_Shape_Tango.html</loc>
+    <lastmod>2015-01-27T10:23:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/02_Styling/01_Fill.html</loc>
+    <lastmod>2015-01-27T10:23:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/10_Data_&_Serialization/01_Select_by_id.html</loc>
+    <lastmod>2015-01-27T10:23:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/09_Selectors/01_Select_by_id.html</loc>
+    <lastmod>2015-01-27T10:23:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/987_Drag_and_Drop_Stress_Test.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/986_Modify_Curves_with_Anchor_Points.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/985_Interactive_Building_Map.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/983_Multi-touch_Scale_Shape.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/01_Rect.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/02_Circle.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/03_Ellipse.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/990_10000_Shapes_with_Tooltips.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/08_Line_-_Blob.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/10_Image.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/13_Star.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/15_Path.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/17_Custom.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/04_Wedge.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/02_Image_Events.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/03_Mobile_Events.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/995_Image_Resize.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/994_Planets_Image_Map.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/07_Remove_by_Name.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/09_Listen_for_Events.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/04_Drag_and_Drop/01_Drag_and_Drop.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/04_Drag_and_Drop/02_Drag_an_Image.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/04_Drag_and_Drop/05_Drag_a_Stage.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/993_Expand_Images_on_Hover.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/05_Groups_and_Layers/01_Groups.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/05_Groups_and_Layers/03_Change_Containers.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/981_Elastic_Stars.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/05_Groups_and_Layers/04_Clipping_Regions.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/02_Styling/06_Hide_and_Show.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/07_Tweens/03_All_Easings.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/07_Tweens/01_Linear_Easing.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/07_Tweens/05_All_Controls.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/07_Tweens/06_Tween_Filter.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/07_Tweens/07_GreenSock_Plugin.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/08_Animations/02_Moving.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/08_Animations/03_Rotation%20.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/08_Animations/04_Scaling.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/989_Animation_Stress_Test.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/11_Performance/01_Layer_Management.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/11_Performance/02_Batch_Draw.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/988_Animals_on_the_Beach_Game.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/09_Selectors/03_Select_by_Name.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/05_Desktop_and_Mobile.html</loc>
+    <lastmod>2015-01-27T10:23:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/999_Image_Border_Highlighting.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/01_Binding_Events.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/05_Groups_and_Layers/02_Layering.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/07_Line_-_Spline.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/992_Physics_Simulator.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/02_Styling/02_Stroke.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/02_Styling/03_Opacity.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/02_Styling/04_Shadow.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/09_Sprite.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/02_Styling/05_Line_Join.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/07_Tweens/02_Common_Easings.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/997_Star_Spiner.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/06_Remove_Event.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/07_Tweens/04_Finish_Event.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/11_Text.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/08_Custom_Hit_Region.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/12_TextPath.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/08_Animations/01_Create_an_Animation.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/06_Filters/05_Blur.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/11_Event_Delegation.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/06_Filters/03_Brighten.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/08_Animations/05_Stop_Animation.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/06_Filters/02_Grayscale.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/10_Data_&_Serialization/03_Simple_Load.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/10_Data_&_Serialization/04_Complex_Load.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/04_Drag_and_Drop/04_Drag_a_Line.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/16_RegularPolygon.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/04_Drag_and_Drop/07_Simple_Drag_Bounds.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/09_Selectors/02_Select_by_Type.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/04_Drag_and_Drop/08_Complex_Drag_and_Drop.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/977_Zoom_Layer_On_hover.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/978_Wheel%20of%20Fortune.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/06_Filters/01_Invert.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/10_Cancel_Propagation.html</loc>
+    <lastmod>2015-01-27T10:23:10.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/06_Filters/04_Kaleidoscope.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/06_Line_-_Polygon.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/03_Events/12_Fire_Events.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/11_Performance/03_Shape_Caching.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/04_Drag_and_Drop/09_Drop_Events.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/998_Drag_and_Drop_Multiple_Shapes.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/04_Drag_and_Drop/03_Drag_a_Group.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/01_Shapes/14_Label.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/10_Data_&_Serialization/02_Serialize_a_Stage.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/984_Multi-touch_Scale_Stage.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/12_Sandbox/980_20000_Nodes.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/04_Drag_and_Drop/06_Drag_Events.html</loc>
+    <lastmod>2015-01-27T10:23:09.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://konvajs.github.io/docs/how_it_works.html</loc>
     <lastmod>2015-01-27T05:18:45.000Z</lastmod>
   </url>
@@ -22,7 +512,7 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/shapes/rect.html</loc>
+    <loc>http://konvajs.github.io/docs/shapes/circle.html</loc>
     <lastmod>2015-01-27T04:15:56.000Z</lastmod>
   </url>
   
@@ -87,7 +577,7 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/shapes/circle.html</loc>
+    <loc>http://konvajs.github.io/docs/shapes/rect.html</loc>
     <lastmod>2015-01-27T04:15:56.000Z</lastmod>
   </url>
   
