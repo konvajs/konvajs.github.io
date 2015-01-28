@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://konvajs.github.io/docs/shapes/Circle.html</loc>
+    <lastmod>2015-01-28T01:28:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Circle.html</loc>
+    <lastmod>2015-01-28T01:27:04.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://konvajs.github.io/docs/shapes/Rect.html</loc>
-    <lastmod>2015-01-27T21:18:35.000Z</lastmod>
+    <lastmod>2015-01-28T00:30:07.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/sandbox/Drag_and_Drop_Stress_Test.html</loc>
-    <lastmod>2015-01-27T21:17:32.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/index.html</loc>
-    <lastmod>2015-01-27T21:17:32.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/animations/Create_an_Animation.html</loc>
-    <lastmod>2015-01-27T21:17:32.000Z</lastmod>
+    <loc>http://konvajs.github.io/downloads/code/shapes/rect.html</loc>
+    <lastmod>2015-01-27T22:40:13.000Z</lastmod>
   </url>
   
   <url>
@@ -357,7 +357,7 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/shapes/Circle.html</loc>
+    <loc>http://konvajs.github.io/index.html</loc>
     <lastmod>2015-01-27T21:17:32.000Z</lastmod>
   </url>
   
@@ -402,7 +402,7 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/index.html</loc>
+    <loc>http://konvajs.github.io/docs/index.html</loc>
     <lastmod>2015-01-27T21:17:32.000Z</lastmod>
   </url>
   
@@ -507,7 +507,12 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/rect.html</loc>
+    <loc>http://konvajs.github.io/docs/animations/Create_an_Animation.html</loc>
+    <lastmod>2015-01-27T21:17:32.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/sandbox/Drag_and_Drop_Stress_Test.html</loc>
     <lastmod>2015-01-27T21:17:32.000Z</lastmod>
   </url>
   
