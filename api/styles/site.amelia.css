@@ -6215,7 +6215,7 @@ code {
   color: #ffffff;
 }
 #main {
-  margin-top: 62px;
+  margin-top: 56px;
 }
 .navbar-fixed-top .navbar-inner {
   padding-left: 20px;
@@ -6248,9 +6248,9 @@ code {
 }
 #toc {
   position: fixed;
-  top: 62px;
+  top: 56px;
   width: 29%;
-  max-height: 82%;
+  max-height: 90%;
   overflow: auto;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -6259,7 +6259,7 @@ code {
   padding: 5px;
 }
 #toc .toc-active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #d92432;
   color: #ffffff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -6269,8 +6269,13 @@ code {
 #toc .toc-active a:hover,
 #toc .toc-active a:active,
 #toc .toc-active a:visited {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #d92432;
   color: #ffffff;
+}
+.toc-shim {
+  padding-top: 56px;
+  margin-top: -56px;
+  display: block;
 }
 .toc-h1 {
   margin-left: 2px;
@@ -6307,7 +6312,6 @@ code {
   color: #debb27;
   font-weight: 700;
   padding-top: 10px;
-  padding-bottom: 7px;
   display: block;
 }
 footer {
@@ -6320,8 +6324,8 @@ code {
   color: #df6e1e;
 }
 .buffered-name {
-  padding-top: 62px;
-  margin-top: -62px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .member-collapsed {
   background-color: #debb27;
@@ -6343,13 +6347,7 @@ code {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  padding: 3px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.member-name {
-  padding-top: 100px !important;
-  margin-top: -100px !important;
+  padding: 10px;
 }
 .sunlight-highlighted {
   margin: 0;
