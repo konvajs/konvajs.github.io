@@ -104,11 +104,12 @@ We can adjust the shadow propert">
         <h1 id="HTML5_Canvas_Konva_Shadows">HTML5 Canvas Konva Shadows</h1>
 <p>To apply shadows with Konva, we can set the <code>shadowColor</code>, <code>shadowOffset</code>, <code>shadowBlur</code>, and <code>shadowOpacity</code> properties when we instantiate a shape.</p>
 <p>We can adjust the shadow properties after instantiation by using the <code>shadowColor()</code>, <code>shadowOffset()</code>, <code>shadowBlur()</code>, and <code>shadowOpacity()</code> methods.</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/sugel/1/embed?js,output" target="_blank" rel="external">Konva Shadows Demo</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<iframe src="/downloads/code/styling/Shadow.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
 
+<figure class="highlight html"><figcaption><span>Konva Circle Demo</span><a href="/downloads/code/styling/Shadow.html">download</a></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://rawgit.com/konvajs/konva/master/konva.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Shadow Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="tag">body</span> <span class="rules">{</span></div><div class="line">      <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</div><div class="line">      <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</div><div class="line">    <span class="rule">}</span></div><div class="line">  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">        <span class="keyword">var</span> width = <span class="built_in">window</span>.innerWidth;</div><div class="line">        <span class="keyword">var</span> height = <span class="built_in">window</span>.innerHeight;</div><div class="line"></div><div class="line">        <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">            container: <span class="string">'container'</span>,</div><div class="line">            width: width,</div><div class="line">            height: height</div><div class="line">        });</div><div class="line">        <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line">        <span class="keyword">var</span> text = <span class="keyword">new</span> Konva.Text({</div><div class="line">            text: <span class="string">'Text Shadow!'</span>,</div><div class="line">            fontFamily: <span class="string">'Calibri'</span>,</div><div class="line">            fontSize: <span class="number">40</span>,</div><div class="line">            x: <span class="number">20</span>,</div><div class="line">            y: <span class="number">20</span>,</div><div class="line">            stroke: <span class="string">'red'</span>,</div><div class="line">            strokeWidth: <span class="number">2</span>,</div><div class="line">            shadowColor: <span class="string">'black'</span>,</div><div class="line">            shadowBlur: <span class="number">0</span>,</div><div class="line">            shadowOffset: {x : <span class="number">10</span>, y : <span class="number">10</span>},</div><div class="line">            shadowOpacity: <span class="number">0.5</span></div><div class="line">        });</div><div class="line"></div><div class="line">        <span class="keyword">var</span> line = <span class="keyword">new</span> Konva.Line({</div><div class="line">            stroke: <span class="string">'green'</span>,</div><div class="line">            strokeWidth: <span class="number">10</span>,</div><div class="line">            lineJoin: <span class="string">'round'</span>,</div><div class="line">            lineCap: <span class="string">'round'</span>,</div><div class="line">            points: [<span class="number">50</span>, <span class="number">140</span>, <span class="number">250</span>, <span class="number">160</span>],</div><div class="line">            shadowColor: <span class="string">'black'</span>,</div><div class="line">            shadowBlur: <span class="number">10</span>,</div><div class="line">            shadowOffset: {x : <span class="number">10</span>, y : <span class="number">10</span>},</div><div class="line">            shadowOpacity: <span class="number">0.5</span></div><div class="line">        });</div><div class="line"></div><div class="line">        <span class="keyword">var</span> rect = <span class="keyword">new</span> Konva.Rect({</div><div class="line">            x: <span class="number">100</span>,</div><div class="line">            y: <span class="number">120</span>,</div><div class="line">            width: <span class="number">100</span>,</div><div class="line">            height: <span class="number">50</span>,</div><div class="line">            fill: <span class="string">'#00D2FF'</span>,</div><div class="line">            stroke: <span class="string">'black'</span>,</div><div class="line">            strokeWidth: <span class="number">4</span>,</div><div class="line">            shadowColor: <span class="string">'black'</span>,</div><div class="line">            shadowBlur: <span class="number">10</span>,</div><div class="line">            shadowOffset: {x : <span class="number">10</span>, y : <span class="number">10</span>},</div><div class="line">            shadowOpacity: <span class="number">0.5</span></div><div class="line">        });</div><div class="line"></div><div class="line">        layer.add(text);</div><div class="line">        layer.add(line);</div><div class="line">        layer.add(rect);</div><div class="line"></div><div class="line">        <span class="comment">// add the layer to the stage</span></div><div class="line">        stage.add(layer);</div><div class="line">  <span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-27T21:17:32.000Z" itemprop="dateModified">Last updated: Jan 28 2015</time>
+        <time id="page-footer-updated" datetime="2015-01-29T16:37:51.000Z" itemprop="dateModified">Last updated: Jan 29 2015</time>
         <a href="styling/Opacity.html" id="page-footer-prev" title="Opacity">Prev</a><a href="styling/Line_Join.html" id="page-footer-next" title="Line Join">Next</a>
       </footer>
       
@@ -284,80 +285,80 @@ We can adjust the shadow propert">
   
     <strong class="sidebar-title">Selectors</strong>
     
-      <a href="/docs/Selectors/Select_by_id.html" class="sidebar-link">Select by id</a>
+      <a href="/docs/selectors/Select_by_id.html" class="sidebar-link">Select by id</a>
     
-      <a href="/docs/Selectors/Select_by_Type.html" class="sidebar-link">Select by Type</a>
+      <a href="/docs/selectors/Select_by_Type.html" class="sidebar-link">Select by Type</a>
     
-      <a href="/docs/Selectors/Select_by_Name.html" class="sidebar-link">Select by Name</a>
+      <a href="/docs/selectors/Select_by_Name.html" class="sidebar-link">Select by Name</a>
     
   
     <strong class="sidebar-title">Data &amp; Serialization</strong>
     
-      <a href="/docs/Data_&_Serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
+      <a href="/docs/data_&_Serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
     
-      <a href="/docs/Data_&_Serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
+      <a href="/docs/data_&_Serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
     
-      <a href="/docs/Data_&_Serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
+      <a href="/docs/data_&_Serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
     
-      <a href="/docs/Data_&_Serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
+      <a href="/docs/data_&_Serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
     
   
     <strong class="sidebar-title">Performance</strong>
     
-      <a href="/docs/Performance/Layer_Management.html" class="sidebar-link">Layer Management</a>
+      <a href="/docs/performance/Layer_Management.html" class="sidebar-link">Layer Management</a>
     
-      <a href="/docs/Performance/Batch_Draw.html" class="sidebar-link">Batch Draw</a>
+      <a href="/docs/performance/Batch_Draw.html" class="sidebar-link">Batch Draw</a>
     
-      <a href="/docs/Performance/Shape_Caching.html" class="sidebar-link">Shape Caching</a>
+      <a href="/docs/performance/Shape_Caching.html" class="sidebar-link">Shape Caching</a>
     
   
     <strong class="sidebar-title">Sandbox</strong>
     
-      <a href="/docs/Sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">Zoom Layer On hover</a>
+      <a href="/docs/sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">Zoom Layer On hover</a>
     
-      <a href="/docs/Sandbox/Wheel of Fortune.html" class="sidebar-link">Wheel of Fortune</a>
+      <a href="/docs/sandbox/Wheel of Fortune.html" class="sidebar-link">Wheel of Fortune</a>
     
-      <a href="/docs/Sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum_Squiggle</a>
+      <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum_Squiggle</a>
     
-      <a href="/docs/Sandbox/20000_Nodes.html" class="sidebar-link">20000_Nodes</a>
+      <a href="/docs/sandbox/20000_Nodes.html" class="sidebar-link">20000_Nodes</a>
     
-      <a href="/docs/Sandbox/Elastic_Stars.html" class="sidebar-link">Elastic_Stars</a>
+      <a href="/docs/sandbox/Elastic_Stars.html" class="sidebar-link">Elastic_Stars</a>
     
-      <a href="/docs/Sandbox/Shape_Tango.html" class="sidebar-link">Shape_Tango</a>
+      <a href="/docs/sandbox/Shape_Tango.html" class="sidebar-link">Shape_Tango</a>
     
-      <a href="/docs/Sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">Multi-touch_Scale_Shape</a>
+      <a href="/docs/sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">Multi-touch_Scale_Shape</a>
     
-      <a href="/docs/Sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link">Multi-touch_Scale_Stage</a>
+      <a href="/docs/sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link">Multi-touch_Scale_Stage</a>
     
-      <a href="/docs/Sandbox/Interactive_Building_Map.html" class="sidebar-link">Interactive_Building_Map</a>
+      <a href="/docs/sandbox/Interactive_Building_Map.html" class="sidebar-link">Interactive_Building_Map</a>
     
-      <a href="/docs/Sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">Modify_Curves_with_Anchor_Points</a>
+      <a href="/docs/sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">Modify_Curves_with_Anchor_Points</a>
     
-      <a href="/docs/Sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">Drag_and_Drop_Stress_Test</a>
+      <a href="/docs/sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">Drag_and_Drop_Stress_Test</a>
     
-      <a href="/docs/Sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals_on_the_Beach_Game</a>
+      <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals_on_the_Beach_Game</a>
     
-      <a href="/docs/Sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation_Stress_Test</a>
+      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation_Stress_Test</a>
     
-      <a href="/docs/Sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000_Shapes_with_Tooltips</a>
+      <a href="/docs/sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000_Shapes_with_Tooltips</a>
     
-      <a href="/docs/Sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">Modify_Shape_Color_on_Click</a>
+      <a href="/docs/sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">Modify_Shape_Color_on_Click</a>
     
-      <a href="/docs/Sandbox/Physics_Simulator.html" class="sidebar-link">Physics_Simulator</a>
+      <a href="/docs/sandbox/Physics_Simulator.html" class="sidebar-link">Physics_Simulator</a>
     
-      <a href="/docs/Sandbox/Expand_Images_on_Hover.html" class="sidebar-link">Expand_Images_on_Hover</a>
+      <a href="/docs/sandbox/Expand_Images_on_Hover.html" class="sidebar-link">Expand_Images_on_Hover</a>
     
-      <a href="/docs/Sandbox/Planets_Image_Map.html" class="sidebar-link">Planets_Image_Map</a>
+      <a href="/docs/sandbox/Planets_Image_Map.html" class="sidebar-link">Planets_Image_Map</a>
     
-      <a href="/docs/Sandbox/Image_Resize.html" class="sidebar-link">Image_Resize</a>
+      <a href="/docs/sandbox/Image_Resize.html" class="sidebar-link">Image_Resize</a>
     
-      <a href="/docs/Sandbox/Shape_Tooltips.html" class="sidebar-link">Shape_Tooltips</a>
+      <a href="/docs/sandbox/Shape_Tooltips.html" class="sidebar-link">Shape_Tooltips</a>
     
-      <a href="/docs/Sandbox/Star_Spiner.html" class="sidebar-link">Star_Spiner</a>
+      <a href="/docs/sandbox/Star_Spiner.html" class="sidebar-link">Star_Spiner</a>
     
-      <a href="/docs/Sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">Drag_and_Drop_Multiple_Shapes</a>
+      <a href="/docs/sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">Drag_and_Drop_Multiple_Shapes</a>
     
-      <a href="/docs/Sandbox/Image_Border_Highlighting.html" class="sidebar-link">Image_Border_Highlighting</a>
+      <a href="/docs/sandbox/Image_Border_Highlighting.html" class="sidebar-link">Image_Border_Highlighting</a>
     
   
 </aside>

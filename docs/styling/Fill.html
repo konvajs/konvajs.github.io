@@ -105,11 +105,12 @@ Konva supports colors, patterns, linear gradient">
 <p>To fill a shape with Konva, we can set the fill property when we instantiate a shape, or we can use the <code>fill()</code> method.</p>
 <p>Konva supports colors, patterns, linear gradients, and radial gradients.</p>
 <p>Instructions: Mouseover each pentagon to change its fill.  You can also drag and drop the shapes.</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/zaraxeg/1/embed?js,output" target="_blank" rel="external">Konva Fill Demo</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<iframe src="/downloads/code/styling/Fill.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
 
+<figure class="highlight html"><figcaption><span>Konva Circle Demo</span><a href="/downloads/code/styling/Fill.html">download</a></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://rawgit.com/konvajs/konva/master/konva.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Fill Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="tag">body</span> <span class="rules">{</span></div><div class="line">      <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</div><div class="line">      <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</div><div class="line">    <span class="rule">}</span></div><div class="line">  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">loadImages</span><span class="params">(sources, callback)</span> </span>{</div><div class="line">        <span class="keyword">var</span> images = {};</div><div class="line">        <span class="keyword">var</span> loadedImages = <span class="number">0</span>;</div><div class="line">        <span class="keyword">var</span> numImages = <span class="number">0</span>;</div><div class="line">        <span class="comment">// get num of sources</span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> src <span class="keyword">in</span> sources) {</div><div class="line">            numImages++;</div><div class="line">        }</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> src <span class="keyword">in</span> sources) {</div><div class="line">            images[src] = <span class="keyword">new</span> Image();</div><div class="line">            images[src].onload = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">                <span class="keyword">if</span>(++loadedImages &gt;= numImages) {</div><div class="line">                    callback(images);</div><div class="line">                }</div><div class="line">            };</div><div class="line">            images[src].src = sources[src];</div><div class="line">        }</div><div class="line">    }</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">draw</span><span class="params">(images)</span> </span>{</div><div class="line">        <span class="keyword">var</span> width = <span class="built_in">window</span>.innerWidth;</div><div class="line">        <span class="keyword">var</span> height = <span class="built_in">window</span>.innerHeight;</div><div class="line"></div><div class="line">        <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">            container: <span class="string">'container'</span>,</div><div class="line">            width: width,</div><div class="line">            height: height</div><div class="line">        });</div><div class="line">        <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line">        <span class="keyword">var</span> colorPentagon = <span class="keyword">new</span> Konva.RegularPolygon({</div><div class="line">            x: <span class="number">80</span>,</div><div class="line">            y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">            sides: <span class="number">5</span>,</div><div class="line">            radius: <span class="number">70</span>,</div><div class="line">            fill: <span class="string">'red'</span>,</div><div class="line">            stroke: <span class="string">'black'</span>,</div><div class="line">            strokeWidth: <span class="number">4</span>,</div><div class="line">            draggable: <span class="literal">true</span></div><div class="line">        });</div><div class="line"></div><div class="line">        <span class="keyword">var</span> patternPentagon = <span class="keyword">new</span> Konva.RegularPolygon({</div><div class="line">            x: <span class="number">220</span>,</div><div class="line">            y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">            sides: <span class="number">5</span>,</div><div class="line">            radius: <span class="number">70</span>,</div><div class="line">            fillPatternImage: images.darthVader,</div><div class="line">            fillPatternOffset: { x : -<span class="number">220</span>, y : <span class="number">70</span>},</div><div class="line">            stroke: <span class="string">'black'</span>,</div><div class="line">            strokeWidth: <span class="number">4</span>,</div><div class="line">            draggable: <span class="literal">true</span></div><div class="line">        });</div><div class="line"></div><div class="line">        <span class="keyword">var</span> linearGradPentagon = <span class="keyword">new</span> Konva.RegularPolygon({</div><div class="line">            x: <span class="number">360</span>,</div><div class="line">            y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">            sides: <span class="number">5</span>,</div><div class="line">            radius: <span class="number">70</span>,</div><div class="line">            fillLinearGradientStartPoint: { x : -<span class="number">50</span>, y : -<span class="number">50</span>},</div><div class="line">            fillLinearGradientEndPoint: { x : <span class="number">50</span>, y : <span class="number">50</span>},</div><div class="line">            fillLinearGradientColorStops: [<span class="number">0</span>, <span class="string">'red'</span>, <span class="number">1</span>, <span class="string">'yellow'</span>],</div><div class="line">            stroke: <span class="string">'black'</span>,</div><div class="line">            strokeWidth: <span class="number">4</span>,</div><div class="line">            draggable: <span class="literal">true</span></div><div class="line">        });</div><div class="line"></div><div class="line">        <span class="keyword">var</span> radialGradPentagon = <span class="keyword">new</span> Konva.RegularPolygon({</div><div class="line">            x: <span class="number">500</span>,</div><div class="line">            y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">            sides: <span class="number">5</span>,</div><div class="line">            radius: <span class="number">70</span>,</div><div class="line">            fillRadialGradientStartPoint: <span class="number">0</span>,</div><div class="line">            fillRadialGradientStartRadius: <span class="number">0</span>,</div><div class="line">            fillRadialGradientEndPoint: <span class="number">0</span>,</div><div class="line">            fillRadialGradientEndRadius: <span class="number">70</span>,</div><div class="line">            fillRadialGradientColorStops: [<span class="number">0</span>, <span class="string">'red'</span>, <span class="number">0.5</span>, <span class="string">'yellow'</span>, <span class="number">1</span>, <span class="string">'blue'</span>],</div><div class="line">            stroke: <span class="string">'black'</span>,</div><div class="line">            strokeWidth: <span class="number">4</span>,</div><div class="line">            draggable: <span class="literal">true</span></div><div class="line">        });</div><div class="line"></div><div class="line">        <span class="comment">/*</span></div><div class="line">               * bind listeners</div><div class="line">               */</div><div class="line">        colorPentagon.on(<span class="string">'mouseover touchstart'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.setFill(<span class="string">'blue'</span>);</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        colorPentagon.on(<span class="string">'mouseout touchend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.setFill(<span class="string">'red'</span>);</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        patternPentagon.on(<span class="string">'mouseover touchstart'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.setFillPatternImage(images.yoda);</div><div class="line">            <span class="keyword">this</span>.setFillPatternOffset({ x : -<span class="number">100</span>, y : <span class="number">70</span>});</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        patternPentagon.on(<span class="string">'mouseout touchend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.setFillPatternImage(images.darthVader);</div><div class="line">            <span class="keyword">this</span>.setFillPatternOffset({x : -<span class="number">220</span>, y :<span class="number">70</span>});</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        linearGradPentagon.on(<span class="string">'mouseover touchstart'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.setFillLinearGradientStartPoint({ x: -<span class="number">50</span>});</div><div class="line">            <span class="keyword">this</span>.setFillLinearGradientEndPoint({ x : <span class="number">50</span>});</div><div class="line">            <span class="keyword">this</span>.setFillLinearGradientColorStops([<span class="number">0</span>, <span class="string">'green'</span>, <span class="number">1</span>, <span class="string">'yellow'</span>]);</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        linearGradPentagon.on(<span class="string">'mouseout touchend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="comment">// set multiple properties at once with setAttrs</span></div><div class="line">            <span class="keyword">this</span>.setAttrs({</div><div class="line">                fillLinearGradientStartPoint: {x : -<span class="number">50</span>, y : -<span class="number">50</span>},</div><div class="line">                fillLinearGradientEndPoint: { x : <span class="number">50</span>, y : <span class="number">50</span>},</div><div class="line">                fillLinearGradientColorStops: [<span class="number">0</span>, <span class="string">'red'</span>, <span class="number">1</span>, <span class="string">'yellow'</span>]</div><div class="line">            });</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        radialGradPentagon.on(<span class="string">'mouseover touchstart'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.setFillRadialGradientColorStops([<span class="number">0</span>, <span class="string">'red'</span>, <span class="number">0.5</span>, <span class="string">'yellow'</span>, <span class="number">1</span>, <span class="string">'green'</span>]);</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        radialGradPentagon.on(<span class="string">'mouseout touchend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="comment">// set multiple properties at once with setAttrs</span></div><div class="line">            <span class="keyword">this</span>.setAttrs({</div><div class="line">                fillRadialGradientStartPoint: <span class="number">0</span>,</div><div class="line">                fillRadialGradientStartRadius: <span class="number">0</span>,</div><div class="line">                fillRadialGradientEndPoint: <span class="number">0</span>,</div><div class="line">                fillRadialGradientEndRadius: <span class="number">70</span>,</div><div class="line">                fillRadialGradientColorStops: [<span class="number">0</span>, <span class="string">'red'</span>, <span class="number">0.5</span>, <span class="string">'yellow'</span>, <span class="number">1</span>, <span class="string">'blue'</span>]</div><div class="line">            });</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        layer.add(colorPentagon);</div><div class="line">        layer.add(patternPentagon);</div><div class="line">        layer.add(linearGradPentagon);</div><div class="line">        layer.add(radialGradPentagon);</div><div class="line">        stage.add(layer);</div><div class="line">    }</div><div class="line">    <span class="keyword">var</span> sources = {</div><div class="line">        darthVader: <span class="string">'http://konvajs.github.io/assets/darth-vader.jpg'</span>,</div><div class="line">        yoda: <span class="string">'http://konvajs.github.io/assets/yoda.jpg'</span></div><div class="line">    };</div><div class="line"></div><div class="line">    loadImages(sources, <span class="function"><span class="keyword">function</span><span class="params">(images)</span> </span>{</div><div class="line">        draw(images);</div><div class="line">    });</div><div class="line">  <span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-27T21:17:32.000Z" itemprop="dateModified">Last updated: Jan 28 2015</time>
+        <time id="page-footer-updated" datetime="2015-01-29T16:33:00.000Z" itemprop="dateModified">Last updated: Jan 29 2015</time>
         <a href="shapes/Custom.html" id="page-footer-prev" title="Custom">Prev</a><a href="styling/Stroke.html" id="page-footer-next" title="Stroke">Next</a>
       </footer>
       
@@ -285,80 +286,80 @@ Konva supports colors, patterns, linear gradient">
   
     <strong class="sidebar-title">Selectors</strong>
     
-      <a href="/docs/Selectors/Select_by_id.html" class="sidebar-link">Select by id</a>
+      <a href="/docs/selectors/Select_by_id.html" class="sidebar-link">Select by id</a>
     
-      <a href="/docs/Selectors/Select_by_Type.html" class="sidebar-link">Select by Type</a>
+      <a href="/docs/selectors/Select_by_Type.html" class="sidebar-link">Select by Type</a>
     
-      <a href="/docs/Selectors/Select_by_Name.html" class="sidebar-link">Select by Name</a>
+      <a href="/docs/selectors/Select_by_Name.html" class="sidebar-link">Select by Name</a>
     
   
     <strong class="sidebar-title">Data &amp; Serialization</strong>
     
-      <a href="/docs/Data_&_Serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
+      <a href="/docs/data_&_Serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
     
-      <a href="/docs/Data_&_Serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
+      <a href="/docs/data_&_Serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
     
-      <a href="/docs/Data_&_Serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
+      <a href="/docs/data_&_Serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
     
-      <a href="/docs/Data_&_Serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
+      <a href="/docs/data_&_Serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
     
   
     <strong class="sidebar-title">Performance</strong>
     
-      <a href="/docs/Performance/Layer_Management.html" class="sidebar-link">Layer Management</a>
+      <a href="/docs/performance/Layer_Management.html" class="sidebar-link">Layer Management</a>
     
-      <a href="/docs/Performance/Batch_Draw.html" class="sidebar-link">Batch Draw</a>
+      <a href="/docs/performance/Batch_Draw.html" class="sidebar-link">Batch Draw</a>
     
-      <a href="/docs/Performance/Shape_Caching.html" class="sidebar-link">Shape Caching</a>
+      <a href="/docs/performance/Shape_Caching.html" class="sidebar-link">Shape Caching</a>
     
   
     <strong class="sidebar-title">Sandbox</strong>
     
-      <a href="/docs/Sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">Zoom Layer On hover</a>
+      <a href="/docs/sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">Zoom Layer On hover</a>
     
-      <a href="/docs/Sandbox/Wheel of Fortune.html" class="sidebar-link">Wheel of Fortune</a>
+      <a href="/docs/sandbox/Wheel of Fortune.html" class="sidebar-link">Wheel of Fortune</a>
     
-      <a href="/docs/Sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum_Squiggle</a>
+      <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum_Squiggle</a>
     
-      <a href="/docs/Sandbox/20000_Nodes.html" class="sidebar-link">20000_Nodes</a>
+      <a href="/docs/sandbox/20000_Nodes.html" class="sidebar-link">20000_Nodes</a>
     
-      <a href="/docs/Sandbox/Elastic_Stars.html" class="sidebar-link">Elastic_Stars</a>
+      <a href="/docs/sandbox/Elastic_Stars.html" class="sidebar-link">Elastic_Stars</a>
     
-      <a href="/docs/Sandbox/Shape_Tango.html" class="sidebar-link">Shape_Tango</a>
+      <a href="/docs/sandbox/Shape_Tango.html" class="sidebar-link">Shape_Tango</a>
     
-      <a href="/docs/Sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">Multi-touch_Scale_Shape</a>
+      <a href="/docs/sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">Multi-touch_Scale_Shape</a>
     
-      <a href="/docs/Sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link">Multi-touch_Scale_Stage</a>
+      <a href="/docs/sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link">Multi-touch_Scale_Stage</a>
     
-      <a href="/docs/Sandbox/Interactive_Building_Map.html" class="sidebar-link">Interactive_Building_Map</a>
+      <a href="/docs/sandbox/Interactive_Building_Map.html" class="sidebar-link">Interactive_Building_Map</a>
     
-      <a href="/docs/Sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">Modify_Curves_with_Anchor_Points</a>
+      <a href="/docs/sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">Modify_Curves_with_Anchor_Points</a>
     
-      <a href="/docs/Sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">Drag_and_Drop_Stress_Test</a>
+      <a href="/docs/sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">Drag_and_Drop_Stress_Test</a>
     
-      <a href="/docs/Sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals_on_the_Beach_Game</a>
+      <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals_on_the_Beach_Game</a>
     
-      <a href="/docs/Sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation_Stress_Test</a>
+      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation_Stress_Test</a>
     
-      <a href="/docs/Sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000_Shapes_with_Tooltips</a>
+      <a href="/docs/sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000_Shapes_with_Tooltips</a>
     
-      <a href="/docs/Sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">Modify_Shape_Color_on_Click</a>
+      <a href="/docs/sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">Modify_Shape_Color_on_Click</a>
     
-      <a href="/docs/Sandbox/Physics_Simulator.html" class="sidebar-link">Physics_Simulator</a>
+      <a href="/docs/sandbox/Physics_Simulator.html" class="sidebar-link">Physics_Simulator</a>
     
-      <a href="/docs/Sandbox/Expand_Images_on_Hover.html" class="sidebar-link">Expand_Images_on_Hover</a>
+      <a href="/docs/sandbox/Expand_Images_on_Hover.html" class="sidebar-link">Expand_Images_on_Hover</a>
     
-      <a href="/docs/Sandbox/Planets_Image_Map.html" class="sidebar-link">Planets_Image_Map</a>
+      <a href="/docs/sandbox/Planets_Image_Map.html" class="sidebar-link">Planets_Image_Map</a>
     
-      <a href="/docs/Sandbox/Image_Resize.html" class="sidebar-link">Image_Resize</a>
+      <a href="/docs/sandbox/Image_Resize.html" class="sidebar-link">Image_Resize</a>
     
-      <a href="/docs/Sandbox/Shape_Tooltips.html" class="sidebar-link">Shape_Tooltips</a>
+      <a href="/docs/sandbox/Shape_Tooltips.html" class="sidebar-link">Shape_Tooltips</a>
     
-      <a href="/docs/Sandbox/Star_Spiner.html" class="sidebar-link">Star_Spiner</a>
+      <a href="/docs/sandbox/Star_Spiner.html" class="sidebar-link">Star_Spiner</a>
     
-      <a href="/docs/Sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">Drag_and_Drop_Multiple_Shapes</a>
+      <a href="/docs/sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">Drag_and_Drop_Multiple_Shapes</a>
     
-      <a href="/docs/Sandbox/Image_Border_Highlighting.html" class="sidebar-link">Image_Border_Highlighting</a>
+      <a href="/docs/sandbox/Image_Border_Highlighting.html" class="sidebar-link">Image_Border_Highlighting</a>
     
   
 </aside>
