@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Konva - JavaScript 2d canvas framework</title>
+  <title>Opacity Tutorial | Konva - JavaScript 2d canvas framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://konvajs.github.io/docs/styling/Opacity.html">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -27,22 +27,19 @@
 
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
-  <link rel="alternative" href="/atom.xml" title="Konva - JavaScript 2d canvas framework" type="application/atom+xml">
-  <meta name="description" content="HTML5 Canvas Set Opacity with Konva
-To set a shape opacity with Konva, we can set the opacity property when we instantiate the shape, or we can use the opacity() method.
-Shapes can have an opacity val">
+  <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
+  <meta name="description" content="To set a shape opacity with Konva, we can set the opacity property when we instantiate the shape, or we can use the opacity() method.
+Shapes can have an opacity value between 0 and 1, where 0 is fully">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Konva - JavaScript 2d canvas framework">
+<meta property="og:title" content="Opacity Tutorial">
 <meta property="og:url" content="http://konvajs.github.io/docs/styling/Opacity.html">
-<meta property="og:site_name" content="Konva - JavaScript 2d canvas framework">
-<meta property="og:description" content="HTML5 Canvas Set Opacity with Konva
-To set a shape opacity with Konva, we can set the opacity property when we instantiate the shape, or we can use the opacity() method.
-Shapes can have an opacity val">
+<meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
+<meta property="og:description" content="To set a shape opacity with Konva, we can set the opacity property when we instantiate the shape, or we can use the opacity() method.
+Shapes can have an opacity value between 0 and 1, where 0 is fully">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Konva - JavaScript 2d canvas framework">
-<meta name="twitter:description" content="HTML5 Canvas Set Opacity with Konva
-To set a shape opacity with Konva, we can set the opacity property when we instantiate the shape, or we can use the opacity() method.
-Shapes can have an opacity val">
+<meta name="twitter:title" content="Opacity Tutorial">
+<meta name="twitter:description" content="To set a shape opacity with Konva, we can set the opacity property when we instantiate the shape, or we can use the opacity() method.
+Shapes can have an opacity value between 0 and 1, where 0 is fully">
 <meta name="twitter:site" content="@lavrton">
 
   
@@ -88,7 +85,7 @@ Shapes can have an opacity val">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name"></h1>
+        <h1 id="page-title" itemprop="name">Opacity Tutorial</h1>
         <a href="https://github.com/konvajs/site/blob/master/source/docs/styling/Opacity.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -96,13 +93,12 @@ Shapes can have an opacity val">
   <div class="outer">
     <div id="mobile-menu-wrap"></div>
     <div class="page-content">
-      <div class="toc-wrap">
-        <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5_Canvas_Set_Opacity_with_Konva"><span class="toc-number">1.</span> <span class="toc-text">HTML5 Canvas Set Opacity with Konva</span></a></li></ol>
-      </div>
+      <!--<div class="toc-wrap">-->
+        <!--<strong class="toc-title">Contents</strong>-->
+        <!---->
+      <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h1 id="HTML5_Canvas_Set_Opacity_with_Konva">HTML5 Canvas Set Opacity with Konva</h1>
-<p>To set a shape opacity with Konva, we can set the <code>opacity</code> property when we instantiate the shape, or we can use the <code>opacity()</code> method.</p>
+        <p>To set a shape opacity with Konva, we can set the <code>opacity</code> property when we instantiate the shape, or we can use the <code>opacity()</code> method.</p>
 <p>Shapes can have an opacity value between 0 and 1, where 0 is fully transparent, and 1 is fully opaque.  Unless otherwise specified, all shapes are defaulted with an opacity value of 1.</p>
 <p>Instructions: Mouseover the pentagon to change its opacity.</p>
 <iframe src="/downloads/code/styling/Opacity.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
@@ -110,7 +106,7 @@ Shapes can have an opacity val">
 <figure class="highlight html"><figcaption><span>Konva Circle Demo</span><a href="/downloads/code/styling/Opacity.html">download</a></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://rawgit.com/konvajs/konva/master/konva.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Opacity Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="tag">body</span> <span class="rules">{</span></div><div class="line">      <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</div><div class="line">      <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</div><div class="line">    <span class="rule">}</span></div><div class="line">  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">        <span class="keyword">var</span> width = <span class="built_in">window</span>.innerWidth;</div><div class="line">        <span class="keyword">var</span> height = <span class="built_in">window</span>.innerHeight;</div><div class="line"></div><div class="line">        <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">            container: <span class="string">'container'</span>,</div><div class="line">            width: width,</div><div class="line">            height: height</div><div class="line">        });</div><div class="line">        <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line">        <span class="keyword">var</span> pentagon = <span class="keyword">new</span> Konva.RegularPolygon({</div><div class="line">            x: stage.getWidth() / <span class="number">2</span>,</div><div class="line">            y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">            sides: <span class="number">5</span>,</div><div class="line">            radius: <span class="number">70</span>,</div><div class="line">            fill: <span class="string">'red'</span>,</div><div class="line">            stroke: <span class="string">'black'</span>,</div><div class="line">            strokeWidth: <span class="number">4</span>,</div><div class="line">            opacity: <span class="number">0.5</span></div><div class="line">        });</div><div class="line"></div><div class="line">        pentagon.on(<span class="string">'mouseover'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.opacity(<span class="number">1</span>);</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        pentagon.on(<span class="string">'mouseout'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.opacity(<span class="number">0.5</span>);</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        <span class="comment">// add the shape to the layer</span></div><div class="line">        layer.add(pentagon);</div><div class="line"></div><div class="line">        <span class="comment">// add the layer to the stage</span></div><div class="line">        stage.add(layer);</div><div class="line">  <span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-29T16:36:36.000Z" itemprop="dateModified">Last updated: Jan 29 2015</time>
+        <time id="page-footer-updated" datetime="2015-01-30T11:30:29.000Z" itemprop="dateModified">Last updated: Jan 30 2015</time>
         <a href="styling/Stroke.html" id="page-footer-prev" title="Stroke">Prev</a><a href="styling/Shadow.html" id="page-footer-next" title="Shadow">Next</a>
       </footer>
       
@@ -295,13 +291,13 @@ Shapes can have an opacity val">
   
     <strong class="sidebar-title">Data &amp; Serialization</strong>
     
-      <a href="/docs/data_&_Serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
+      <a href="/docs/data_&_serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
     
-      <a href="/docs/data_&_Serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
+      <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
     
-      <a href="/docs/data_&_Serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
+      <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
     
-      <a href="/docs/data_&_Serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
+      <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
     
   
     <strong class="sidebar-title">Performance</strong>

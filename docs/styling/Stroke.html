@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Konva - JavaScript 2d canvas framework</title>
+  <title>Set Shape Stroke Color and Width Tutorial | Konva - JavaScript 2d canvas framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://konvajs.github.io/docs/styling/Stroke.html">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -27,19 +27,19 @@
 
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
-  <link rel="alternative" href="/atom.xml" title="Konva - JavaScript 2d canvas framework" type="application/atom+xml">
-  <meta name="description" content="HTML5 Canvas Set Shape Stroke Color and Width with Konva
-To set a shape stroke and stroke width with Konva, we can set the stroke and strokeWidth properties when we instantiate a shape, or we can use">
+  <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
+  <meta name="description" content="To set a shape stroke and stroke width with Konva, we can set the stroke and strokeWidth properties when we instantiate a shape, or we can use the stroke() and strokeWidth() methods.
+Instructions: Mou">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Konva - JavaScript 2d canvas framework">
+<meta property="og:title" content="Set Shape Stroke Color and Width Tutorial">
 <meta property="og:url" content="http://konvajs.github.io/docs/styling/Stroke.html">
-<meta property="og:site_name" content="Konva - JavaScript 2d canvas framework">
-<meta property="og:description" content="HTML5 Canvas Set Shape Stroke Color and Width with Konva
-To set a shape stroke and stroke width with Konva, we can set the stroke and strokeWidth properties when we instantiate a shape, or we can use">
+<meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
+<meta property="og:description" content="To set a shape stroke and stroke width with Konva, we can set the stroke and strokeWidth properties when we instantiate a shape, or we can use the stroke() and strokeWidth() methods.
+Instructions: Mou">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Konva - JavaScript 2d canvas framework">
-<meta name="twitter:description" content="HTML5 Canvas Set Shape Stroke Color and Width with Konva
-To set a shape stroke and stroke width with Konva, we can set the stroke and strokeWidth properties when we instantiate a shape, or we can use">
+<meta name="twitter:title" content="Set Shape Stroke Color and Width Tutorial">
+<meta name="twitter:description" content="To set a shape stroke and stroke width with Konva, we can set the stroke and strokeWidth properties when we instantiate a shape, or we can use the stroke() and strokeWidth() methods.
+Instructions: Mou">
 <meta name="twitter:site" content="@lavrton">
 
   
@@ -85,7 +85,7 @@ To set a shape stroke and stroke width with Konva, we can set the stroke and str
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name"></h1>
+        <h1 id="page-title" itemprop="name">Set Shape Stroke Color and Width Tutorial</h1>
         <a href="https://github.com/konvajs/site/blob/master/source/docs/styling/Stroke.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -93,20 +93,19 @@ To set a shape stroke and stroke width with Konva, we can set the stroke and str
   <div class="outer">
     <div id="mobile-menu-wrap"></div>
     <div class="page-content">
-      <div class="toc-wrap">
-        <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5_Canvas_Set_Shape_Stroke_Color_and_Width_with_Konva"><span class="toc-number">1.</span> <span class="toc-text">HTML5 Canvas Set Shape Stroke Color and Width with Konva</span></a></li></ol>
-      </div>
+      <!--<div class="toc-wrap">-->
+        <!--<strong class="toc-title">Contents</strong>-->
+        <!---->
+      <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h1 id="HTML5_Canvas_Set_Shape_Stroke_Color_and_Width_with_Konva">HTML5 Canvas Set Shape Stroke Color and Width with Konva</h1>
-<p>To set a shape stroke and stroke width with Konva, we can set the <code>stroke</code> and <code>strokeWidth</code> properties when we instantiate a shape, or we can use the <code>stroke()</code> and <code>strokeWidth()</code> methods.</p>
+        <p>To set a shape stroke and stroke width with Konva, we can set the <code>stroke</code> and <code>strokeWidth</code> properties when we instantiate a shape, or we can use the <code>stroke()</code> and <code>strokeWidth()</code> methods.</p>
 <p>Instructions: Mouseover the pentagon to change its stroke color and width.</p>
 <iframe src="/downloads/code/styling/Stroke.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
 
 <figure class="highlight html"><figcaption><span>Konva Circle Demo</span><a href="/downloads/code/styling/Stroke.html">download</a></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://rawgit.com/konvajs/konva/master/konva.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Stroke Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="tag">body</span> <span class="rules">{</span></div><div class="line">      <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</div><div class="line">      <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</div><div class="line">    <span class="rule">}</span></div><div class="line">  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">        <span class="keyword">var</span> width = <span class="built_in">window</span>.innerWidth;</div><div class="line">        <span class="keyword">var</span> height = <span class="built_in">window</span>.innerHeight;</div><div class="line"></div><div class="line">        <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">            container: <span class="string">'container'</span>,</div><div class="line">            width: width,</div><div class="line">            height: height</div><div class="line">        });</div><div class="line">        <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line">        <span class="keyword">var</span> pentagon = <span class="keyword">new</span> Konva.RegularPolygon({</div><div class="line">            x: stage.getWidth() / <span class="number">2</span>,</div><div class="line">            y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">            sides: <span class="number">5</span>,</div><div class="line">            radius: <span class="number">70</span>,</div><div class="line">            fill: <span class="string">'red'</span>,</div><div class="line">            stroke: <span class="string">'black'</span>,</div><div class="line">            strokeWidth: <span class="number">4</span></div><div class="line">        });</div><div class="line"></div><div class="line">        pentagon.on(<span class="string">'mouseover'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.stroke(<span class="string">'blue'</span>);</div><div class="line">            <span class="keyword">this</span>.strokeWidth(<span class="number">20</span>);</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line"></div><div class="line">        pentagon.on(<span class="string">'mouseout'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">            <span class="keyword">this</span>.stroke(<span class="string">'black'</span>);</div><div class="line">            <span class="keyword">this</span>.strokeWidth(<span class="number">4</span>);</div><div class="line">            layer.draw();</div><div class="line">        });</div><div class="line">        <span class="comment">// add the shape to the layer</span></div><div class="line">        layer.add(pentagon);</div><div class="line"></div><div class="line">        <span class="comment">// add the layer to the stage</span></div><div class="line">        stage.add(layer);</div><div class="line">  <span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-29T16:35:15.000Z" itemprop="dateModified">Last updated: Jan 29 2015</time>
+        <time id="page-footer-updated" datetime="2015-01-30T11:30:42.000Z" itemprop="dateModified">Last updated: Jan 30 2015</time>
         <a href="styling/Fill.html" id="page-footer-prev" title="Fill">Prev</a><a href="styling/Opacity.html" id="page-footer-next" title="Opacity">Next</a>
       </footer>
       
@@ -291,13 +290,13 @@ To set a shape stroke and stroke width with Konva, we can set the stroke and str
   
     <strong class="sidebar-title">Data &amp; Serialization</strong>
     
-      <a href="/docs/data_&_Serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
+      <a href="/docs/data_&_serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
     
-      <a href="/docs/data_&_Serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
+      <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
     
-      <a href="/docs/data_&_Serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
+      <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
     
-      <a href="/docs/data_&_Serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
+      <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
     
   
     <strong class="sidebar-title">Performance</strong>
