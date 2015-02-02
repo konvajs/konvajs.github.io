@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Konva - JavaScript 2d canvas framework</title>
+  <title>Load Complex Stage | Konva - JavaScript 2d canvas framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://konvajs.github.io/docs/data_&_serialization/Complex_Load.html">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -28,18 +28,15 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
-  <meta name="description" content="HTML5 Canvas Load Complex Stage with Konva
-To load a complex stage that originally contained images and event bindings using Konva,we need to create a stage node using Konva.Node.create(), and then se">
+  <meta name="description" content="To load a complex stage that originally contained images and event bindings using Konva,we need to create a stage node using Konva.Node.create(), and then set theimages and event handlers with the hel">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Konva.js - JavaScript 2d canvas framework">
+<meta property="og:title" content="Load Complex Stage">
 <meta property="og:url" content="http://konvajs.github.io/docs/data_&_serialization/Complex_Load.html">
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
-<meta property="og:description" content="HTML5 Canvas Load Complex Stage with Konva
-To load a complex stage that originally contained images and event bindings using Konva,we need to create a stage node using Konva.Node.create(), and then se">
+<meta property="og:description" content="To load a complex stage that originally contained images and event bindings using Konva,we need to create a stage node using Konva.Node.create(), and then set theimages and event handlers with the hel">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Konva.js - JavaScript 2d canvas framework">
-<meta name="twitter:description" content="HTML5 Canvas Load Complex Stage with Konva
-To load a complex stage that originally contained images and event bindings using Konva,we need to create a stage node using Konva.Node.create(), and then se">
+<meta name="twitter:title" content="Load Complex Stage">
+<meta name="twitter:description" content="To load a complex stage that originally contained images and event bindings using Konva,we need to create a stage node using Konva.Node.create(), and then set theimages and event handlers with the hel">
 <meta name="twitter:site" content="@lavrton">
 
   
@@ -71,7 +68,7 @@ To load a complex stage that originally contained images and event bindings usin
             </li>
           
             <li class="main-nav-item">
-              <a href="/api/" class="main-nav-link">API</a>
+              <a href="/api/Konva.html" class="main-nav-link">API</a>
             </li>
           
         </ul>
@@ -85,7 +82,7 @@ To load a complex stage that originally contained images and event bindings usin
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name"></h1>
+        <h1 id="page-title" itemprop="name">Load Complex Stage</h1>
         <a href="https://github.com/konvajs/site/blob/master/source/docs/data_&_serialization/Complex_Load.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -95,17 +92,18 @@ To load a complex stage that originally contained images and event bindings usin
     <div class="page-content">
       <!--<div class="toc-wrap">-->
         <!--<strong class="toc-title">Contents</strong>-->
-        <!--<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5_Canvas_Load_Complex_Stage_with_Konva"><span class="toc-number">1.</span> <span class="toc-text">HTML5 Canvas Load Complex Stage with Konva</span></a></li></ol>-->
+        <!---->
       <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h1 id="HTML5_Canvas_Load_Complex_Stage_with_Konva">HTML5 Canvas Load Complex Stage with Konva</h1>
-<p>To load a complex stage that originally contained images and event bindings using Konva,<br>we need to create a stage node using <code>Konva.Node.create()</code>, and then set the<br>images and event handlers with the help of selectors using the <code>get()</code> method.<br>Images and event handlers must be manually set because they aren’t serializable.</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/kujir/1/embed?js,output" target="_blank" rel="external">Konva Load Complex Stage Demo</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+        <p>To load a complex stage that originally contained images and event bindings using Konva,<br>we need to create a stage node using <code>Konva.Node.create()</code>, and then set the<br>images and event handlers with the help of selectors using the <code>get()</code> method.<br>Images and event handlers must be manually set because they aren’t serializable.</p>
+<iframe src="/downloads/code/data_&_serialization/Complex_Load.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+
+<figure class="highlight html"><figcaption><span>Konva Load Complex Stage Demo</span><a href="/downloads/code/data_&_serialization/Complex_Load.html">download</a></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://rawgit.com/konvajs/konva/master/konva.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Load Complex Stage Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">        <span class="tag">body</span> <span class="rules">{</span></div><div class="line">            <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">            <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">            <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</div><div class="line">            <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</div><div class="line">        <span class="rule">}</span></div><div class="line">    <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> json = <span class="string">'{"attrs":{"width":578,"height":200},"className":"Stage","children":[{"attrs":{},"className":"Layer","children":[{"attrs":{"width":"auto","height":"auto","text":"Text Shadow!","fontFamily":"Calibri","fontSize":95,"x":20,"y":20,"stroke":"red","strokeWidth":2,"shadowColor":"black","shadowBlur":2,"shadowOffsetX":10,"shadowOffsetY":10,"shadowOpacity":0.5},"className":"Text"},{"attrs":{"stroke":"green","strokeWidth":10,"lineJoin":"round","lineCap":"round","points":[{"x":50,"y":140},{"x":450,"y":160}],"shadowColor":"black","shadowBlur":10,"shadowOffsetX":5,"shadowOffsetY":5,"shadowOpacity":0.5},"className":"Line"},{"attrs":{"x":280,"y":100,"width":100,"height":50,"fill":"#00D2FF","stroke":"black","strokeWidth":4,"shadowColor":"black","shadowBlur":10,"shadowOffsetX":5,"shadowOffsetY":5,"shadowOpacity":0.5,"rotation":0.3490658503988659,"id":"blueRectangle"},"className":"Rect"},{"attrs":{"x":100,"y":41,"width":106,"height":118,"id":"yodaImage"},"className":"Image"}]}]}'</span>;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> stage = Konva.Node.create(json, <span class="string">'container'</span>);</div><div class="line"></div><div class="line">    <span class="comment">/*</span></div><div class="line">    * set functions</div><div class="line">    */</div><div class="line">    stage.get(<span class="string">'#blueRectangle'</span>).on(<span class="string">'mouseover mouseout'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">        <span class="keyword">var</span> stroke = <span class="keyword">this</span>.stroke();</div><div class="line">        <span class="keyword">this</span>.stroke(stroke === <span class="string">'black'</span> ? <span class="string">'red'</span> : <span class="string">'black'</span>);</div><div class="line">        stage.draw();</div><div class="line">    });</div><div class="line">    <span class="comment">/*</span></div><div class="line">    * set images</div><div class="line">    */</div><div class="line">    <span class="keyword">var</span> imageObj = <span class="keyword">new</span> Image();</div><div class="line">    imageObj.onload = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">        stage.get(<span class="string">'#yodaImage'</span>)[<span class="number">0</span>].image(imageObj);</div><div class="line">        stage.draw();</div><div class="line">    };</div><div class="line">    imageObj.src = <span class="string">'http://konvajs.github.io/assets/yoda.jpg'</span>;</div><div class="line"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-27T21:17:32.000Z" itemprop="dateModified">Last updated: Jan 28 2015</time>
-        <a href="data_&_serialization/Simple_Load.html" id="page-footer-prev" title="Simple Load">Prev</a><a href="performance/Layer_Management.html" id="page-footer-next" title="Layer Management">Next</a>
+        <time id="page-footer-updated" datetime="2015-02-02T09:33:16.000Z" itemprop="dateModified">Last updated: Feb 2 2015</time>
+        <a href="data_&_serialization/Simple_Load.html" id="page-footer-prev" title="Simple Load">Prev</a><a href="data_&_serialization/Stage_Data_URL.html" id="page-footer-next" title="Stage Data URL">Next</a>
       </footer>
       
 <section id="comments">
@@ -205,34 +203,34 @@ To load a complex stage that originally contained images and event bindings usin
   
     <strong class="sidebar-title">Drag and Drop</strong>
     
-      <a href="/docs/drag_and_Drop/Drag_and_Drop.html" class="sidebar-link">Drag and Drop</a>
+      <a href="/docs/drag_and_drop/Drag_and_Drop.html" class="sidebar-link">Drag and Drop</a>
     
-      <a href="/docs/drag_and_Drop/Drag_an_Image.html" class="sidebar-link">Drag an Image</a>
+      <a href="/docs/drag_and_drop/Drag_an_Image.html" class="sidebar-link">Drag an Image</a>
     
-      <a href="/docs/drag_and_Drop/Drag_a_Group.html" class="sidebar-link">Drag a Group</a>
+      <a href="/docs/drag_and_drop/Drag_a_Group.html" class="sidebar-link">Drag a Group</a>
     
-      <a href="/docs/drag_and_Drop/Drag_a_Line.html" class="sidebar-link">Drag a Line</a>
+      <a href="/docs/drag_and_drop/Drag_a_Line.html" class="sidebar-link">Drag a Line</a>
     
-      <a href="/docs/drag_and_Drop/Drag_a_Stage.html" class="sidebar-link">Drag a Stage</a>
+      <a href="/docs/drag_and_drop/Drag_a_Stage.html" class="sidebar-link">Drag a Stage</a>
     
-      <a href="/docs/drag_and_Drop/Drag_Events.html" class="sidebar-link">Drag Events</a>
+      <a href="/docs/drag_and_drop/Drag_Events.html" class="sidebar-link">Drag Events</a>
     
-      <a href="/docs/drag_and_Drop/Simple_Drag_Bounds.html" class="sidebar-link">Simple Drag Bounds</a>
+      <a href="/docs/drag_and_drop/Simple_Drag_Bounds.html" class="sidebar-link">Simple Drag Bounds</a>
     
-      <a href="/docs/drag_and_Drop/Complex_Drag_and_Drop.html" class="sidebar-link">Complex Drag and Drop</a>
+      <a href="/docs/drag_and_drop/Complex_Drag_and_Drop.html" class="sidebar-link">Complex Drag and Drop</a>
     
-      <a href="/docs/drag_and_Drop/Drop_Events.html" class="sidebar-link">Drop Events</a>
+      <a href="/docs/drag_and_drop/Drop_Events.html" class="sidebar-link">Drop Events</a>
     
   
     <strong class="sidebar-title">Groups and Layers</strong>
     
-      <a href="/docs/groups_and_Layers/Groups.html" class="sidebar-link">Groups</a>
+      <a href="/docs/groups_and_layers/Groups.html" class="sidebar-link">Groups</a>
     
-      <a href="/docs/groups_and_Layers/Layering.html" class="sidebar-link">Layering</a>
+      <a href="/docs/groups_and_layers/Layering.html" class="sidebar-link">Layering</a>
     
-      <a href="/docs/groups_and_Layers/Change_Containers.html" class="sidebar-link">Change Containers</a>
+      <a href="/docs/groups_and_layers/Change_Containers.html" class="sidebar-link">Change Containers</a>
     
-      <a href="/docs/groups_and_Layers/Clipping_Regions.html" class="sidebar-link">Clipping Regions</a>
+      <a href="/docs/groups_and_layers/Clipping_Regions.html" class="sidebar-link">Clipping Regions</a>
     
   
     <strong class="sidebar-title">Filters</strong>
@@ -271,7 +269,7 @@ To load a complex stage that originally contained images and event bindings usin
     
       <a href="/docs/animations/Moving.html" class="sidebar-link">Moving</a>
     
-      <a href="/docs/animations/Rotation .html" class="sidebar-link">Rotation</a>
+      <a href="/docs/animations/Rotation.html" class="sidebar-link">Rotation</a>
     
       <a href="/docs/animations/Scaling.html" class="sidebar-link">Scaling</a>
     
@@ -289,13 +287,13 @@ To load a complex stage that originally contained images and event bindings usin
   
     <strong class="sidebar-title">Data &amp; Serialization</strong>
     
-      <a href="/docs/data_&_serialization/Select_by_id.html" class="sidebar-link">Select by id</a>
-    
       <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize a Stage</a>
     
       <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple Load</a>
     
       <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link current">Complex Load</a>
+    
+      <a href="/docs/data_&_serialization/Stage_Data_URL.html" class="sidebar-link">Stage Data URL</a>
     
   
     <strong class="sidebar-title">Performance</strong>
@@ -311,7 +309,7 @@ To load a complex stage that originally contained images and event bindings usin
     
       <a href="/docs/sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">Zoom Layer On hover</a>
     
-      <a href="/docs/sandbox/Wheel of Fortune.html" class="sidebar-link">Wheel of Fortune</a>
+      <a href="/docs/sandbox/Wheel_of_Fortune.html" class="sidebar-link">Wheel of Fortune</a>
     
       <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum Squiggle</a>
     
@@ -333,7 +331,7 @@ To load a complex stage that originally contained images and event bindings usin
     
       <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals on the Beach Game</a>
     
-      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation Stress_Test</a>
+      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation Stress Test</a>
     
       <a href="/docs/sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000 Shapes with Tooltips</a>
     

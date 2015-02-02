@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Konva - JavaScript 2d canvas framework</title>
+  <title>Shape Groups | Konva - JavaScript 2d canvas framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://konvajs.github.io/docs/groups_and_layers/Groups.html">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -28,18 +28,15 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
-  <meta name="description" content="HTML5 Canvas Groups with Konva
-To group multiple shapes together with Konva, we can instantiatea Konva.Group() object and then add shapes to it with the add() method.Grouping shapes together is really">
+  <meta name="description" content="To group multiple shapes together with Konva, we can instantiatea Konva.Group() object and then add shapes to it with the add() method.Grouping shapes together is really handy when we want to transfor">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Konva.js - JavaScript 2d canvas framework">
+<meta property="og:title" content="Shape Groups">
 <meta property="og:url" content="http://konvajs.github.io/docs/groups_and_layers/Groups.html">
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
-<meta property="og:description" content="HTML5 Canvas Groups with Konva
-To group multiple shapes together with Konva, we can instantiatea Konva.Group() object and then add shapes to it with the add() method.Grouping shapes together is really">
+<meta property="og:description" content="To group multiple shapes together with Konva, we can instantiatea Konva.Group() object and then add shapes to it with the add() method.Grouping shapes together is really handy when we want to transfor">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Konva.js - JavaScript 2d canvas framework">
-<meta name="twitter:description" content="HTML5 Canvas Groups with Konva
-To group multiple shapes together with Konva, we can instantiatea Konva.Group() object and then add shapes to it with the add() method.Grouping shapes together is really">
+<meta name="twitter:title" content="Shape Groups">
+<meta name="twitter:description" content="To group multiple shapes together with Konva, we can instantiatea Konva.Group() object and then add shapes to it with the add() method.Grouping shapes together is really handy when we want to transfor">
 <meta name="twitter:site" content="@lavrton">
 
   
@@ -71,7 +68,7 @@ To group multiple shapes together with Konva, we can instantiatea Konva.Group() 
             </li>
           
             <li class="main-nav-item">
-              <a href="/api/" class="main-nav-link">API</a>
+              <a href="/api/Konva.html" class="main-nav-link">API</a>
             </li>
           
         </ul>
@@ -85,7 +82,7 @@ To group multiple shapes together with Konva, we can instantiatea Konva.Group() 
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name"></h1>
+        <h1 id="page-title" itemprop="name">Shape Groups</h1>
         <a href="https://github.com/konvajs/site/blob/master/source/docs/groups_and_layers/Groups.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -95,17 +92,17 @@ To group multiple shapes together with Konva, we can instantiatea Konva.Group() 
     <div class="page-content">
       <!--<div class="toc-wrap">-->
         <!--<strong class="toc-title">Contents</strong>-->
-        <!--<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5_Canvas_Groups_with_Konva"><span class="toc-number">1.</span> <span class="toc-text">HTML5 Canvas Groups with Konva</span></a></li></ol>-->
+        <!---->
       <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h1 id="HTML5_Canvas_Groups_with_Konva">HTML5 Canvas Groups with Konva</h1>
-<p>To group multiple shapes together with Konva, we can instantiate<br>a <code>Konva.Group()</code> object and then add shapes to it with the <code>add()</code> method.<br>Grouping shapes together is really handy when we want to transform multiple<br>shapes together, e.g. if we want to move, rotate, or scale multiple shapes<br>at once.  Groups can also be added to other groups to create more complex<br>Node trees.  For a full list of attributes and methods, check out the <a href="http://konva.github.io/api/Konva.Group.html" target="_blank" rel="external">Konva.Group documentation</a>.</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/qepajo/1/embed?js,output" target="_blank" rel="external">Konva Groups Demo</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+        <p>To group multiple shapes together with Konva, we can instantiate<br>a <code>Konva.Group()</code> object and then add shapes to it with the <code>add()</code> method.<br>Grouping shapes together is really handy when we want to transform multiple<br>shapes together, e.g. if we want to move, rotate, or scale multiple shapes<br>at once.  Groups can also be added to other groups to create more complex<br>Node trees.  For a full list of attributes and methods, check out the <a href="http://konvajs.github.io/api/Konva.Group.html" target="_blank" rel="external">Konva.Group documentation</a>.</p>
+<iframe src="/downloads/code/groups_and_layers/Groups.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
 
+<figure class="highlight html"><figcaption><span>Konva Groups Demo</span><a href="/downloads/code/groups_and_layers/Groups.html">download</a></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://rawgit.com/konvajs/konva/master/konva.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Groups Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="tag">body</span> <span class="rules">{</span></div><div class="line">      <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</div><div class="line">      <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</div><div class="line">    <span class="rule">}</span></div><div class="line">  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> width = <span class="built_in">window</span>.innerWidth;</div><div class="line">    <span class="keyword">var</span> height = <span class="built_in">window</span>.innerHeight;</div><div class="line">    </div><div class="line">    <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">      container: <span class="string">'container'</span>,</div><div class="line">      width: width,</div><div class="line">      height: height</div><div class="line">    });</div><div class="line"></div><div class="line">    <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line">    <span class="comment">/*</span></div><div class="line">    * create a group which will be used to combine</div><div class="line">    * multiple simple shapes.  Transforming the group will</div><div class="line">    * transform all of the simple shapes together as</div><div class="line">    * one unit</div><div class="line">    */</div><div class="line">    <span class="keyword">var</span> group = <span class="keyword">new</span> Konva.Group({</div><div class="line">        x: <span class="number">120</span>,</div><div class="line">        y: <span class="number">40</span>,</div><div class="line">        rotationDeg: <span class="number">20</span></div><div class="line">    });</div><div class="line"></div><div class="line">    <span class="keyword">var</span> colors = [<span class="string">'red'</span>, <span class="string">'orange'</span>, <span class="string">'yellow'</span>];</div><div class="line"></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) {</div><div class="line">        <span class="keyword">var</span> box = <span class="keyword">new</span> Konva.Rect({</div><div class="line">            x: i * <span class="number">30</span>,</div><div class="line">            y: i * <span class="number">18</span>,</div><div class="line">            width: <span class="number">100</span>,</div><div class="line">            height: <span class="number">50</span>,</div><div class="line">            name: colors[i],</div><div class="line">            fill: colors[i],</div><div class="line">            stroke: <span class="string">'black'</span>,</div><div class="line">            strokeWidth: <span class="number">4</span></div><div class="line">        });</div><div class="line"></div><div class="line">        group.add(box);</div><div class="line">    }</div><div class="line"></div><div class="line">    layer.add(group);</div><div class="line">    stage.add(layer);</div><div class="line">  <span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-27T21:17:32.000Z" itemprop="dateModified">Last updated: Jan 28 2015</time>
-        <a href="index.html" id="page-footer-next" title="Overview">Next</a>
+        <time id="page-footer-updated" datetime="2015-02-02T09:51:33.000Z" itemprop="dateModified">Last updated: Feb 2 2015</time>
+        <a href="drag_and_drop/Drop_Events.html" id="page-footer-prev" title="Drop Events">Prev</a><a href="groups_and_layers/Layering.html" id="page-footer-next" title="Layering">Next</a>
       </footer>
       
 <section id="comments">
@@ -205,34 +202,34 @@ To group multiple shapes together with Konva, we can instantiatea Konva.Group() 
   
     <strong class="sidebar-title">Drag and Drop</strong>
     
-      <a href="/docs/drag_and_Drop/Drag_and_Drop.html" class="sidebar-link">Drag and Drop</a>
+      <a href="/docs/drag_and_drop/Drag_and_Drop.html" class="sidebar-link">Drag and Drop</a>
     
-      <a href="/docs/drag_and_Drop/Drag_an_Image.html" class="sidebar-link">Drag an Image</a>
+      <a href="/docs/drag_and_drop/Drag_an_Image.html" class="sidebar-link">Drag an Image</a>
     
-      <a href="/docs/drag_and_Drop/Drag_a_Group.html" class="sidebar-link">Drag a Group</a>
+      <a href="/docs/drag_and_drop/Drag_a_Group.html" class="sidebar-link">Drag a Group</a>
     
-      <a href="/docs/drag_and_Drop/Drag_a_Line.html" class="sidebar-link">Drag a Line</a>
+      <a href="/docs/drag_and_drop/Drag_a_Line.html" class="sidebar-link">Drag a Line</a>
     
-      <a href="/docs/drag_and_Drop/Drag_a_Stage.html" class="sidebar-link">Drag a Stage</a>
+      <a href="/docs/drag_and_drop/Drag_a_Stage.html" class="sidebar-link">Drag a Stage</a>
     
-      <a href="/docs/drag_and_Drop/Drag_Events.html" class="sidebar-link">Drag Events</a>
+      <a href="/docs/drag_and_drop/Drag_Events.html" class="sidebar-link">Drag Events</a>
     
-      <a href="/docs/drag_and_Drop/Simple_Drag_Bounds.html" class="sidebar-link">Simple Drag Bounds</a>
+      <a href="/docs/drag_and_drop/Simple_Drag_Bounds.html" class="sidebar-link">Simple Drag Bounds</a>
     
-      <a href="/docs/drag_and_Drop/Complex_Drag_and_Drop.html" class="sidebar-link">Complex Drag and Drop</a>
+      <a href="/docs/drag_and_drop/Complex_Drag_and_Drop.html" class="sidebar-link">Complex Drag and Drop</a>
     
-      <a href="/docs/drag_and_Drop/Drop_Events.html" class="sidebar-link">Drop Events</a>
+      <a href="/docs/drag_and_drop/Drop_Events.html" class="sidebar-link">Drop Events</a>
     
   
     <strong class="sidebar-title">Groups and Layers</strong>
     
-      <a href="/docs/groups_and_Layers/Groups.html" class="sidebar-link">Groups</a>
+      <a href="/docs/groups_and_layers/Groups.html" class="sidebar-link current">Groups</a>
     
-      <a href="/docs/groups_and_Layers/Layering.html" class="sidebar-link">Layering</a>
+      <a href="/docs/groups_and_layers/Layering.html" class="sidebar-link">Layering</a>
     
-      <a href="/docs/groups_and_Layers/Change_Containers.html" class="sidebar-link">Change Containers</a>
+      <a href="/docs/groups_and_layers/Change_Containers.html" class="sidebar-link">Change Containers</a>
     
-      <a href="/docs/groups_and_Layers/Clipping_Regions.html" class="sidebar-link">Clipping Regions</a>
+      <a href="/docs/groups_and_layers/Clipping_Regions.html" class="sidebar-link">Clipping Regions</a>
     
   
     <strong class="sidebar-title">Filters</strong>
@@ -271,7 +268,7 @@ To group multiple shapes together with Konva, we can instantiatea Konva.Group() 
     
       <a href="/docs/animations/Moving.html" class="sidebar-link">Moving</a>
     
-      <a href="/docs/animations/Rotation .html" class="sidebar-link">Rotation</a>
+      <a href="/docs/animations/Rotation.html" class="sidebar-link">Rotation</a>
     
       <a href="/docs/animations/Scaling.html" class="sidebar-link">Scaling</a>
     
@@ -289,13 +286,13 @@ To group multiple shapes together with Konva, we can instantiatea Konva.Group() 
   
     <strong class="sidebar-title">Data &amp; Serialization</strong>
     
-      <a href="/docs/data_&_serialization/Select_by_id.html" class="sidebar-link">Select by id</a>
-    
       <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize a Stage</a>
     
       <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple Load</a>
     
       <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link">Complex Load</a>
+    
+      <a href="/docs/data_&_serialization/Stage_Data_URL.html" class="sidebar-link">Stage Data URL</a>
     
   
     <strong class="sidebar-title">Performance</strong>
@@ -311,7 +308,7 @@ To group multiple shapes together with Konva, we can instantiatea Konva.Group() 
     
       <a href="/docs/sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">Zoom Layer On hover</a>
     
-      <a href="/docs/sandbox/Wheel of Fortune.html" class="sidebar-link">Wheel of Fortune</a>
+      <a href="/docs/sandbox/Wheel_of_Fortune.html" class="sidebar-link">Wheel of Fortune</a>
     
       <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum Squiggle</a>
     
@@ -333,7 +330,7 @@ To group multiple shapes together with Konva, we can instantiatea Konva.Group() 
     
       <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals on the Beach Game</a>
     
-      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation Stress_Test</a>
+      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation Stress Test</a>
     
       <a href="/docs/sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000 Shapes with Tooltips</a>
     

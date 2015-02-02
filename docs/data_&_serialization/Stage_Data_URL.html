@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Konva - JavaScript 2d canvas framework</title>
+  <title>Stage Data URL | Konva - JavaScript 2d canvas framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://konvajs.github.io/docs/data_&_serialization/Select_by_id.html">
+  <link rel="canonical" href="http://konvajs.github.io/docs/data_&_serialization/Stage_Data_URL.html">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -28,18 +28,15 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
-  <meta name="description" content="HTML5 Canvas Stage Data URL with Konva
-To get the data URL of the stage with Konva, we can use the toDataURL()method which requires a callback function for Stage (for other nodes callback is not requi">
+  <meta name="description" content="To get the data URL of the stage with Konva, we can use the toDataURL()method which requires a callback function for Stage (for other nodes callback is not required).In addition, we can also pass in a">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Konva.js - JavaScript 2d canvas framework">
-<meta property="og:url" content="http://konvajs.github.io/docs/data_&_serialization/Select_by_id.html">
+<meta property="og:title" content="Stage Data URL">
+<meta property="og:url" content="http://konvajs.github.io/docs/data_&_serialization/Stage_Data_URL.html">
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
-<meta property="og:description" content="HTML5 Canvas Stage Data URL with Konva
-To get the data URL of the stage with Konva, we can use the toDataURL()method which requires a callback function for Stage (for other nodes callback is not requi">
+<meta property="og:description" content="To get the data URL of the stage with Konva, we can use the toDataURL()method which requires a callback function for Stage (for other nodes callback is not required).In addition, we can also pass in a">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Konva.js - JavaScript 2d canvas framework">
-<meta name="twitter:description" content="HTML5 Canvas Stage Data URL with Konva
-To get the data URL of the stage with Konva, we can use the toDataURL()method which requires a callback function for Stage (for other nodes callback is not requi">
+<meta name="twitter:title" content="Stage Data URL">
+<meta name="twitter:description" content="To get the data URL of the stage with Konva, we can use the toDataURL()method which requires a callback function for Stage (for other nodes callback is not required).In addition, we can also pass in a">
 <meta name="twitter:site" content="@lavrton">
 
   
@@ -71,7 +68,7 @@ To get the data URL of the stage with Konva, we can use the toDataURL()method wh
             </li>
           
             <li class="main-nav-item">
-              <a href="/api/" class="main-nav-link">API</a>
+              <a href="/api/Konva.html" class="main-nav-link">API</a>
             </li>
           
         </ul>
@@ -85,8 +82,8 @@ To get the data URL of the stage with Konva, we can use the toDataURL()method wh
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name"></h1>
-        <a href="https://github.com/konvajs/site/blob/master/source/docs/data_&_serialization/Select_by_id.md" title="Improve this doc" id="page-edit-link"></a>
+        <h1 id="page-title" itemprop="name">Stage Data URL</h1>
+        <a href="https://github.com/konvajs/site/blob/master/source/docs/data_&_serialization/Stage_Data_URL.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
   </header>
@@ -95,19 +92,20 @@ To get the data URL of the stage with Konva, we can use the toDataURL()method wh
     <div class="page-content">
       <!--<div class="toc-wrap">-->
         <!--<strong class="toc-title">Contents</strong>-->
-        <!--<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5_Canvas_Stage_Data_URL_with_Konva"><span class="toc-number">1.</span> <span class="toc-text">HTML5 Canvas Stage Data URL with Konva</span></a></li></ol>-->
+        <!---->
       <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h1 id="HTML5_Canvas_Stage_Data_URL_with_Konva">HTML5 Canvas Stage Data URL with Konva</h1>
-<p>To get the data URL of the stage with Konva, we can use the <code>toDataURL()</code><br>method which requires a callback function for <code>Stage</code> (for other nodes callback is not required).<br>In addition, we can also pass in a mime type such as image/jpeg and a quality value that ranges between 0 and 1.<br>We can also get the data URLs of specific nodes, including layers, groups, and shapes.</p>
+        <p>To get the data URL of the stage with Konva, we can use the <code>toDataURL()</code><br>method which requires a callback function for <code>Stage</code> (for other nodes callback is not required).<br>In addition, we can also pass in a mime type such as image/jpeg and a quality value that ranges between 0 and 1.<br>We can also get the data URLs of specific nodes, including layers, groups, and shapes.</p>
 <p><em>Note: The <code>toDataURL()</code> method requires that any images drawn onto the canvas<br>are hosted on a web server with the same domain as the code executing it.<br>If this condition is not met, a SECURITY_ERR exception is thrown.</em></p>
 <p>Instructions: Drag and drop the rectangle and then click on the save button to get the composite data url and open the resulting image in a new window</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/yoqida/1/embed?js,output" target="_blank" rel="external">Konva Stage Data URL Demo</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<iframe src="/downloads/code/data_&_serialization/Stage_Data_URL.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+
+<figure class="highlight html"><figcaption><span>Konva Stage Data URL Demo</span><a href="/downloads/code/data_&_serialization/Stage_Data_URL.html">download</a></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://rawgit.com/konvajs/konva/master/konva.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Stage Data URL Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">        <span class="tag">body</span> <span class="rules">{</span></div><div class="line">            <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">            <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">            <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</div><div class="line">            <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</div><div class="line">        <span class="rule">}</span></div><div class="line">        <span class="id">#buttons</span> <span class="rules">{</span></div><div class="line">            <span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</div><div class="line">            <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">5px</span></span></span>;</div><div class="line">            <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">10px</span></span></span>;</div><div class="line">        <span class="rule">}</span></div><div class="line">        <span class="id">#buttons</span> &gt; <span class="tag">input</span> <span class="rules">{</span></div><div class="line">            <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">10px</span></span></span>;</div><div class="line">            <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</div><div class="line">            <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">5px</span></span></span>;</div><div class="line">        <span class="rule">}</span></div><div class="line">    <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"buttons"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">id</span>=<span class="value">"save"</span>&gt;</span></div><div class="line">        Save as image</div><div class="line">    <span class="tag">&lt;/<span class="title">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> width = <span class="built_in">window</span>.innerWidth;</div><div class="line">    <span class="keyword">var</span> height = <span class="built_in">window</span>.innerHeight;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">        container: <span class="string">'container'</span>,</div><div class="line">        width: width,</div><div class="line">        height: height</div><div class="line">    });</div><div class="line"></div><div class="line">    <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line">    <span class="keyword">var</span> rectX = stage.getWidth() / <span class="number">2</span> - <span class="number">50</span>;</div><div class="line">    <span class="keyword">var</span> rectY = stage.getHeight() / <span class="number">2</span> - <span class="number">25</span>;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> box = <span class="keyword">new</span> Konva.Rect({</div><div class="line">        x: rectX,</div><div class="line">        y: rectY,</div><div class="line">        width: <span class="number">100</span>,</div><div class="line">        height: <span class="number">50</span>,</div><div class="line">        fill: <span class="string">'#00D2FF'</span>,</div><div class="line">        stroke: <span class="string">'black'</span>,</div><div class="line">        strokeWidth: <span class="number">4</span>,</div><div class="line">        draggable: <span class="literal">true</span></div><div class="line">    });</div><div class="line"></div><div class="line">    box.on(<span class="string">'mouseover'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">        <span class="built_in">document</span>.body.style.cursor = <span class="string">'pointer'</span>;</div><div class="line">    });</div><div class="line"></div><div class="line">    box.on(<span class="string">'mouseout'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">        <span class="built_in">document</span>.body.style.cursor = <span class="string">'default'</span>;</div><div class="line">    });</div><div class="line"></div><div class="line">    layer.add(box);</div><div class="line">    stage.add(layer);</div><div class="line"></div><div class="line">    <span class="built_in">document</span>.getElementById(<span class="string">'save'</span>).addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">        <span class="comment">/*</span></div><div class="line">        * since the stage toDataURL() method is asynchronous, we need</div><div class="line">        * to provide a callback</div><div class="line">        */</div><div class="line">        stage.toDataURL({</div><div class="line">            callback: <span class="function"><span class="keyword">function</span><span class="params">(dataUrl)</span> </span>{</div><div class="line">                <span class="comment">/*</span></div><div class="line">                 * here you can do anything you like with the data url.</div><div class="line">                 * In this tutorial we'll just open the url with the browser</div><div class="line">                 * so that you can see the result as an image</div><div class="line">                 */</div><div class="line">                <span class="built_in">window</span>.open(dataUrl);</div><div class="line">            }</div><div class="line">        });</div><div class="line">    }, <span class="literal">false</span>);</div><div class="line"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-27T21:17:32.000Z" itemprop="dateModified">Last updated: Jan 28 2015</time>
-        <a href="selectors/Select_by_Name.html" id="page-footer-prev" title="Select by Name">Prev</a><a href="data_&_serialization/Serialize_a_Stage.html" id="page-footer-next" title="Serialize a Stage">Next</a>
+        <time id="page-footer-updated" datetime="2015-02-02T09:31:11.000Z" itemprop="dateModified">Last updated: Feb 2 2015</time>
+        <a href="data_&_serialization/Complex_Load.html" id="page-footer-prev" title="Complex Load">Prev</a><a href="performance/Layer_Management.html" id="page-footer-next" title="Layer Management">Next</a>
       </footer>
       
 <section id="comments">
@@ -207,34 +205,34 @@ To get the data URL of the stage with Konva, we can use the toDataURL()method wh
   
     <strong class="sidebar-title">Drag and Drop</strong>
     
-      <a href="/docs/drag_and_Drop/Drag_and_Drop.html" class="sidebar-link">Drag and Drop</a>
+      <a href="/docs/drag_and_drop/Drag_and_Drop.html" class="sidebar-link">Drag and Drop</a>
     
-      <a href="/docs/drag_and_Drop/Drag_an_Image.html" class="sidebar-link">Drag an Image</a>
+      <a href="/docs/drag_and_drop/Drag_an_Image.html" class="sidebar-link">Drag an Image</a>
     
-      <a href="/docs/drag_and_Drop/Drag_a_Group.html" class="sidebar-link">Drag a Group</a>
+      <a href="/docs/drag_and_drop/Drag_a_Group.html" class="sidebar-link">Drag a Group</a>
     
-      <a href="/docs/drag_and_Drop/Drag_a_Line.html" class="sidebar-link">Drag a Line</a>
+      <a href="/docs/drag_and_drop/Drag_a_Line.html" class="sidebar-link">Drag a Line</a>
     
-      <a href="/docs/drag_and_Drop/Drag_a_Stage.html" class="sidebar-link">Drag a Stage</a>
+      <a href="/docs/drag_and_drop/Drag_a_Stage.html" class="sidebar-link">Drag a Stage</a>
     
-      <a href="/docs/drag_and_Drop/Drag_Events.html" class="sidebar-link">Drag Events</a>
+      <a href="/docs/drag_and_drop/Drag_Events.html" class="sidebar-link">Drag Events</a>
     
-      <a href="/docs/drag_and_Drop/Simple_Drag_Bounds.html" class="sidebar-link">Simple Drag Bounds</a>
+      <a href="/docs/drag_and_drop/Simple_Drag_Bounds.html" class="sidebar-link">Simple Drag Bounds</a>
     
-      <a href="/docs/drag_and_Drop/Complex_Drag_and_Drop.html" class="sidebar-link">Complex Drag and Drop</a>
+      <a href="/docs/drag_and_drop/Complex_Drag_and_Drop.html" class="sidebar-link">Complex Drag and Drop</a>
     
-      <a href="/docs/drag_and_Drop/Drop_Events.html" class="sidebar-link">Drop Events</a>
+      <a href="/docs/drag_and_drop/Drop_Events.html" class="sidebar-link">Drop Events</a>
     
   
     <strong class="sidebar-title">Groups and Layers</strong>
     
-      <a href="/docs/groups_and_Layers/Groups.html" class="sidebar-link">Groups</a>
+      <a href="/docs/groups_and_layers/Groups.html" class="sidebar-link">Groups</a>
     
-      <a href="/docs/groups_and_Layers/Layering.html" class="sidebar-link">Layering</a>
+      <a href="/docs/groups_and_layers/Layering.html" class="sidebar-link">Layering</a>
     
-      <a href="/docs/groups_and_Layers/Change_Containers.html" class="sidebar-link">Change Containers</a>
+      <a href="/docs/groups_and_layers/Change_Containers.html" class="sidebar-link">Change Containers</a>
     
-      <a href="/docs/groups_and_Layers/Clipping_Regions.html" class="sidebar-link">Clipping Regions</a>
+      <a href="/docs/groups_and_layers/Clipping_Regions.html" class="sidebar-link">Clipping Regions</a>
     
   
     <strong class="sidebar-title">Filters</strong>
@@ -273,7 +271,7 @@ To get the data URL of the stage with Konva, we can use the toDataURL()method wh
     
       <a href="/docs/animations/Moving.html" class="sidebar-link">Moving</a>
     
-      <a href="/docs/animations/Rotation .html" class="sidebar-link">Rotation</a>
+      <a href="/docs/animations/Rotation.html" class="sidebar-link">Rotation</a>
     
       <a href="/docs/animations/Scaling.html" class="sidebar-link">Scaling</a>
     
@@ -291,13 +289,13 @@ To get the data URL of the stage with Konva, we can use the toDataURL()method wh
   
     <strong class="sidebar-title">Data &amp; Serialization</strong>
     
-      <a href="/docs/data_&_serialization/Select_by_id.html" class="sidebar-link current">Select by id</a>
-    
       <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize a Stage</a>
     
       <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple Load</a>
     
       <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link">Complex Load</a>
+    
+      <a href="/docs/data_&_serialization/Stage_Data_URL.html" class="sidebar-link current">Stage Data URL</a>
     
   
     <strong class="sidebar-title">Performance</strong>
@@ -313,7 +311,7 @@ To get the data URL of the stage with Konva, we can use the toDataURL()method wh
     
       <a href="/docs/sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">Zoom Layer On hover</a>
     
-      <a href="/docs/sandbox/Wheel of Fortune.html" class="sidebar-link">Wheel of Fortune</a>
+      <a href="/docs/sandbox/Wheel_of_Fortune.html" class="sidebar-link">Wheel of Fortune</a>
     
       <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum Squiggle</a>
     
@@ -335,7 +333,7 @@ To get the data URL of the stage with Konva, we can use the toDataURL()method wh
     
       <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals on the Beach Game</a>
     
-      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation Stress_Test</a>
+      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation Stress Test</a>
     
       <a href="/docs/sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000 Shapes with Tooltips</a>
     
@@ -379,7 +377,7 @@ To get the data URL of the stage with Konva, we can use the toDataURL()method wh
 <script>
   var disqus_shortname = 'konvajs';
   
-  var disqus_url = 'http://konvajs.github.io/docs/data_&amp;_serialization/Select_by_id.html';
+  var disqus_url = 'http://konvajs.github.io/docs/data_&amp;_serialization/Stage_Data_URL.html';
   
   (function(){
     var dsq = document.createElement('script');
