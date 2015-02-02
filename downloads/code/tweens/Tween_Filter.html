@@ -32,6 +32,8 @@
         y: 30,
         draggable: true
     });
+    layer.add(lion);
+    stage.add(layer);
 
     var image = new Image();
     image.onload = function() {
@@ -40,25 +42,25 @@
         lion.filters([Konva.Filters.Blur]);
         lion.blurRadius(10);
         layer.draw();
+        var tween = new Konva.Tween({
+            node: lion,
+            duration: 0.6,
+            blurRadius: 0,
+            easing: Konva.Easings.EaseInOut
+        });
+
+        lion.on('mouseover', function() {
+            tween.play();
+        });
+
+        lion.on('mouseout', function() {
+            tween.reverse();
+        });
     };
     image.src = 'http://konvajs.github.io/assets/lion.png';
 
-    layer.add(lion);
-    stage.add(layer);
-    var tween = new Konva.Tween({
-        node: lion,
-        duration: 0.6,
-        blurRadius: 0,
-        easing: Konva.Easings.EaseInOut
-    });
-
-    lion.on('mouseover', function() {
-        tween.play();
-    });
-
-    lion.on('mouseout', function() {
-        tween.reverse();
-    });
+    
+    
   </script>
 
 </body>

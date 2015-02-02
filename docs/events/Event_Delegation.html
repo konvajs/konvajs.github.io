@@ -101,12 +101,12 @@ To get the event target with Konva, we can access the target propertyof the Even
         <h1 id="HTML5_Canvas_Event_Delegation_with_Konva">HTML5 Canvas Event Delegation with Konva</h1>
 <p>To get the event target with Konva, we can access the <code>target</code> property<br>of the Event object.  This is particularly useful when using event delegation,<br>in which we can bind an event handler to a parent node, and listen to events<br>that occur on its children.</p>
 <p>Instructions: Click on the star and observe that the layer event binding<br>correctly identifies the shape that was clicked on.</p>
-<iframe src="/downloads/code/shapes/Event_Delegation.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+<iframe src="/downloads/code/events/Event_Delegation.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
 
-
+<figure class="highlight html"><figcaption><span>Konva Event_Delegation Demo</span><a href="/downloads/code/events/Event_Delegation.html">download</a></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://rawgit.com/konvajs/konva/master/konva.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Event Delegation Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="tag">body</span> <span class="rules">{</span></div><div class="line">      <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</div><div class="line">      <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</div><div class="line">    <span class="rule">}</span></div><div class="line">  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">      container: <span class="string">'container'</span>,</div><div class="line">      width: <span class="number">300</span>,</div><div class="line">      height: <span class="number">300</span></div><div class="line">    });</div><div class="line"></div><div class="line">    <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line">    <span class="keyword">var</span> star = <span class="keyword">new</span> Konva.Star({</div><div class="line">      x: stage.getWidth() / <span class="number">2</span>,</div><div class="line">      y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">      numPoints: <span class="number">15</span>,</div><div class="line">      innerRadius: <span class="number">40</span>,</div><div class="line">      outerRadius: <span class="number">70</span>,</div><div class="line">      fill: <span class="string">'blue'</span>,</div><div class="line">      scale: {</div><div class="line">        x: <span class="number">2</span>,</div><div class="line">        y: <span class="number">0.5</span></div><div class="line">      },</div><div class="line">      name: <span class="string">'my star'</span></div><div class="line">    });</div><div class="line"></div><div class="line">    layer.on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span><span class="params">(evt)</span> </span>{</div><div class="line">      <span class="comment">// get the shape that was clicked on</span></div><div class="line">      <span class="keyword">var</span> shape = evt.target;</div><div class="line">      alert(<span class="string">'you clicked on \"'</span> + shape.getName() + <span class="string">'\"'</span>);</div><div class="line">    });</div><div class="line"></div><div class="line">    layer.add(star);</div><div class="line"></div><div class="line">    <span class="comment">// add the layer to the stage</span></div><div class="line">    stage.add(layer);</div><div class="line">  <span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-30T11:27:37.000Z" itemprop="dateModified">Last updated: Jan 30 2015</time>
+        <time id="page-footer-updated" datetime="2015-01-31T05:14:33.000Z" itemprop="dateModified">Last updated: Jan 31 2015</time>
         <a href="events/Cancel_Propagation.html" id="page-footer-prev" title="Cancel Propagation">Prev</a><a href="events/Fire_Events.html" id="page-footer-next" title="Fire Events">Next</a>
       </footer>
       
@@ -232,9 +232,9 @@ To get the event target with Konva, we can access the target propertyof the Even
     
       <a href="/docs/groups_and_Layers/Layering.html" class="sidebar-link">Layering</a>
     
-      <a href="/docs/groups_and_Layers/Change_Containers.html" class="sidebar-link">Change_Containers</a>
+      <a href="/docs/groups_and_Layers/Change_Containers.html" class="sidebar-link">Change Containers</a>
     
-      <a href="/docs/groups_and_Layers/Clipping_Regions.html" class="sidebar-link">Clipping_Regions</a>
+      <a href="/docs/groups_and_Layers/Clipping_Regions.html" class="sidebar-link">Clipping Regions</a>
     
   
     <strong class="sidebar-title">Filters</strong>
@@ -269,7 +269,7 @@ To get the event target with Konva, we can access the target propertyof the Even
   
     <strong class="sidebar-title">Animations</strong>
     
-      <a href="/docs/animations/Create_an_Animation.html" class="sidebar-link">Create_an_Animation</a>
+      <a href="/docs/animations/Create_an_Animation.html" class="sidebar-link">Create an Animation</a>
     
       <a href="/docs/animations/Moving.html" class="sidebar-link">Moving</a>
     
@@ -277,7 +277,7 @@ To get the event target with Konva, we can access the target propertyof the Even
     
       <a href="/docs/animations/Scaling.html" class="sidebar-link">Scaling</a>
     
-      <a href="/docs/animations/Stop_Animation.html" class="sidebar-link">Stop_Animation</a>
+      <a href="/docs/animations/Stop_Animation.html" class="sidebar-link">Stop Animation</a>
     
   
     <strong class="sidebar-title">Selectors</strong>
@@ -291,13 +291,13 @@ To get the event target with Konva, we can access the target propertyof the Even
   
     <strong class="sidebar-title">Data &amp; Serialization</strong>
     
-      <a href="/docs/data_&_serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
+      <a href="/docs/data_&_serialization/Select_by_id.html" class="sidebar-link">Select by id</a>
     
-      <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
+      <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize a Stage</a>
     
-      <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
+      <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple Load</a>
     
-      <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
+      <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link">Complex Load</a>
     
   
     <strong class="sidebar-title">Performance</strong>
@@ -315,47 +315,47 @@ To get the event target with Konva, we can access the target propertyof the Even
     
       <a href="/docs/sandbox/Wheel of Fortune.html" class="sidebar-link">Wheel of Fortune</a>
     
-      <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum_Squiggle</a>
+      <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum Squiggle</a>
     
-      <a href="/docs/sandbox/20000_Nodes.html" class="sidebar-link">20000_Nodes</a>
+      <a href="/docs/sandbox/20000_Nodes.html" class="sidebar-link">20000 Nodes</a>
     
-      <a href="/docs/sandbox/Elastic_Stars.html" class="sidebar-link">Elastic_Stars</a>
+      <a href="/docs/sandbox/Elastic_Stars.html" class="sidebar-link">Elastic Stars</a>
     
-      <a href="/docs/sandbox/Shape_Tango.html" class="sidebar-link">Shape_Tango</a>
+      <a href="/docs/sandbox/Shape_Tango.html" class="sidebar-link">Shape Tango</a>
     
-      <a href="/docs/sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">Multi-touch_Scale_Shape</a>
+      <a href="/docs/sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">Multi-touch Scale Shape</a>
     
-      <a href="/docs/sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link">Multi-touch_Scale_Stage</a>
+      <a href="/docs/sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link">Multi-touch Scale Stage</a>
     
-      <a href="/docs/sandbox/Interactive_Building_Map.html" class="sidebar-link">Interactive_Building_Map</a>
+      <a href="/docs/sandbox/Interactive_Building_Map.html" class="sidebar-link">Interactive Building Map</a>
     
-      <a href="/docs/sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">Modify_Curves_with_Anchor_Points</a>
+      <a href="/docs/sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">Modify Curves with Anchor Points</a>
     
-      <a href="/docs/sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">Drag_and_Drop_Stress_Test</a>
+      <a href="/docs/sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">Drag and Drop Stress Test</a>
     
-      <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals_on_the_Beach_Game</a>
+      <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals on the Beach Game</a>
     
-      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation_Stress_Test</a>
+      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation Stress_Test</a>
     
-      <a href="/docs/sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000_Shapes_with_Tooltips</a>
+      <a href="/docs/sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000 Shapes with Tooltips</a>
     
-      <a href="/docs/sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">Modify_Shape_Color_on_Click</a>
+      <a href="/docs/sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">Modify Shape Color on Click</a>
     
-      <a href="/docs/sandbox/Physics_Simulator.html" class="sidebar-link">Physics_Simulator</a>
+      <a href="/docs/sandbox/Physics_Simulator.html" class="sidebar-link">Physics Simulator</a>
     
-      <a href="/docs/sandbox/Expand_Images_on_Hover.html" class="sidebar-link">Expand_Images_on_Hover</a>
+      <a href="/docs/sandbox/Expand_Images_on_Hover.html" class="sidebar-link">Expand Images on Hover</a>
     
-      <a href="/docs/sandbox/Planets_Image_Map.html" class="sidebar-link">Planets_Image_Map</a>
+      <a href="/docs/sandbox/Planets_Image_Map.html" class="sidebar-link">Planets Image Map</a>
     
-      <a href="/docs/sandbox/Image_Resize.html" class="sidebar-link">Image_Resize</a>
+      <a href="/docs/sandbox/Image_Resize.html" class="sidebar-link">Image Resize</a>
     
-      <a href="/docs/sandbox/Shape_Tooltips.html" class="sidebar-link">Shape_Tooltips</a>
+      <a href="/docs/sandbox/Shape_Tooltips.html" class="sidebar-link">Shape Tooltips</a>
     
-      <a href="/docs/sandbox/Star_Spiner.html" class="sidebar-link">Star_Spiner</a>
+      <a href="/docs/sandbox/Star_Spiner.html" class="sidebar-link">Star Spiner</a>
     
-      <a href="/docs/sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">Drag_and_Drop_Multiple_Shapes</a>
+      <a href="/docs/sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">Drag and Drop Multiple Shapes</a>
     
-      <a href="/docs/sandbox/Image_Border_Highlighting.html" class="sidebar-link">Image_Border_Highlighting</a>
+      <a href="/docs/sandbox/Image_Border_Highlighting.html" class="sidebar-link">Image Border Highlighting</a>
     
   
 </aside>

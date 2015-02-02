@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Konva - JavaScript 2d canvas framework</title>
+  <title>Multi-touch Scale Stage | Konva - JavaScript 2d canvas framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://konvajs.github.io/docs/sandbox/Multi-touch_Scale_Stage.html">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -28,21 +28,18 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
-  <meta name="description" content="HTML5 Canvas Multi-touch Scale Stage with Konva
-Note: This lab only works on devices that support multi-touch gestures such as iOS because it makes use of multiple touch events.
-Instructions: Using a">
+  <meta name="description" content="Note: This lab only works on devices that support multi-touch gestures such as iOS because it makes use of multiple touch events.
+Instructions: Using a mobile device that supports multi-touch gestures">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Konva.js - JavaScript 2d canvas framework">
+<meta property="og:title" content="Multi-touch Scale Stage">
 <meta property="og:url" content="http://konvajs.github.io/docs/sandbox/Multi-touch_Scale_Stage.html">
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
-<meta property="og:description" content="HTML5 Canvas Multi-touch Scale Stage with Konva
-Note: This lab only works on devices that support multi-touch gestures such as iOS because it makes use of multiple touch events.
-Instructions: Using a">
+<meta property="og:description" content="Note: This lab only works on devices that support multi-touch gestures such as iOS because it makes use of multiple touch events.
+Instructions: Using a mobile device that supports multi-touch gestures">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Konva.js - JavaScript 2d canvas framework">
-<meta name="twitter:description" content="HTML5 Canvas Multi-touch Scale Stage with Konva
-Note: This lab only works on devices that support multi-touch gestures such as iOS because it makes use of multiple touch events.
-Instructions: Using a">
+<meta name="twitter:title" content="Multi-touch Scale Stage">
+<meta name="twitter:description" content="Note: This lab only works on devices that support multi-touch gestures such as iOS because it makes use of multiple touch events.
+Instructions: Using a mobile device that supports multi-touch gestures">
 <meta name="twitter:site" content="@lavrton">
 
   
@@ -88,7 +85,7 @@ Instructions: Using a">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name"></h1>
+        <h1 id="page-title" itemprop="name">Multi-touch Scale Stage</h1>
         <a href="https://github.com/konvajs/site/blob/master/source/docs/sandbox/Multi-touch_Scale_Stage.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -98,18 +95,18 @@ Instructions: Using a">
     <div class="page-content">
       <!--<div class="toc-wrap">-->
         <!--<strong class="toc-title">Contents</strong>-->
-        <!--<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5_Canvas_Multi-touch_Scale_Stage_with_Konva"><span class="toc-number">1.</span> <span class="toc-text">HTML5 Canvas Multi-touch Scale Stage with Konva</span></a></li></ol>-->
+        <!---->
       <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h1 id="HTML5_Canvas_Multi-touch_Scale_Stage_with_Konva">HTML5 Canvas Multi-touch Scale Stage with Konva</h1>
-<p>Note: This lab only works on devices that support multi-touch gestures such as iOS because it makes use of multiple touch events.</p>
+        <p>Note: This lab only works on devices that support multi-touch gestures such as iOS because it makes use of multiple touch events.</p>
 <p>Instructions: Using a mobile device that supports multi-touch gestures such as iOS, use two fingers to zoom in or out of the stage</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/focire/1/embed?output" target="_blank" rel="external">Konva Multi-touch Scale Stage Demo</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<iframe src="/downloads/code/sandbox/Multi-touch_Scale_Stage.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
 
+<figure class="highlight html"><figcaption><span>Konva Multi-touch Scale Stage</span><a href="/downloads/code/sandbox/Multi-touch_Scale_Stage.html">download</a></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://rawgit.com/konvajs/konva/master/konva.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Multi-touch Scale Stage Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="tag">body</span> <span class="rules">{</span></div><div class="line">      <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</div><div class="line">      <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</div><div class="line">      <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</div><div class="line">    <span class="rule">}</span></div><div class="line">  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> width = <span class="built_in">window</span>.innerWidth;</div><div class="line">    <span class="keyword">var</span> height = <span class="built_in">window</span>.innerHeight;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> lastDist = <span class="number">0</span>;</div><div class="line">    <span class="keyword">var</span> startScale = <span class="number">1</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getDistance</span><span class="params">(p1, p2)</span> </span>{</div><div class="line">        <span class="keyword">return</span> <span class="built_in">Math</span>.sqrt(<span class="built_in">Math</span>.pow((p2.x - p1.x), <span class="number">2</span>) + <span class="built_in">Math</span>.pow((p2.y - p1.y), <span class="number">2</span>));</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">        container: <span class="string">'container'</span>,</div><div class="line">        width: width,</div><div class="line">        height: height,</div><div class="line">        draggable: <span class="literal">true</span>,</div><div class="line">        x: width / <span class="number">2</span>,</div><div class="line">        y: height / <span class="number">2</span>,</div><div class="line">        offset: {</div><div class="line">            x : width / <span class="number">2</span>,</div><div class="line">            y : height / <span class="number">2</span></div><div class="line">        }</div><div class="line">    });</div><div class="line"></div><div class="line">    <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line">    <span class="keyword">var</span> triangle = <span class="keyword">new</span> Konva.RegularPolygon({</div><div class="line">        x: <span class="number">190</span>,</div><div class="line">        y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">        sides: <span class="number">3</span>,</div><div class="line">        radius: <span class="number">80</span>,</div><div class="line">        fill: <span class="string">'green'</span>,</div><div class="line">        stroke: <span class="string">'black'</span>,</div><div class="line">        strokeWidth: <span class="number">4</span></div><div class="line">    });</div><div class="line"></div><div class="line">    <span class="keyword">var</span> circle = <span class="keyword">new</span> Konva.Circle({</div><div class="line">        x: <span class="number">380</span>,</div><div class="line">        y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">        radius: <span class="number">70</span>,</div><div class="line">        fill: <span class="string">'red'</span>,</div><div class="line">        stroke: <span class="string">'black'</span>,</div><div class="line">        strokeWidth: <span class="number">4</span></div><div class="line">    });</div><div class="line"></div><div class="line">    stage.getContent().addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span><span class="params">(evt)</span> </span>{</div><div class="line">        <span class="keyword">var</span> touch1 = evt.touches[<span class="number">0</span>];</div><div class="line">        <span class="keyword">var</span> touch2 = evt.touches[<span class="number">1</span>];</div><div class="line"></div><div class="line">        <span class="keyword">if</span>(touch1 &amp;&amp; touch2) {</div><div class="line">            <span class="keyword">var</span> dist = getDistance({</div><div class="line">                x: touch1.clientX,</div><div class="line">                y: touch1.clientY</div><div class="line">            }, {</div><div class="line">                x: touch2.clientX,</div><div class="line">                y: touch2.clientY</div><div class="line">            });</div><div class="line"></div><div class="line">            <span class="keyword">if</span>(!lastDist) {</div><div class="line">                lastDist = dist;</div><div class="line">            }</div><div class="line"></div><div class="line">            <span class="keyword">var</span> scale = stage.getScaleX() * dist / lastDist;</div><div class="line"></div><div class="line">            stage.scaleX(scale);</div><div class="line">            stage.scaleY(scale);</div><div class="line">            stage.draw();</div><div class="line">            lastDist = dist;</div><div class="line">        }</div><div class="line">    }, <span class="literal">false</span>);</div><div class="line"></div><div class="line">    stage.getContent().addEventListener(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">        lastDist = <span class="number">0</span>;</div><div class="line">    }, <span class="literal">false</span>);</div><div class="line"></div><div class="line">    layer.add(triangle);</div><div class="line">    layer.add(circle);</div><div class="line">    stage.add(layer);</div><div class="line">  <span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-27T21:17:32.000Z" itemprop="dateModified">Last updated: Jan 28 2015</time>
-        <a href="sandbox/Multi-touch_Scale_Shape.html" id="page-footer-prev" title="Multi-touch_Scale_Shape">Prev</a><a href="sandbox/Interactive_Building_Map.html" id="page-footer-next" title="Interactive_Building_Map">Next</a>
+        <time id="page-footer-updated" datetime="2015-01-31T06:11:19.000Z" itemprop="dateModified">Last updated: Jan 31 2015</time>
+        <a href="sandbox/Multi-touch_Scale_Shape.html" id="page-footer-prev" title="Multi-touch Scale Shape">Prev</a><a href="sandbox/Interactive_Building_Map.html" id="page-footer-next" title="Interactive Building Map">Next</a>
       </footer>
       
 <section id="comments">
@@ -234,9 +231,9 @@ Instructions: Using a">
     
       <a href="/docs/groups_and_Layers/Layering.html" class="sidebar-link">Layering</a>
     
-      <a href="/docs/groups_and_Layers/Change_Containers.html" class="sidebar-link">Change_Containers</a>
+      <a href="/docs/groups_and_Layers/Change_Containers.html" class="sidebar-link">Change Containers</a>
     
-      <a href="/docs/groups_and_Layers/Clipping_Regions.html" class="sidebar-link">Clipping_Regions</a>
+      <a href="/docs/groups_and_Layers/Clipping_Regions.html" class="sidebar-link">Clipping Regions</a>
     
   
     <strong class="sidebar-title">Filters</strong>
@@ -271,7 +268,7 @@ Instructions: Using a">
   
     <strong class="sidebar-title">Animations</strong>
     
-      <a href="/docs/animations/Create_an_Animation.html" class="sidebar-link">Create_an_Animation</a>
+      <a href="/docs/animations/Create_an_Animation.html" class="sidebar-link">Create an Animation</a>
     
       <a href="/docs/animations/Moving.html" class="sidebar-link">Moving</a>
     
@@ -279,7 +276,7 @@ Instructions: Using a">
     
       <a href="/docs/animations/Scaling.html" class="sidebar-link">Scaling</a>
     
-      <a href="/docs/animations/Stop_Animation.html" class="sidebar-link">Stop_Animation</a>
+      <a href="/docs/animations/Stop_Animation.html" class="sidebar-link">Stop Animation</a>
     
   
     <strong class="sidebar-title">Selectors</strong>
@@ -293,13 +290,13 @@ Instructions: Using a">
   
     <strong class="sidebar-title">Data &amp; Serialization</strong>
     
-      <a href="/docs/data_&_serialization/Select_by_id.html" class="sidebar-link">Select_by_id</a>
+      <a href="/docs/data_&_serialization/Select_by_id.html" class="sidebar-link">Select by id</a>
     
-      <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize_a_Stage</a>
+      <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize a Stage</a>
     
-      <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple_Load</a>
+      <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple Load</a>
     
-      <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link">Complex_Load</a>
+      <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link">Complex Load</a>
     
   
     <strong class="sidebar-title">Performance</strong>
@@ -317,47 +314,47 @@ Instructions: Using a">
     
       <a href="/docs/sandbox/Wheel of Fortune.html" class="sidebar-link">Wheel of Fortune</a>
     
-      <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum_Squiggle</a>
+      <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum Squiggle</a>
     
-      <a href="/docs/sandbox/20000_Nodes.html" class="sidebar-link">20000_Nodes</a>
+      <a href="/docs/sandbox/20000_Nodes.html" class="sidebar-link">20000 Nodes</a>
     
-      <a href="/docs/sandbox/Elastic_Stars.html" class="sidebar-link">Elastic_Stars</a>
+      <a href="/docs/sandbox/Elastic_Stars.html" class="sidebar-link">Elastic Stars</a>
     
-      <a href="/docs/sandbox/Shape_Tango.html" class="sidebar-link">Shape_Tango</a>
+      <a href="/docs/sandbox/Shape_Tango.html" class="sidebar-link">Shape Tango</a>
     
-      <a href="/docs/sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">Multi-touch_Scale_Shape</a>
+      <a href="/docs/sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">Multi-touch Scale Shape</a>
     
-      <a href="/docs/sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link current">Multi-touch_Scale_Stage</a>
+      <a href="/docs/sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link current">Multi-touch Scale Stage</a>
     
-      <a href="/docs/sandbox/Interactive_Building_Map.html" class="sidebar-link">Interactive_Building_Map</a>
+      <a href="/docs/sandbox/Interactive_Building_Map.html" class="sidebar-link">Interactive Building Map</a>
     
-      <a href="/docs/sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">Modify_Curves_with_Anchor_Points</a>
+      <a href="/docs/sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">Modify Curves with Anchor Points</a>
     
-      <a href="/docs/sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">Drag_and_Drop_Stress_Test</a>
+      <a href="/docs/sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">Drag and Drop Stress Test</a>
     
-      <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals_on_the_Beach_Game</a>
+      <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals on the Beach Game</a>
     
-      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation_Stress_Test</a>
+      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation Stress_Test</a>
     
-      <a href="/docs/sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000_Shapes_with_Tooltips</a>
+      <a href="/docs/sandbox/10000_Shapes_with_Tooltips.html" class="sidebar-link">10000 Shapes with Tooltips</a>
     
-      <a href="/docs/sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">Modify_Shape_Color_on_Click</a>
+      <a href="/docs/sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">Modify Shape Color on Click</a>
     
-      <a href="/docs/sandbox/Physics_Simulator.html" class="sidebar-link">Physics_Simulator</a>
+      <a href="/docs/sandbox/Physics_Simulator.html" class="sidebar-link">Physics Simulator</a>
     
-      <a href="/docs/sandbox/Expand_Images_on_Hover.html" class="sidebar-link">Expand_Images_on_Hover</a>
+      <a href="/docs/sandbox/Expand_Images_on_Hover.html" class="sidebar-link">Expand Images on Hover</a>
     
-      <a href="/docs/sandbox/Planets_Image_Map.html" class="sidebar-link">Planets_Image_Map</a>
+      <a href="/docs/sandbox/Planets_Image_Map.html" class="sidebar-link">Planets Image Map</a>
     
-      <a href="/docs/sandbox/Image_Resize.html" class="sidebar-link">Image_Resize</a>
+      <a href="/docs/sandbox/Image_Resize.html" class="sidebar-link">Image Resize</a>
     
-      <a href="/docs/sandbox/Shape_Tooltips.html" class="sidebar-link">Shape_Tooltips</a>
+      <a href="/docs/sandbox/Shape_Tooltips.html" class="sidebar-link">Shape Tooltips</a>
     
-      <a href="/docs/sandbox/Star_Spiner.html" class="sidebar-link">Star_Spiner</a>
+      <a href="/docs/sandbox/Star_Spiner.html" class="sidebar-link">Star Spiner</a>
     
-      <a href="/docs/sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">Drag_and_Drop_Multiple_Shapes</a>
+      <a href="/docs/sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">Drag and Drop Multiple Shapes</a>
     
-      <a href="/docs/sandbox/Image_Border_Highlighting.html" class="sidebar-link">Image_Border_Highlighting</a>
+      <a href="/docs/sandbox/Image_Border_Highlighting.html" class="sidebar-link">Image Border Highlighting</a>
     
   
 </aside>
