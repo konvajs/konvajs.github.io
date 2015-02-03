@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://konvajs.github.io/docs/performance/All_Performance_Tips.html</loc>
+    <lastmod>2015-02-03T03:45:36.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://konvajs.github.io/docs/support.html</loc>
     <lastmod>2015-02-03T01:51:00.000Z</lastmod>
   </url>
@@ -14,11 +19,6 @@
   <url>
     <loc>http://konvajs.github.io/downloads/code/tweens/Complex_Tweening.html</loc>
     <lastmod>2015-02-03T01:41:33.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/performance/All_Performance_Tips.html</loc>
-    <lastmod>2015-02-03T01:09:00.000Z</lastmod>
   </url>
   
   <url>

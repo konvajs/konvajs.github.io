@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Batch Draw Tip | Konva - JavaScript 2d canvas framework</title>
+  <title>All KonvaJS performance tips list | Konva - JavaScript 2d canvas framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://konvajs.github.io/docs/performance/All_Performance_Tips.html">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -35,7 +35,7 @@ Optimize Animation
 Shape Redraw
 If your shape has only position transformation (x and y, no scale, rotation) set transformsEnabled = &#39;position&#39;">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Batch Draw Tip">
+<meta property="og:title" content="All KonvaJS performance tips list">
 <meta property="og:url" content="http://konvajs.github.io/docs/performance/All_Performance_Tips.html">
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
 <meta property="og:description" content="batchDraw method
@@ -45,7 +45,7 @@ Optimize Animation
 Shape Redraw
 If your shape has only position transformation (x and y, no scale, rotation) set transformsEnabled = &#39;position&#39;">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Batch Draw Tip">
+<meta name="twitter:title" content="All KonvaJS performance tips list">
 <meta name="twitter:description" content="batchDraw method
 Layer Management
 Shape Caching
@@ -101,7 +101,7 @@ If your shape has only position transformation (x and y, no scale, rotation) set
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Batch Draw Tip</h1>
+        <h1 id="page-title" itemprop="name">All KonvaJS performance tips list</h1>
         <a href="https://github.com/konvajs/site/blob/master/source/docs/performance/All_Performance_Tips.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -125,11 +125,12 @@ If your shape has only position transformation (x and y, no scale, rotation) set
 <li>For mobile application set viewport: <code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=no&quot;&gt;</code></li>
 <li>If you have bad performance on retina devices set <code>Konva.pixelRatio = 1</code>. Make sure that quality of result is ok for you.</li>
 <li>While dragging a node you can move it on separate layer. Then move it back to original layer.</li>
+<li>Set <code>shape.strokeHitEnabled(false)</code>. In case where stroke is small and useful for hit detection. For more info read <a href="http://konvajs.github.io/api/Konva.Shape.html" target="_blank" rel="external">Shape API doc</a>.</li>
 </ol>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-02-03T01:09:00.000Z" itemprop="dateModified">Last updated: Feb 3 2015</time>
+        <time id="page-footer-updated" datetime="2015-02-03T03:45:36.000Z" itemprop="dateModified">Last updated: Feb 3 2015</time>
         <a href="performance/Shape_Redraw.html" id="page-footer-prev" title="Shape Redraw">Prev</a><a href="sandbox/Zoom_Layer_On_hover.html" id="page-footer-next" title="Zoom Layer On hover">Next</a>
       </footer>
       
