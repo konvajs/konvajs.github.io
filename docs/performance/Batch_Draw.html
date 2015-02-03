@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Konva - JavaScript 2d canvas framework</title>
+  <title>Batch Draw Tip | Konva - JavaScript 2d canvas framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://konvajs.github.io/docs/performance/Batch_Draw.html">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -28,18 +28,15 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
-  <meta name="description" content="HTML5 Canvas Konva Batch Draw
-In some situations, we may want to update a Konva shape as fast as possible,but without causing too many redraws.  For example, if we want to update anelement on the stag">
+  <meta name="description" content="In some situations, we may want to update a Konva shape as fast as possible,but without causing too many redraws.  For example, if we want to update anelement on the stage via mousemove, we don’t want">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Konva.js - JavaScript 2d canvas framework">
+<meta property="og:title" content="Batch Draw Tip">
 <meta property="og:url" content="http://konvajs.github.io/docs/performance/Batch_Draw.html">
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
-<meta property="og:description" content="HTML5 Canvas Konva Batch Draw
-In some situations, we may want to update a Konva shape as fast as possible,but without causing too many redraws.  For example, if we want to update anelement on the stag">
+<meta property="og:description" content="In some situations, we may want to update a Konva shape as fast as possible,but without causing too many redraws.  For example, if we want to update anelement on the stage via mousemove, we don’t want">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Konva.js - JavaScript 2d canvas framework">
-<meta name="twitter:description" content="HTML5 Canvas Konva Batch Draw
-In some situations, we may want to update a Konva shape as fast as possible,but without causing too many redraws.  For example, if we want to update anelement on the stag">
+<meta name="twitter:title" content="Batch Draw Tip">
+<meta name="twitter:description" content="In some situations, we may want to update a Konva shape as fast as possible,but without causing too many redraws.  For example, if we want to update anelement on the stage via mousemove, we don’t want">
 <meta name="twitter:site" content="@lavrton">
 
   
@@ -74,6 +71,10 @@ In some situations, we may want to update a Konva shape as fast as possible,but 
               <a href="/api/Konva.html" class="main-nav-link">API</a>
             </li>
           
+            <li class="main-nav-item">
+              <a href="/docs/support.html" class="main-nav-link">Support</a>
+            </li>
+          
         </ul>
         <a href="https://github.com/konvajs/konva" id="github-btn" title="GitHub" target="_blank"></a>
         <a id="search-btn" class="st-search-launcher" title="Search"></a>
@@ -85,7 +86,7 @@ In some situations, we may want to update a Konva shape as fast as possible,but 
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name"></h1>
+        <h1 id="page-title" itemprop="name">Batch Draw Tip</h1>
         <a href="https://github.com/konvajs/site/blob/master/source/docs/performance/Batch_Draw.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -95,11 +96,10 @@ In some situations, we may want to update a Konva shape as fast as possible,but 
     <div class="page-content">
       <!--<div class="toc-wrap">-->
         <!--<strong class="toc-title">Contents</strong>-->
-        <!--<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5_Canvas_Konva_Batch_Draw"><span class="toc-number">1.</span> <span class="toc-text">HTML5 Canvas Konva Batch Draw</span></a></li></ol>-->
+        <!---->
       <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h1 id="HTML5_Canvas_Konva_Batch_Draw">HTML5 Canvas Konva Batch Draw</h1>
-<p>In some situations, we may want to update a Konva shape as fast as possible,<br>but without causing too many redraws.  For example, if we want to update an<br>element on the stage via mousemove, we don’t want to redraw the layer with the<br><code>draw()</code> method, because the mousemove event could be fired hundreds of times per<br>second, which would result in a forced frame rate of over a hundred frames per second.<br>Often times this can cause jumpy animations because browsers simply can’t handle excessive redraws.</p>
+        <p>In some situations, we may want to update a Konva shape as fast as possible,<br>but without causing too many redraws.  For example, if we want to update an<br>element on the stage via mousemove, we don’t want to redraw the layer with the<br><code>draw()</code> method, because the mousemove event could be fired hundreds of times per<br>second, which would result in a forced frame rate of over a hundred frames per second.<br>Often times this can cause jumpy animations because browsers simply can’t handle excessive redraws.</p>
 <p>For situations like this, it’s much better to use the <code>batchDraw()</code> method<br>which automatically hooks redraws into the Konva animation engine.<br>No matter how many times you call <code>batchDraw()</code>, Konva will automatically<br>limit the number of redraws per second based on the maximum number of frames<br>per second that the browser can handle at any given point in time.</p>
 <p>Instructions: Move your mouse over the stage to spin the rectangle</p>
 <iframe src="/downloads/code/performance/BatchDraw.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
@@ -108,7 +108,7 @@ In some situations, we may want to update a Konva shape as fast as possible,but 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-29T16:18:56.000Z" itemprop="dateModified">Last updated: Jan 29 2015</time>
+        <time id="page-footer-updated" datetime="2015-02-02T15:20:42.000Z" itemprop="dateModified">Last updated: Feb 2 2015</time>
         <a href="performance/Layer_Management.html" id="page-footer-prev" title="Layer Management">Prev</a><a href="performance/Shape_Caching.html" id="page-footer-next" title="Shape Caching">Next</a>
       </footer>
       
@@ -161,6 +161,8 @@ In some situations, we may want to update a Konva shape as fast as possible,but 
       <a href="/docs/shapes/Path.html" class="sidebar-link">Path</a>
     
       <a href="/docs/shapes/RegularPolygon.html" class="sidebar-link">RegularPolygon</a>
+    
+      <a href="/docs/shapes/Arrow.html" class="sidebar-link">Arrow</a>
     
       <a href="/docs/shapes/Custom.html" class="sidebar-link">Custom</a>
     
@@ -251,6 +253,8 @@ In some situations, we may want to update a Konva shape as fast as possible,but 
     
       <a href="/docs/filters/Blur.html" class="sidebar-link">Blur</a>
     
+      <a href="/docs/filters/Multiple_Filters.html" class="sidebar-link">Multiple Filters</a>
+    
   
     <strong class="sidebar-title">Tweens</strong>
     
@@ -266,7 +270,7 @@ In some situations, we may want to update a Konva shape as fast as possible,but 
     
       <a href="/docs/tweens/Tween_Filter.html" class="sidebar-link">Tween Filter</a>
     
-      <a href="/docs/tweens/GreenSock_Plugin.html" class="sidebar-link">GreenSock Plugin</a>
+      <a href="/docs/tweens/Complex_Tweening.html" class="sidebar-link">Complex Tweening</a>
     
   
     <strong class="sidebar-title">Animations</strong>
@@ -309,6 +313,12 @@ In some situations, we may want to update a Konva shape as fast as possible,but 
       <a href="/docs/performance/Batch_Draw.html" class="sidebar-link current">Batch Draw</a>
     
       <a href="/docs/performance/Shape_Caching.html" class="sidebar-link">Shape Caching</a>
+    
+      <a href="/docs/performance/Optimize_Animation.html" class="sidebar-link">Optimize Animation</a>
+    
+      <a href="/docs/performance/Shape_Redraw.html" class="sidebar-link">Shape Redraw</a>
+    
+      <a href="/docs/performance/All_Performance_Tips.html" class="sidebar-link">All tips</a>
     
   
     <strong class="sidebar-title">Sandbox</strong>
