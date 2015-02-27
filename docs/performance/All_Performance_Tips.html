@@ -125,14 +125,16 @@ If your shape has only position transformation (x and y, no scale, rotation) set
 <li>For mobile application set viewport: <code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=no&quot;&gt;</code></li>
 <li>If you have bad performance on retina devices set <code>Konva.pixelRatio = 1</code>. Make sure that quality of result is ok for you.</li>
 <li>While dragging a node you can move it on separate layer. Then move it back to original layer.</li>
-<li>Set <code>shape.strokeHitEnabled(false)</code>. In case where stroke is small and not useful for hit detection. For more info read <a href="http://konvajs.github.io/api/Konva.Shape.html" target="_blank" rel="external">Shape API doc</a>.</li>
+<li><a href="http://konvajs.github.io/docs/performance/Optimize_Strokes.html" target="_blank" rel="external">Optimize Stroke Drawing</a></li>
 <li>If a shape has fill, stroke and opacity you may set <code>shape.perfectDrawEnabled(false)</code>. See demo for more information <a href="http://konvajs.github.io/docs/performance/Disable_Perfect_Draw.html" target="_blank" rel="external">Disable Perfect Drawing</a>.</li>
+<li>Try set <code>shape.listening(false)</code> where possible. For more info read <a href="http://konvajs.github.io/docs/performance/Listening_False.html" target="_blank" rel="external">Listening false</a>.</li>
+<li><a href="http://konvajs.github.io/docs/performance/Avoid_Memory_Leaks.html" target="_blank" rel="external">Avoid Memory Leaks</a>.</li>
 </ol>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-02-24T23:23:31.000Z" itemprop="dateModified">Last updated: Feb 25 2015</time>
-        <a href="performance/Disable_Perfect_Draw.html" id="page-footer-prev" title="Disable Perfect Drawing">Prev</a><a href="sandbox/Zoom_Layer_On_hover.html" id="page-footer-next" title="Zoom Layer On hover">Next</a>
+        <time id="page-footer-updated" datetime="2015-02-27T03:56:19.000Z" itemprop="dateModified">Last updated: Feb 27 2015</time>
+        <a href="performance/Avoid_Memory_Leaks.html" id="page-footer-prev" title="Avoid Memory Leaks">Prev</a><a href="sandbox/Zoom_Layer_On_hover.html" id="page-footer-next" title="Zoom Layer On hover">Next</a>
       </footer>
       
 <section id="comments">
@@ -151,6 +153,8 @@ If your shape has only position transformation (x and y, no scale, rotation) set
       <a href="/docs/how_it_works.html" class="sidebar-link">How it works</a>
     
       <a href="/docs/support.html" class="sidebar-link">Support</a>
+    
+      <a href="/docs/tools.html" class="sidebar-link">Tools</a>
     
   
     <strong class="sidebar-title">Shapes</strong>
@@ -341,9 +345,15 @@ If your shape has only position transformation (x and y, no scale, rotation) set
     
       <a href="/docs/performance/Optimize_Animation.html" class="sidebar-link">Optimize Animation</a>
     
+      <a href="/docs/performance/Optimize_Strokes.html" class="sidebar-link">Optimize Strokes</a>
+    
       <a href="/docs/performance/Shape_Redraw.html" class="sidebar-link">Shape Redraw</a>
     
       <a href="/docs/performance/Disable_Perfect_Draw.html" class="sidebar-link">Disable Perfect Drawing</a>
+    
+      <a href="/docs/performance/Listening_False.html" class="sidebar-link">Listening False</a>
+    
+      <a href="/docs/performance/Avoid_Memory_Leaks.html" class="sidebar-link">Avoid Memory Leaks</a>
     
       <a href="/docs/performance/All_Performance_Tips.html" class="sidebar-link current">All tips</a>
     
