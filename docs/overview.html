@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Overview | Konva - JavaScript 2d canvas framework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="canonical" href="http://konvajs.github.io/docs/overview.html">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/android-chrome-manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+  <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
+  <meta name="description" content="What’s Konva?
+Konva is an HTML5 Canvas JavaScript framework that extends the 2d contextby enabling canvas interactivity for desktop and mobile applications.
+Konva enables high performance animations,">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Overview">
+<meta property="og:url" content="http://konvajs.github.io/docs/overview.html">
+<meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
+<meta property="og:description" content="What’s Konva?
+Konva is an HTML5 Canvas JavaScript framework that extends the 2d contextby enabling canvas interactivity for desktop and mobile applications.
+Konva enables high performance animations,">
+<meta property="og:image" content="http://konvajs.github.io/assets/overview-circle.jpg"">
+<meta property="og:image" content="http://konvajs.github.io/assets/overview-custom.jpg"">
+<meta property="og:image" content="http://konvajs.github.io/assets/overview-styles.jpg"">
+<meta property="og:image" content="http://konvajs.github.io/assets/overview-filter.jpg"">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Overview">
+<meta name="twitter:description" content="What’s Konva?
+Konva is an HTML5 Canvas JavaScript framework that extends the 2d contextby enabling canvas interactivity for desktop and mobile applications.
+Konva enables high performance animations,">
+<meta name="twitter:site" content="@lavrton">
+
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54202824-2', 'konvajs.github.io');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <header id="header">
+  <div class="outer">
+    <div class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Konva</a>
+        <a id="main-nav-toggle"></a>
+      </h1>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+            <li class="main-nav-item">
+              <a href="/docs/" class="main-nav-link">Docs</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="/api/Konva.html" class="main-nav-link">API</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="/docs/support.html" class="main-nav-link">Support</a>
+            </li>
+          
+        </ul>
+        <a href="https://github.com/konvajs/konva" id="github-btn" title="GitHub" target="_blank"></a>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
+      </nav>
+    </div>
+  </div>
+</header>
+  <article class="page" itemscope itemtype="http://schema.org/Article">
+  <header id="page-banner">
+    <div class="outer">
+      <div id="page-banner-inner" class="inner">
+        <h1 id="page-title" itemprop="name">Overview</h1>
+        <a href="https://github.com/konvajs/site/blob/master/source/docs/overview.md" title="Improve this doc" id="page-edit-link"></a>
+      </div>
+    </div>
+  </header>
+  <div class="outer">
+    <div id="mobile-menu-wrap"></div>
+    <div class="page-content">
+      <!--<div class="toc-wrap">-->
+        <!--<strong class="toc-title">Contents</strong>-->
+        <!--<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s_Konva?"><span class="toc-number">1.</span> <span class="toc-text">What’s Konva?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How_does_it_work?"><span class="toc-number">2.</span> <span class="toc-text">How does it work?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Basic_shapes"><span class="toc-number">3.</span> <span class="toc-text">Basic shapes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Styles"><span class="toc-number">4.</span> <span class="toc-text">Styles</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Events"><span class="toc-number">5.</span> <span class="toc-text">Events</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DRAG_AND_DROP"><span class="toc-number">6.</span> <span class="toc-text">DRAG AND DROP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Filters"><span class="toc-number">7.</span> <span class="toc-text">Filters</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Animation"><span class="toc-number">8.</span> <span class="toc-text">Animation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Selectors"><span class="toc-number">9.</span> <span class="toc-text">Selectors</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Serialisation_and_Deserialization"><span class="toc-number">10.</span> <span class="toc-text">Serialisation and Deserialization</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Performance"><span class="toc-number">11.</span> <span class="toc-text">Performance</span></a></li></ol>-->
+      <!--</div>-->
+      <div class="page-entry" itemprop="articleBody">
+        <h2 id="What’s_Konva?">What’s Konva?</h2>
+<p>Konva is an HTML5 Canvas JavaScript framework that extends the 2d context<br>by enabling canvas interactivity for desktop and mobile applications.</p>
+<p>Konva enables high performance animations, transitions, node nesting, layering, filtering,<br>caching, event handling for desktop and mobile applications, and much more.</p>
+<h2 id="How_does_it_work?">How does it work?</h2>
+<p>Every thing starts from <code>Konva.Stage</code> than contains several user’s layers (<code>Konva.Layer</code>).</p>
+<p>Each layer has two <code>&lt;canvas&gt;</code> renderers: a scene renderer and a hit graph renderer.<br>The scene renderer is what you can see, and the hit graph renderer is a special hidden<br>canvas that’s used for high performance event detection.</p>
+<p>Each layer can contain shapes, groups of shapes, or groups of other groups.<br>The stage, layers, groups, and shapes are virtual nodes, similar to DOM nodes in an HTML page.</p>
+<p>Here’s an example Node hierarchy:</p>
+<figure class="highlight"><pre><div class="line">              Stage</div><div class="line">                <span class="string">|</span></div><div class="line">         +------+------+</div><div class="line">         <span class="string">|             |</span></div><div class="line">       Layer         Layer</div><div class="line">         <span class="string">|             |</span></div><div class="line">   +-----+-----+     Shape</div><div class="line">   <span class="string">|           |</span></div><div class="line"> Group       Group</div><div class="line">   <span class="string">|           |</span></div><div class="line">   +       +---+---+</div><div class="line">   <span class="string">|       |       |</span></div><div class="line">Shape   Group    Shape</div><div class="line">           <span class="string">|</span></div><div class="line">           +</div><div class="line">           <span class="string">|</span></div><div class="line">         Shape</div></pre></figure>
+
+<p>All nodes can be styled and transformed.  Although <code>Konva</code> has prebuilt shapes available,<br>such as rectangles, circles, images, sprites, text, lines, polygons, regular polygons, paths, stars, etc.,<br>you can also create custom shapes by instantiating the Shape class and creating a draw function.</p>
+<p>Once you have a stage set up with layers and shapes,<br>you can bind event listeners, transform nodes, run animations,<br>apply filters, and much more.</p>
+<p>Minimal code example:</p>
+<figure class="highlight"><pre><div class="line"><span class="comment">// first we need to create a stage</span></div><div class="line"><span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">  container: <span class="string">'container'</span>,   <span class="comment">// id of container &lt;div&gt;</span></div><div class="line">  width: <span class="number">500</span>,</div><div class="line">  height: <span class="number">500</span></div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// then create layer</span></div><div class="line"><span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line"><span class="comment">// create our shape</span></div><div class="line"><span class="keyword">var</span> circle = <span class="keyword">new</span> Konva.Circle({</div><div class="line">  x: stage.getWidth() / <span class="number">2</span>,</div><div class="line">  y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">  radius: <span class="number">70</span>,</div><div class="line">  fill: <span class="string">'red'</span>,</div><div class="line">  stroke: <span class="string">'black'</span>,</div><div class="line">  strokeWidth: <span class="number">4</span></div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// add the shape to the layer</span></div><div class="line">layer.add(circle);</div><div class="line"></div><div class="line"><span class="comment">// add the layer to the stage</span></div><div class="line">stage.add(layer);</div></pre></figure>
+
+<p>Result:<br><img src="http://konvajs.github.io/assets/overview-circle.jpg&quot;" alt="Minimal code demo"></p>
+<h2 id="Basic_shapes">Basic shapes</h2>
+<p>Konva.js supports next shapes: <a href="http://konvajs.github.io/docs/shapes/Rect.html" target="_blank" rel="external">Rect</a>, <a href="http://konvajs.github.io/docs/shapes/Circle.html" target="_blank" rel="external">Circle</a>, <a href="http://konvajs.github.io/docs/shapes/Ellipse.html" target="_blank" rel="external">Ellipse</a>, <a href="http://konvajs.github.io/docs/shapes/Line.html" target="_blank" rel="external">Line</a><br> <a href="http://konvajs.github.io/docs/shapes/Image.html" target="_blank" rel="external">Image</a>, <a href="http://konvajs.github.io/docs/shapes/Text.html" target="_blank" rel="external">Text</a>, <a href="http://konvajs.github.io/docs/shapes/TextPath.html" target="_blank" rel="external">TextPath</a>, <a href="http://konvajs.github.io/docs/shapes/Star.html" target="_blank" rel="external">Star</a>, <a href="http://konvajs.github.io/docs/shapes/Label.html" target="_blank" rel="external">Label</a>, <a href="http://konvajs.github.io/docs/shapes/Path.html" target="_blank" rel="external">SVG Path</a>, <a href="http://konvajs.github.io/docs/shapes/RegularPolygon.html" target="_blank" rel="external">RegularPolygon</a>.<br> Also you can create <a href="http://konvajs.github.io/docs/shapes/Custom.html" target="_blank" rel="external">custom shape</a>:</p>
+<figure class="highlight"><pre><div class="line"><span class="keyword">var</span> triangle = new <span class="type">Konva</span>.<span class="type">Shape</span>({</div><div class="line">      drawFunc: function(context) {</div><div class="line">        context.beginPath();</div><div class="line">        context.moveTo(<span class="number">20</span>, <span class="number">50</span>);</div><div class="line">        context.lineTo(<span class="number">220</span>, <span class="number">80</span>);</div><div class="line">        context.quadraticCurveTo(<span class="number">150</span>, <span class="number">100</span>, <span class="number">260</span>, <span class="number">170</span>);</div><div class="line">        context.closePath();</div><div class="line"></div><div class="line">        // special <span class="type">Konva</span>.js <span class="keyword">method</span></div><div class="line">        context.fillStrokeShape(this);</div><div class="line">      },</div><div class="line">      fill: '<span class="comment">#00D2FF',</span></div><div class="line">      stroke: 'black',</div><div class="line">      strokeWidth: <span class="number">4</span></div><div class="line">});</div></pre></figure>
+
+<p><img src="http://konvajs.github.io/assets/overview-custom.jpg&quot;" alt="Custom shape"></p>
+<h2 id="Styles">Styles</h2>
+<p>Each shape supports the following style properties:</p>
+<ul>
+<li>Fill. Solid color, gradients or images</li>
+<li>Stroke (color, width)</li>
+<li>Shadow (color, offset, opacity, blur)</li>
+<li>Opacity</li>
+</ul>
+<figure class="highlight"><pre><div class="line">var pentagon = new <span class="filename">Konva.RegularPolygon({</span></div><div class="line">    x: <span class="filename">stage.getWidth() / 2,</span></div><div class="line">    y: <span class="filename">stage.getHeight() / 2,</span></div><div class="line">    sides: <span class="number">5</span>,</div><div class="line">    radius: <span class="number">70</span>,</div><div class="line">    fill: <span class="string">'red'</span>,</div><div class="line">    stroke: <span class="string">'black'</span>,</div><div class="line">    strokeWidth: <span class="number">4</span>,</div><div class="line">    shadowOffsetX : <span class="number">20</span>,</div><div class="line">    shadowOffsetY : <span class="number">25</span>,</div><div class="line">    shadowBlur : <span class="number">40</span>,</div><div class="line">    opacity : <span class="number">0.5</span></div><div class="line">});</div></pre></figure>
+
+<p><img src="http://konvajs.github.io/assets/overview-styles.jpg&quot;" alt="Styles"></p>
+<h2 id="Events">Events</h2>
+<p>With <code>Konva</code> you can easily listen to user input events (<code>click</code>, <code>dblclick</code>, <code>mouseover</code>, <code>tap</code>, <code>dbltap</code>, <code>touchstart</code> etc),<br>attributes change events (<code>scaleXChange</code>, <code>fillChange</code>) and drag&amp;drop events (<code>dragstart</code>, <code>dragmove</code>, <code>dragend</code>).</p>
+<figure class="highlight"><pre><div class="line">circle.<span class="keyword">on</span>(<span class="string">'mouseout touchend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span></div><div class="line">    console.<span class="built_in">log</span>(<span class="string">'user input'</span>);</div><div class="line">});</div><div class="line"></div><div class="line">circle.<span class="keyword">on</span>(<span class="string">'xChange'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span></div><div class="line">    console.<span class="built_in">log</span>(<span class="string">'position change'</span>);</div><div class="line">});</div><div class="line"></div><div class="line">circle.<span class="keyword">on</span>(<span class="string">'dragend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span></div><div class="line">    console.<span class="built_in">log</span>(<span class="string">'drag stopped'</span>);</div><div class="line">});</div></pre></figure>
+
+<p>See <a href="http://konvajs.github.io/docs/events/Binding_Events.html" target="_blank" rel="external">working example</a>.</p>
+<h2 id="DRAG_AND_DROP">DRAG AND DROP</h2>
+<p><code>Konva</code> has builtin drag support. For the current moment there is no <code>drop</code> events (<code>drop</code>, <code>dragenter</code>, <code>dragleave</code>, <code>dragover</code>)<br>but it is very easy to implement them <a href="http://konvajs.github.io/docs/drag_and_drop/Drop_Events.html" target="_blank" rel="external">via framework</a>.</p>
+<p>To enable drag&amp;drop just set property draggable = true.</p>
+<figure class="highlight"><pre><div class="line">shape.draggable(<span class="string">'true'</span>);</div></pre></figure>
+
+<p>Then you can subscribe to drag&amp;drop events and setup <a href="http://konvajs.github.io/docs/drag_and_drop/Complex_Drag_and_Drop.html" target="_blank" rel="external">moving limits</a>.</p>
+<h2 id="Filters">Filters</h2>
+<p><code>Konva</code> has several filters: blur, invert, noise etc. For all available filters see <a href="http://konvajs.github.io/api/Konva.Filters.html" target="_blank" rel="external">Filters API</a>.</p>
+<p>Example:<br><img src="http://konvajs.github.io/assets/overview-filter.jpg&quot;" alt="Filter"></p>
+<h2 id="Animation">Animation</h2>
+<p>You can create animations in two ways:</p>
+<ol>
+<li>via <code>Konva.Animation</code> <a href="http://konvajs.github.io/docs/animations/Moving.html" target="_blank" rel="external">Demo</a>:</li>
+</ol>
+<figure class="highlight"><pre><div class="line"><span class="keyword">var</span> anim = <span class="keyword">new</span> Konva.Animation(<span class="function"><span class="keyword">function</span><span class="params">(frame)</span> </span>{</div><div class="line">    <span class="keyword">var</span> time = frame.time,</div><div class="line">        timeDiff = frame.timeDiff,</div><div class="line">        frameRate = frame.frameRate;</div><div class="line">    <span class="comment">// update stuff</span></div><div class="line">}, layer);</div><div class="line">anim.start();</div></pre></figure>
+
+<ol>
+<li>via <code>Konva.Tween</code> <a href="http://konvajs.github.io/docs/tweens/Linear_Easing.html" target="_blank" rel="external">Demo</a>:</li>
+</ol>
+<figure class="highlight"><pre><div class="line"><span class="keyword">var</span> tween = new <span class="type">Konva</span>.<span class="type">Tween</span>({</div><div class="line">        node: rect,</div><div class="line">        duration: <span class="number">1</span>,</div><div class="line">        x: <span class="number">140</span>,</div><div class="line">        rotation: <span class="type">Math</span>.<span class="type">PI</span> * <span class="number">2</span>,</div><div class="line">        opacity: <span class="number">1</span>,</div><div class="line">        strokeWidth: <span class="number">6</span></div><div class="line">});</div><div class="line">tween.play();</div><div class="line"></div><div class="line">// <span class="keyword">or</span> new shorter <span class="keyword">method</span>:</div><div class="line">circle.to({</div><div class="line">    duration : <span class="number">1</span>,</div><div class="line">    fill : 'green'</div><div class="line">});</div></pre></figure>
+
+<h2 id="Selectors">Selectors</h2>
+<p>It is very useful to use searching in elements when you are building large application.<br><code>Konva</code> helps you to find an element with selectors. You can use <code>find()</code> method (returns collection) or <code>findOne()</code> method (return first element of collection).</p>
+<figure class="highlight"><pre><div class="line"><span class="reserved">var</span> circle = <span class="keyword">new</span> Konva.Circle({</div><div class="line">        <span class="attribute">radius</span>: <span class="number">10</span>,</div><div class="line">        <span class="attribute">fill</span>: <span class="string">'red'</span>,</div><div class="line">        id : <span class="string">'face'</span>,</div><div class="line">        name : <span class="string">'red circle'</span></div><div class="line">});</div><div class="line">layer.add(circle);</div><div class="line"></div><div class="line"><span class="regexp">//</span> <span class="keyword">then</span> <span class="keyword">try</span> to search</div><div class="line"></div><div class="line"><span class="regexp">//</span> find <span class="keyword">by</span> type</div><div class="line">layer.find(<span class="string">'Circle'</span>); <span class="regexp">//</span> all circles</div><div class="line"></div><div class="line"><span class="regexp">//</span> find <span class="keyword">by</span> id</div><div class="line">layer.findOne(<span class="string">'#face'</span>);</div><div class="line"></div><div class="line"><span class="regexp">//</span> find <span class="keyword">by</span> name (like css <span class="class"><span class="keyword">class</span>)</span></div><div class="line">layer.find(<span class="string">'.red'</span>)</div></pre></figure>
+
+<h2 id="Serialisation_and_Deserialization">Serialisation and Deserialization</h2>
+<p>All created objects you can save as JSON. You may save it to server or local storage.</p>
+<figure class="highlight"><pre><div class="line"><span class="attribute">var json </span>=<span class="string"> stage.toJSON();</span></div></pre></figure>
+
+<p>Also you can restore objects from JSON:</p>
+<figure class="highlight"><pre><div class="line"><span class="keyword">var</span> json = '{<span class="string">"attrs"</span>:{<span class="string">"width"</span>:<span class="number">578</span>,<span class="string">"height"</span>:<span class="number">200</span>},<span class="string">"className"</span>:<span class="string">"Stage"</span>,<span class="string">"children"</span>:[{<span class="string">"attrs"</span>:{},<span class="string">"className"</span>:<span class="string">"Layer"</span>,<span class="string">"children"</span>:[{<span class="string">"attrs"</span>:{<span class="string">"x"</span>:<span class="number">100</span>,<span class="string">"y"</span>:<span class="number">100</span>,<span class="string">"sides"</span>:<span class="number">6</span>,<span class="string">"radius"</span>:<span class="number">70</span>,<span class="string">"fill"</span>:<span class="string">"red"</span>,<span class="string">"stroke"</span>:<span class="string">"black"</span>,<span class="string">"strokeWidth"</span>:<span class="number">4</span>},<span class="string">"className"</span>:<span class="string">"RegularPolygon"</span>}]}]}';</div><div class="line"></div><div class="line"><span class="keyword">var</span> stage = Konva.Node.create(json, <span class="symbol">'containe</span>r');</div></pre></figure>
+
+<h2 id="Performance">Performance</h2>
+<p><code>Konva</code> has a lot of tools to improve speed of your app. Most important methods:</p>
+<ol>
+<li>Caching allows you to draw an element into buffer canvas. Then draw element from the canvas. It may improve performance a lot for complex nodes such as text or shapes with shadow and strokes.</li>
+</ol>
+<figure class="highlight"><pre><div class="line">shape<span class="built_in">.</span><span class="keyword">cache</span>();</div></pre></figure>
+
+<p><a href="http://konvajs.github.io/docs/performance/Shape_Caching.html" target="_blank" rel="external">Demo</a></p>
+<ol>
+<li>Layering. As framework supports several <code>&lt;canvas&gt;</code> elements you can put objects at your discretion.<br>For example your application consists from complex background and several moving shapes. You can use one layer for background and another one for shapes.<br>While updating shapes you don’t need to update background canvas. <a href="http://konvajs.github.io/docs/performance/Layer_Management.html" target="_blank" rel="external">Demo</a></li>
+</ol>
+<p>You can find all available performance tips here:<br><a href="http://konvajs.github.io/docs/performance/All_Performance_Tips.html" target="_blank" rel="external">http://konvajs.github.io/docs/performance/All_Performance_Tips.html</a></p>
+
+      </div>
+      <footer id="page-footer">
+        <time id="page-footer-updated" datetime="2015-03-10T13:39:21.000Z" itemprop="dateModified">Last updated: Mar 10 2015</time>
+        <a href="index.html" id="page-footer-prev" title="Intro">Prev</a><a href="support.html" id="page-footer-next" title="Support">Next</a>
+      </footer>
+      
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+    </div>
+    <aside id="sidebar">
+  
+    <strong class="sidebar-title">Getting Started</strong>
+    
+      <a href="/docs/index.html" class="sidebar-link">Intro</a>
+    
+      <a href="/docs/overview.html" class="sidebar-link current">Overview</a>
+    
+      <a href="/docs/support.html" class="sidebar-link">Support</a>
+    
+      <a href="/docs/tools.html" class="sidebar-link">Tools</a>
+    
+  
+    <strong class="sidebar-title">Shapes</strong>
+    
+      <a href="/docs/shapes/Rect.html" class="sidebar-link">Rect</a>
+    
+      <a href="/docs/shapes/Circle.html" class="sidebar-link">Circle</a>
+    
+      <a href="/docs/shapes/Ellipse.html" class="sidebar-link">Ellipse</a>
+    
+      <a href="/docs/shapes/Wedge.html" class="sidebar-link">Wedge</a>
+    
+      <a href="/docs/shapes/Line_-_Simple_Line.html" class="sidebar-link">Line - Simple Line</a>
+    
+      <a href="/docs/shapes/Line_-_Polygon.html" class="sidebar-link">Line - Polygon</a>
+    
+      <a href="/docs/shapes/Line_-_Spline.html" class="sidebar-link">Line - Spline</a>
+    
+      <a href="/docs/shapes/Line_-_Blob.html" class="sidebar-link">Line - Blob</a>
+    
+      <a href="/docs/shapes/Sprite.html" class="sidebar-link">Sprite</a>
+    
+      <a href="/docs/shapes/Image.html" class="sidebar-link">Image</a>
+    
+      <a href="/docs/shapes/Text.html" class="sidebar-link">Text</a>
+    
+      <a href="/docs/shapes/TextPath.html" class="sidebar-link">TextPath</a>
+    
+      <a href="/docs/shapes/Star.html" class="sidebar-link">Star</a>
+    
+      <a href="/docs/shapes/Label.html" class="sidebar-link">Label</a>
+    
+      <a href="/docs/shapes/Path.html" class="sidebar-link">Path</a>
+    
+      <a href="/docs/shapes/RegularPolygon.html" class="sidebar-link">RegularPolygon</a>
+    
+      <a href="/docs/shapes/Arrow.html" class="sidebar-link">Arrow</a>
+    
+      <a href="/docs/shapes/Custom.html" class="sidebar-link">Custom</a>
+    
+  
+    <strong class="sidebar-title">Styling</strong>
+    
+      <a href="/docs/styling/Fill.html" class="sidebar-link">Fill</a>
+    
+      <a href="/docs/styling/Stroke.html" class="sidebar-link">Stroke</a>
+    
+      <a href="/docs/styling/Opacity.html" class="sidebar-link">Opacity</a>
+    
+      <a href="/docs/styling/Shadow.html" class="sidebar-link">Shadow</a>
+    
+      <a href="/docs/styling/Line_Join.html" class="sidebar-link">Line Join</a>
+    
+      <a href="/docs/styling/Hide_and_Show.html" class="sidebar-link">Hide and Show</a>
+    
+  
+    <strong class="sidebar-title">Events</strong>
+    
+      <a href="/docs/events/Binding_Events.html" class="sidebar-link">Binding Events</a>
+    
+      <a href="/docs/events/Image_Events.html" class="sidebar-link">Image Events</a>
+    
+      <a href="/docs/events/Mobile_Events.html" class="sidebar-link">Mobile Events</a>
+    
+      <a href="/docs/events/Multi_Event.html" class="sidebar-link">Multi Event</a>
+    
+      <a href="/docs/events/Desktop_and_Mobile.html" class="sidebar-link">Desktop and Mobile</a>
+    
+      <a href="/docs/events/Remove_Event.html" class="sidebar-link">Remove Event</a>
+    
+      <a href="/docs/events/Remove_by_Name.html" class="sidebar-link">Remove by Name</a>
+    
+      <a href="/docs/events/Custom_Hit_Region.html" class="sidebar-link">Custom Hit Region</a>
+    
+      <a href="/docs/events/Listen_for_Events.html" class="sidebar-link">Listen for Events</a>
+    
+      <a href="/docs/events/Cancel_Propagation.html" class="sidebar-link">Cancel Propagation</a>
+    
+      <a href="/docs/events/Event_Delegation.html" class="sidebar-link">Event Delegation</a>
+    
+      <a href="/docs/events/Fire_Events.html" class="sidebar-link">Fire Events</a>
+    
+  
+    <strong class="sidebar-title">Drag and Drop</strong>
+    
+      <a href="/docs/drag_and_drop/Drag_and_Drop.html" class="sidebar-link">Drag and Drop</a>
+    
+      <a href="/docs/drag_and_drop/Drag_an_Image.html" class="sidebar-link">Drag an Image</a>
+    
+      <a href="/docs/drag_and_drop/Drag_a_Group.html" class="sidebar-link">Drag a Group</a>
+    
+      <a href="/docs/drag_and_drop/Drag_a_Line.html" class="sidebar-link">Drag a Line</a>
+    
+      <a href="/docs/drag_and_drop/Drag_a_Stage.html" class="sidebar-link">Drag a Stage</a>
+    
+      <a href="/docs/drag_and_drop/Drag_Events.html" class="sidebar-link">Drag Events</a>
+    
+      <a href="/docs/drag_and_drop/Simple_Drag_Bounds.html" class="sidebar-link">Simple Drag Bounds</a>
+    
+      <a href="/docs/drag_and_drop/Complex_Drag_and_Drop.html" class="sidebar-link">Complex Drag and Drop</a>
+    
+      <a href="/docs/drag_and_drop/Drop_Events.html" class="sidebar-link">Drop Events</a>
+    
+  
+    <strong class="sidebar-title">Groups and Layers</strong>
+    
+      <a href="/docs/groups_and_layers/Groups.html" class="sidebar-link">Groups</a>
+    
+      <a href="/docs/groups_and_layers/Layering.html" class="sidebar-link">Layering</a>
+    
+      <a href="/docs/groups_and_layers/Change_Containers.html" class="sidebar-link">Change Containers</a>
+    
+      <a href="/docs/groups_and_layers/Clipping_Regions.html" class="sidebar-link">Clipping Regions</a>
+    
+  
+    <strong class="sidebar-title">Filters</strong>
+    
+      <a href="/docs/filters/Invert.html" class="sidebar-link">Invert</a>
+    
+      <a href="/docs/filters/Grayscale.html" class="sidebar-link">Grayscale</a>
+    
+      <a href="/docs/filters/Brighten.html" class="sidebar-link">Brighten</a>
+    
+      <a href="/docs/filters/Kaleidoscope.html" class="sidebar-link">Kaleidoscope</a>
+    
+      <a href="/docs/filters/Blur.html" class="sidebar-link">Blur</a>
+    
+      <a href="/docs/filters/Multiple_Filters.html" class="sidebar-link">Multiple Filters</a>
+    
+  
+    <strong class="sidebar-title">Tweens</strong>
+    
+      <a href="/docs/tweens/Linear_Easing.html" class="sidebar-link">Linear Easing</a>
+    
+      <a href="/docs/tweens/Common_Easings.html" class="sidebar-link">Common Easings</a>
+    
+      <a href="/docs/tweens/All_Easings.html" class="sidebar-link">All Easings</a>
+    
+      <a href="/docs/tweens/Finish_Event.html" class="sidebar-link">Finish Event</a>
+    
+      <a href="/docs/tweens/All_Controls.html" class="sidebar-link">All Controls</a>
+    
+      <a href="/docs/tweens/Tween_Filter.html" class="sidebar-link">Tween Filter</a>
+    
+      <a href="/docs/tweens/Complex_Tweening.html" class="sidebar-link">Complex Tweening</a>
+    
+  
+    <strong class="sidebar-title">Animations</strong>
+    
+      <a href="/docs/animations/Create_an_Animation.html" class="sidebar-link">Create an Animation</a>
+    
+      <a href="/docs/animations/Moving.html" class="sidebar-link">Moving</a>
+    
+      <a href="/docs/animations/Rotation.html" class="sidebar-link">Rotation</a>
+    
+      <a href="/docs/animations/Scaling.html" class="sidebar-link">Scaling</a>
+    
+      <a href="/docs/animations/Stop_Animation.html" class="sidebar-link">Stop Animation</a>
+    
+  
+    <strong class="sidebar-title">Selectors</strong>
+    
+      <a href="/docs/selectors/Select_by_id.html" class="sidebar-link">Select by id</a>
+    
+      <a href="/docs/selectors/Select_by_Type.html" class="sidebar-link">Select by Type</a>
+    
+      <a href="/docs/selectors/Select_by_Name.html" class="sidebar-link">Select by Name</a>
+    
+  
+    <strong class="sidebar-title">Data &amp; Serialization</strong>
+    
+      <a href="/docs/data_&_serialization/Serialize_a_Stage.html" class="sidebar-link">Serialize a Stage</a>
+    
+      <a href="/docs/data_&_serialization/Simple_Load.html" class="sidebar-link">Simple Load</a>
+    
+      <a href="/docs/data_&_serialization/Complex_Load.html" class="sidebar-link">Complex Load</a>
+    
+      <a href="/docs/data_&_serialization/Stage_Data_URL.html" class="sidebar-link">Stage Data URL</a>
+    
+  
+    <strong class="sidebar-title">Performance</strong>
+    
+      <a href="/docs/performance/Layer_Management.html" class="sidebar-link">Layer Management</a>
+    
+      <a href="/docs/performance/Batch_Draw.html" class="sidebar-link">Batch Draw</a>
+    
+      <a href="/docs/performance/Shape_Caching.html" class="sidebar-link">Shape Caching</a>
+    
+      <a href="/docs/performance/Optimize_Animation.html" class="sidebar-link">Optimize Animation</a>
+    
+      <a href="/docs/performance/Optimize_Strokes.html" class="sidebar-link">Optimize Strokes</a>
+    
+      <a href="/docs/performance/Shape_Redraw.html" class="sidebar-link">Shape Redraw</a>
+    
+      <a href="/docs/performance/Disable_Perfect_Draw.html" class="sidebar-link">Disable Perfect Drawing</a>
+    
+      <a href="/docs/performance/Listening_False.html" class="sidebar-link">Listening False</a>
+    
+      <a href="/docs/performance/Avoid_Memory_Leaks.html" class="sidebar-link">Avoid Memory Leaks</a>
+    
+      <a href="/docs/performance/All_Performance_Tips.html" class="sidebar-link">All tips</a>
+    
+  
+    <strong class="sidebar-title">Sandbox</strong>
+    
+      <a href="/docs/sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">Zoom Layer On hover</a>
+    
+      <a href="/docs/sandbox/Wheel_of_Fortune.html" class="sidebar-link">Wheel of Fortune</a>
+    
+      <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">Quantum Squiggle</a>
+    
+      <a href="/docs/sandbox/20000_Nodes.html" class="sidebar-link">20000 Nodes</a>
+    
+      <a href="/docs/sandbox/Elastic_Stars.html" class="sidebar-link">Elastic Stars</a>
+    
+      <a href="/docs/sandbox/Shape_Tango.html" class="sidebar-link">Shape Tango</a>
+    
+      <a href="/docs/sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">Multi-touch Scale Shape</a>
+    
+      <a href="/docs/sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link">Multi-touch Scale Stage</a>
+    
+      <a href="/docs/sandbox/Interactive_Building_Map.html" class="sidebar-link">Interactive Building Map</a>
+    
+      <a href="/docs/sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">Modify Curves with Anchor Points</a>
+    
+      <a href="/docs/sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">Drag and Drop Stress Test</a>
+    
+      <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">Animals on the Beach Game</a>
+    
+      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">Animation Stress Test</a>
+    
+      <a href="/docs/sandbox/10000_Shapes_with_Tooltip.html" class="sidebar-link">10000 Shapes with Tooltips</a>
+    
+      <a href="/docs/sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">Modify Shape Color on Click</a>
+    
+      <a href="/docs/sandbox/Physics_Simulator.html" class="sidebar-link">Physics Simulator</a>
+    
+      <a href="/docs/sandbox/Expand_Images_on_Hover.html" class="sidebar-link">Expand Images on Hover</a>
+    
+      <a href="/docs/sandbox/Planets_Image_Map.html" class="sidebar-link">Planets Image Map</a>
+    
+      <a href="/docs/sandbox/Image_Resize.html" class="sidebar-link">Image Resize</a>
+    
+      <a href="/docs/sandbox/Shape_Tooltips.html" class="sidebar-link">Shape Tooltips</a>
+    
+      <a href="/docs/sandbox/Star_Spiner.html" class="sidebar-link">Star Spiner</a>
+    
+      <a href="/docs/sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">Drag and Drop Multiple Shapes</a>
+    
+      <a href="/docs/sandbox/Image_Border_Highlighting.html" class="sidebar-link">Image Border Highlighting</a>
+    
+  
+</aside>
+  </div>
+</article>
+  <footer id="footer">
+  <div class="outer">
+    <div class="inner">
+      <div id="footer-copyright">
+        &copy; 2015 KonvaJS<br>
+      </div>
+      <div id="footer-links">
+        <a href="https://twitter.com/lavrton" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
+        <a href="https://github.com/konvajs/konva" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+<!-- Disqus -->
+<script>
+  var disqus_shortname = 'konvajs';
+  
+  var disqus_url = 'http://konvajs.github.io/docs/overview.html';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+(function() {
+  Swiftype.key = 'rRaQRFqx1DcWDDysdpg_';
+
+  /** DO NOT EDIT BELOW THIS LINE **/
+  var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+  script.src = "//s.swiftypecdn.com/embed.js";
+  var entry = document.getElementsByTagName('script')[0];
+  document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+}());
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/retina.min.js" type="text/javascript"></script>
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+<!-- Google+ -->
+<script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
+<!-- Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</body>
+</html>
