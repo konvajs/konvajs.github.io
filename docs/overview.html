@@ -38,10 +38,10 @@ Konva enables high performance animations,">
 <meta property="og:description" content="What’s Konva?
 Konva is an HTML5 Canvas JavaScript framework that extends the 2d contextby enabling canvas interactivity for desktop and mobile applications.
 Konva enables high performance animations,">
-<meta property="og:image" content="http://konvajs.github.io/assets/overview-circle.jpg"">
-<meta property="og:image" content="http://konvajs.github.io/assets/overview-custom.jpg"">
-<meta property="og:image" content="http://konvajs.github.io/assets/overview-styles.jpg"">
-<meta property="og:image" content="http://konvajs.github.io/assets/overview-filter.jpg"">
+<meta property="og:image" content="http://konvajs.github.io/assets/overview-circle.png">
+<meta property="og:image" content="http://konvajs.github.io/assets/overview-custom.png">
+<meta property="og:image" content="http://konvajs.github.io/assets/overview-styles.png">
+<meta property="og:image" content="http://konvajs.github.io/assets/overview-filter.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Overview">
 <meta name="twitter:description" content="What’s Konva?
@@ -124,12 +124,12 @@ Konva enables high performance animations,">
 <p>Minimal code example:</p>
 <figure class="highlight"><pre><div class="line"><span class="comment">// first we need to create a stage</span></div><div class="line"><span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</div><div class="line">  container: <span class="string">'container'</span>,   <span class="comment">// id of container &lt;div&gt;</span></div><div class="line">  width: <span class="number">500</span>,</div><div class="line">  height: <span class="number">500</span></div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// then create layer</span></div><div class="line"><span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</div><div class="line"></div><div class="line"><span class="comment">// create our shape</span></div><div class="line"><span class="keyword">var</span> circle = <span class="keyword">new</span> Konva.Circle({</div><div class="line">  x: stage.getWidth() / <span class="number">2</span>,</div><div class="line">  y: stage.getHeight() / <span class="number">2</span>,</div><div class="line">  radius: <span class="number">70</span>,</div><div class="line">  fill: <span class="string">'red'</span>,</div><div class="line">  stroke: <span class="string">'black'</span>,</div><div class="line">  strokeWidth: <span class="number">4</span></div><div class="line">});</div><div class="line"></div><div class="line"><span class="comment">// add the shape to the layer</span></div><div class="line">layer.add(circle);</div><div class="line"></div><div class="line"><span class="comment">// add the layer to the stage</span></div><div class="line">stage.add(layer);</div></pre></figure>
 
-<p>Result:<br><img src="http://konvajs.github.io/assets/overview-circle.jpg&quot;" alt="Minimal code demo"></p>
+<p>Result:<br><img src="http://konvajs.github.io/assets/overview-circle.png" alt="Minimal code demo"></p>
 <h2 id="Basic_shapes">Basic shapes</h2>
 <p>Konva.js supports next shapes: <a href="http://konvajs.github.io/docs/shapes/Rect.html" target="_blank" rel="external">Rect</a>, <a href="http://konvajs.github.io/docs/shapes/Circle.html" target="_blank" rel="external">Circle</a>, <a href="http://konvajs.github.io/docs/shapes/Ellipse.html" target="_blank" rel="external">Ellipse</a>, <a href="http://konvajs.github.io/docs/shapes/Line.html" target="_blank" rel="external">Line</a><br> <a href="http://konvajs.github.io/docs/shapes/Image.html" target="_blank" rel="external">Image</a>, <a href="http://konvajs.github.io/docs/shapes/Text.html" target="_blank" rel="external">Text</a>, <a href="http://konvajs.github.io/docs/shapes/TextPath.html" target="_blank" rel="external">TextPath</a>, <a href="http://konvajs.github.io/docs/shapes/Star.html" target="_blank" rel="external">Star</a>, <a href="http://konvajs.github.io/docs/shapes/Label.html" target="_blank" rel="external">Label</a>, <a href="http://konvajs.github.io/docs/shapes/Path.html" target="_blank" rel="external">SVG Path</a>, <a href="http://konvajs.github.io/docs/shapes/RegularPolygon.html" target="_blank" rel="external">RegularPolygon</a>.<br> Also you can create <a href="http://konvajs.github.io/docs/shapes/Custom.html" target="_blank" rel="external">custom shape</a>:</p>
 <figure class="highlight"><pre><div class="line"><span class="keyword">var</span> triangle = new <span class="type">Konva</span>.<span class="type">Shape</span>({</div><div class="line">      drawFunc: function(context) {</div><div class="line">        context.beginPath();</div><div class="line">        context.moveTo(<span class="number">20</span>, <span class="number">50</span>);</div><div class="line">        context.lineTo(<span class="number">220</span>, <span class="number">80</span>);</div><div class="line">        context.quadraticCurveTo(<span class="number">150</span>, <span class="number">100</span>, <span class="number">260</span>, <span class="number">170</span>);</div><div class="line">        context.closePath();</div><div class="line"></div><div class="line">        // special <span class="type">Konva</span>.js <span class="keyword">method</span></div><div class="line">        context.fillStrokeShape(this);</div><div class="line">      },</div><div class="line">      fill: '<span class="comment">#00D2FF',</span></div><div class="line">      stroke: 'black',</div><div class="line">      strokeWidth: <span class="number">4</span></div><div class="line">});</div></pre></figure>
 
-<p><img src="http://konvajs.github.io/assets/overview-custom.jpg&quot;" alt="Custom shape"></p>
+<p><img src="http://konvajs.github.io/assets/overview-custom.png" alt="Custom shape"></p>
 <h2 id="Styles">Styles</h2>
 <p>Each shape supports the following style properties:</p>
 <ul>
@@ -140,7 +140,7 @@ Konva enables high performance animations,">
 </ul>
 <figure class="highlight"><pre><div class="line">var pentagon = new <span class="filename">Konva.RegularPolygon({</span></div><div class="line">    x: <span class="filename">stage.getWidth() / 2,</span></div><div class="line">    y: <span class="filename">stage.getHeight() / 2,</span></div><div class="line">    sides: <span class="number">5</span>,</div><div class="line">    radius: <span class="number">70</span>,</div><div class="line">    fill: <span class="string">'red'</span>,</div><div class="line">    stroke: <span class="string">'black'</span>,</div><div class="line">    strokeWidth: <span class="number">4</span>,</div><div class="line">    shadowOffsetX : <span class="number">20</span>,</div><div class="line">    shadowOffsetY : <span class="number">25</span>,</div><div class="line">    shadowBlur : <span class="number">40</span>,</div><div class="line">    opacity : <span class="number">0.5</span></div><div class="line">});</div></pre></figure>
 
-<p><img src="http://konvajs.github.io/assets/overview-styles.jpg&quot;" alt="Styles"></p>
+<p><img src="http://konvajs.github.io/assets/overview-styles.png" alt="Styles"></p>
 <h2 id="Events">Events</h2>
 <p>With <code>Konva</code> you can easily listen to user input events (<code>click</code>, <code>dblclick</code>, <code>mouseover</code>, <code>tap</code>, <code>dbltap</code>, <code>touchstart</code> etc),<br>attributes change events (<code>scaleXChange</code>, <code>fillChange</code>) and drag&amp;drop events (<code>dragstart</code>, <code>dragmove</code>, <code>dragend</code>).</p>
 <figure class="highlight"><pre><div class="line">circle.<span class="keyword">on</span>(<span class="string">'mouseout touchend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span></div><div class="line">    console.<span class="built_in">log</span>(<span class="string">'user input'</span>);</div><div class="line">});</div><div class="line"></div><div class="line">circle.<span class="keyword">on</span>(<span class="string">'xChange'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span></div><div class="line">    console.<span class="built_in">log</span>(<span class="string">'position change'</span>);</div><div class="line">});</div><div class="line"></div><div class="line">circle.<span class="keyword">on</span>(<span class="string">'dragend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> {</span></div><div class="line">    console.<span class="built_in">log</span>(<span class="string">'drag stopped'</span>);</div><div class="line">});</div></pre></figure>
@@ -154,7 +154,7 @@ Konva enables high performance animations,">
 <p>Then you can subscribe to drag&amp;drop events and setup <a href="http://konvajs.github.io/docs/drag_and_drop/Complex_Drag_and_Drop.html" target="_blank" rel="external">moving limits</a>.</p>
 <h2 id="Filters">Filters</h2>
 <p><code>Konva</code> has several filters: blur, invert, noise etc. For all available filters see <a href="http://konvajs.github.io/api/Konva.Filters.html" target="_blank" rel="external">Filters API</a>.</p>
-<p>Example:<br><img src="http://konvajs.github.io/assets/overview-filter.jpg&quot;" alt="Filter"></p>
+<p>Example:<br><img src="http://konvajs.github.io/assets/overview-filter.png" alt="Filter"></p>
 <h2 id="Animation">Animation</h2>
 <p>You can create animations in two ways:</p>
 <ol>
@@ -193,7 +193,7 @@ Konva enables high performance animations,">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-03-10T13:39:21.000Z" itemprop="dateModified">Last updated: Mar 10 2015</time>
+        <time id="page-footer-updated" datetime="2015-03-10T13:54:43.000Z" itemprop="dateModified">Last updated: Mar 10 2015</time>
         <a href="index.html" id="page-footer-prev" title="Intro">Prev</a><a href="support.html" id="page-footer-next" title="Support">Next</a>
       </footer>
       
