@@ -100,13 +100,13 @@
       <div class="page-entry" itemprop="articleBody">
         <h3 id="Deleting_shape">Deleting shape</h3><p>There are two very close methods <code>remove()</code> and <code>destroy()</code>. If you need to completely delete node you need to use <code>destroy()</code> method.<br>If you are going to reuse node you should <code>remove()</code> it then later you may add it again to any container.<br>Don’t reuse node after <code>destroy()</code>. As <code>destroy()</code> delete all references to node from KonvaJS engine.</p>
 <h3 id="Tweening">Tweening</h3><p>When you are using <code>Konva.Tween</code> instance you have to destroy it after usage.</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> tween = <span class="keyword">new</span> Konva.Tween(&#123;</span><br><span class="line">    node : circle,</span><br><span class="line">    x : <span class="number">0</span>,</span><br><span class="line">    duration : <span class="number">0.5</span>,</span><br><span class="line">    onFinish : <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// remove all references from Konva</span></span><br><span class="line">        tween.destroy();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">tween.play();</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> tween = <span class="keyword">new</span> Konva.Tween(&#123;</span><br><span class="line">    node : circle,</span><br><span class="line">    x : <span class="number">0</span>,</span><br><span class="line">    duration : <span class="number">0.5</span>,</span><br><span class="line">    onFinish : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// remove all references from Konva</span></span><br><span class="line">        tween.destroy();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">tween.play();</span><br></pre></td></tr></table></figure>
 <p>Or if you don’t need to reuse tween you may use new <code>to()</code> method:<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// tween will be automatically started and destroyed on finish</span></span><br><span class="line">circle.to(&#123;</span><br><span class="line">    x : <span class="number">0</span>,</span><br><span class="line">    duration : <span class="number">0.5</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 
       </div>
       <footer id="page-footer">
         <time id="page-footer-updated" datetime="2015-02-27T00:48:53.000Z" itemprop="dateModified">Last updated: Feb 27 2015</time>
-        <a href="performance/Listening_False.html" id="page-footer-prev" title="Listening False">Prev</a><a href="performance/All_Performance_Tips.html" id="page-footer-next" title="All tips">Next</a>
+        <a href="/docs/performance,Listening_False.html" id="page-footer-prev" title="Listening False">Prev</a><a href="/docs/performance/All_Performance_Tips.html" id="page-footer-next" title="All tips">Next</a>
       </footer>
       
 <section id="comments">
@@ -331,6 +331,8 @@
     
   
     <strong class="sidebar-title">Sandbox</strong>
+    
+      <a href="/docs/sandbox/Free_Drawing.html" class="sidebar-link">Free Drawing</a>
     
       <a href="/docs/sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">Zoom Layer On hover</a>
     
