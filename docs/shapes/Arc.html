@@ -2,9 +2,9 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Konva - JavaScript 2d canvas framework</title>
+  <title>Arc Tutorial | Konva - JavaScript 2d canvas framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://konvajs.github.io/docs/events/Mobile_Events.html">
+  <link rel="canonical" href="http://konvajs.github.io/docs/shapes/Arc.html">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -27,16 +27,25 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
-  <meta name="description" content="HTML5 Canvas Mobile Touch Events TutorialTo bind event handlers to shapes on a mobile device with Konva, we can use the on() method.The on() method requires an event type and a function to be executed">
+  <meta name="description" content="To create a ring shape with Konva, we can instantiate a Konva.Arc() object.
+For a full list of attributes and methods, check out the Konva.Arc documentation.
+
+Konva Arc Demoview raw&amp;lt;!DOCTYPE html&amp;g">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Konva.js - JavaScript 2d canvas framework">
-<meta property="og:url" content="http://konvajs.github.io/docs/events/Mobile_Events.html">
+<meta property="og:title" content="Arc Tutorial">
+<meta property="og:url" content="http://konvajs.github.io/docs/shapes/Arc.html">
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
-<meta property="og:description" content="HTML5 Canvas Mobile Touch Events TutorialTo bind event handlers to shapes on a mobile device with Konva, we can use the on() method.The on() method requires an event type and a function to be executed">
+<meta property="og:description" content="To create a ring shape with Konva, we can instantiate a Konva.Arc() object.
+For a full list of attributes and methods, check out the Konva.Arc documentation.
+
+Konva Arc Demoview raw&amp;lt;!DOCTYPE html&amp;g">
 <meta property="og:image" content="/logo.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Konva.js - JavaScript 2d canvas framework">
-<meta name="twitter:description" content="HTML5 Canvas Mobile Touch Events TutorialTo bind event handlers to shapes on a mobile device with Konva, we can use the on() method.The on() method requires an event type and a function to be executed">
+<meta name="twitter:title" content="Arc Tutorial">
+<meta name="twitter:description" content="To create a ring shape with Konva, we can instantiate a Konva.Arc() object.
+For a full list of attributes and methods, check out the Konva.Arc documentation.
+
+Konva Arc Demoview raw&amp;lt;!DOCTYPE html&amp;g">
 <meta name="twitter:site" content="@lavrton">
   
 <script>
@@ -85,8 +94,8 @@
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name"></h1>
-        <a href="https://github.com/konvajs/site/blob/master/source/docs/events/Mobile_Events.md" title="Improve this doc" id="page-edit-link"></a>
+        <h1 id="page-title" itemprop="name">Arc Tutorial</h1>
+        <a href="https://github.com/konvajs/site/blob/master/source/docs/shapes/Arc.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
   </header>
@@ -95,18 +104,18 @@
     <div class="page-content">
       <!--<div class="toc-wrap">-->
         <!--<strong class="toc-title">Contents</strong>-->
-        <!--<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5_Canvas_Mobile_Touch_Events_Tutorial"><span class="toc-number">1.</span> <span class="toc-text">HTML5 Canvas Mobile Touch Events Tutorial</span></a></li></ol>-->
+        <!---->
       <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h1 id="HTML5_Canvas_Mobile_Touch_Events_Tutorial">HTML5 Canvas Mobile Touch Events Tutorial</h1><p>To bind event handlers to shapes on a mobile device with Konva, we can use the <code>on()</code> method.<br>The <code>on()</code> method requires an event type and a function to be executed when the event occurs.<br>Konva supports <code>touchstart</code>, <code>touchmove</code>, <code>touchend</code>, <code>tap</code>, <code>dbltap</code>, <code>dragstart</code>, <code>dragmove</code>, and <code>dragend</code> mobile events.</p>
-<p><em>Note: This example only works on iOS and Android mobile devices because it makes use of touch events rather than mouse events.</em></p>
-<p>Instructions: move your finger across the triangle to see touch coordinates and touch start and touch end the circle.</p>
-<iframe src="/downloads/code/events/Mobile_Events.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
-<figure class="highlight html"><figcaption><span>Konva Mobile_Events Demo</span><a href="/downloads/code/events/Mobile_Events.html">view raw</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://cdn.rawgit.com/konvajs/konva/0.9.0/konva.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Mobile Touch Events Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">    <span class="tag">body</span> <span class="rules">{</span><br><span class="line">      <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</span><br><span class="line">    }</span></span><br><span class="line">  </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="actionscript"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">writeMessage</span><span class="params">(message)</span> </span>{</span><br><span class="line">      text.setText(message);</span><br><span class="line">      layer.draw();</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</span><br><span class="line">      container: <span class="string">'container'</span>,</span><br><span class="line">      width: <span class="number">300</span>,</span><br><span class="line">      height: <span class="number">300</span></span><br><span class="line">    });</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> triangle = <span class="keyword">new</span> Konva.RegularPolygon({</span><br><span class="line">      x: <span class="number">80</span>,</span><br><span class="line">      y: <span class="number">120</span>,</span><br><span class="line">      sides: <span class="number">3</span>,</span><br><span class="line">      radius: <span class="number">80</span>,</span><br><span class="line">      fill: <span class="string">'#00D2FF'</span>,</span><br><span class="line">      stroke: <span class="string">'black'</span>,</span><br><span class="line">      strokeWidth: <span class="number">4</span></span><br><span class="line">    });</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> text = <span class="keyword">new</span> Konva.Text({</span><br><span class="line">      x: <span class="number">10</span>,</span><br><span class="line">      y: <span class="number">10</span>,</span><br><span class="line">      fontFamily: <span class="string">'Calibri'</span>,</span><br><span class="line">      fontSize: <span class="number">24</span>,</span><br><span class="line">      text: <span class="string">''</span>,</span><br><span class="line">      fill: <span class="string">'black'</span></span><br><span class="line">    });</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> circle = <span class="keyword">new</span> Konva.Circle({</span><br><span class="line">      x: <span class="number">230</span>,</span><br><span class="line">      y: <span class="number">100</span>,</span><br><span class="line">      radius: <span class="number">60</span>,</span><br><span class="line">      fill: <span class="string">'red'</span>,</span><br><span class="line">      stroke: <span class="string">'black'</span>,</span><br><span class="line">      strokeWidth: <span class="number">4</span></span><br><span class="line">    });</span><br><span class="line"></span><br><span class="line">    triangle.on(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</span><br><span class="line">      <span class="keyword">var</span> touchPos = stage.getPointerPosition();</span><br><span class="line">      <span class="keyword">var</span> x = touchPos.x - <span class="number">190</span>;</span><br><span class="line">      <span class="keyword">var</span> y = touchPos.y - <span class="number">40</span>;</span><br><span class="line">      writeMessage(<span class="string">'x: '</span> + x + <span class="string">', y: '</span> + y);</span><br><span class="line">    });</span><br><span class="line"></span><br><span class="line">    circle.on(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</span><br><span class="line">      writeMessage(<span class="string">'Touchstart circle'</span>);</span><br><span class="line">    });</span><br><span class="line">    circle.on(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</span><br><span class="line">      writeMessage(<span class="string">'Touchend circle'</span>);</span><br><span class="line">    });</span><br><span class="line"></span><br><span class="line">    layer.add(triangle);</span><br><span class="line">    layer.add(circle);</span><br><span class="line">    layer.add(text);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// add the layer to the stage</span></span><br><span class="line">    stage.add(layer);</span><br><span class="line">  </span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        <p>To create a ring shape with <code>Konva</code>, we can instantiate a <code>Konva.Arc()</code> object.</p>
+<p>For a full list of attributes and methods, check out the <a href="http://konvajs.github.io/api/Konva.Arc.html" target="_blank" rel="external">Konva.Arc documentation</a>.</p>
+<iframe src="/downloads/code/shapes/Arc.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+<figure class="highlight html"><figcaption><span>Konva Arc Demo</span><a href="/downloads/code/shapes/Arc.html">view raw</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://cdn.rawgit.com/konvajs/konva/0.9.0/konva.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Konva Arc Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">    <span class="tag">body</span> <span class="rules">{</span><br><span class="line">      <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">      <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#F0F0F0</span></span></span>;</span><br><span class="line">    }</span></span><br><span class="line">  </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="processing"></span><br><span class="line">    var <span class="variable">width</span> = window.innerWidth;</span><br><span class="line">    var <span class="variable">height</span> = window.innerHeight;</span><br><span class="line"></span><br><span class="line">    var stage = <span class="keyword">new</span> Konva.Stage({</span><br><span class="line">        container: <span class="string">'container'</span>,</span><br><span class="line">        <span class="variable">width</span>: <span class="variable">width</span>,</span><br><span class="line">        <span class="variable">height</span>: <span class="variable">height</span></span><br><span class="line">    });</span><br><span class="line"></span><br><span class="line">    var layer = <span class="keyword">new</span> Konva.Layer();</span><br><span class="line"></span><br><span class="line">    var <span class="built_in">arc</span> = <span class="keyword">new</span> Konva.Arc({</span><br><span class="line">      x: stage.getWidth() / <span class="number">2</span>,</span><br><span class="line">      y: stage.getHeight() / <span class="number">2</span>,</span><br><span class="line">      innerRadius: <span class="number">40</span>,</span><br><span class="line">      outerRadius: <span class="number">70</span>,</span><br><span class="line">      angle: <span class="number">60</span>,</span><br><span class="line">      <span class="built_in">fill</span>: <span class="string">'yellow'</span>,</span><br><span class="line">      <span class="built_in">stroke</span>: <span class="string">'black'</span>,</span><br><span class="line">      strokeWidth: <span class="number">4</span></span><br><span class="line">    });</span><br><span class="line"></span><br><span class="line">    <span class="comment">// add the shape to the layer</span></span><br><span class="line">    layer.<span class="built_in">add</span>(<span class="built_in">arc</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// add the layer to the stage</span></span><br><span class="line">    stage.<span class="built_in">add</span>(layer);</span><br><span class="line">  </span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-31T05:14:33.000Z" itemprop="dateModified">Last updated: Jan 31 2015</time>
-        <a href="/docs/events,Image_Events.html" id="page-footer-prev" title="Image Events">Prev</a><a href="/docs/events/Multi_Event.html" id="page-footer-next" title="Multi Event">Next</a>
+        <time id="page-footer-updated" datetime="2015-05-22T03:30:05.797Z" itemprop="dateModified">Last updated: May 22 2015</time>
+        <a href="/docs/shapes,Ring.html" id="page-footer-prev" title="Ring">Prev</a><a href="/docs/shapes/Label.html" id="page-footer-next" title="Label">Next</a>
       </footer>
       
 <section id="comments">
@@ -159,7 +168,7 @@
     
       <a href="/docs/shapes/Ring.html" class="sidebar-link">Ring</a>
     
-      <a href="/docs/shapes/Arc.html" class="sidebar-link">Arc</a>
+      <a href="/docs/shapes/Arc.html" class="sidebar-link current">Arc</a>
     
       <a href="/docs/shapes/Label.html" class="sidebar-link">Label</a>
     
@@ -193,7 +202,7 @@
     
       <a href="/docs/events/Image_Events.html" class="sidebar-link">Image Events</a>
     
-      <a href="/docs/events/Mobile_Events.html" class="sidebar-link current">Mobile Events</a>
+      <a href="/docs/events/Mobile_Events.html" class="sidebar-link">Mobile Events</a>
     
       <a href="/docs/events/Multi_Event.html" class="sidebar-link">Multi Event</a>
     
@@ -406,7 +415,7 @@
 <script>
   var disqus_shortname = 'konvajs';
   
-  var disqus_url = 'http://konvajs.github.io/docs/events/Mobile_Events.html';
+  var disqus_url = 'http://konvajs.github.io/docs/shapes/Arc.html';
   
   (function(){
     var dsq = document.createElement('script');
