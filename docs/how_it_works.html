@@ -33,7 +33,8 @@
 <meta property="og:url" content="http://konvajs.github.io/docs/how_it_works.html">
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
 <meta property="og:description" content="Konva stages are made up of user defined layers.Each layer has two canvas renderers, a scene renderer and a hit graph renderer.The scene renderer is what you can see, and the hit graph renderer is a s">
-<meta property="og:image" content="/logo.png">
+<meta property="og:image" content="http://konvajs.github.io/logo.png">
+<meta property="og:updated_time" content="2015-01-27T21:17:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How It Works">
 <meta name="twitter:description" content="Konva stages are made up of user defined layers.Each layer has two canvas renderers, a scene renderer and a hit graph renderer.The scene renderer is what you can see, and the hit graph renderer is a s">
@@ -100,7 +101,7 @@
       <div class="page-entry" itemprop="articleBody">
         <p>Konva stages are made up of user defined layers.<br>Each layer has two canvas renderers, a scene renderer and a hit graph renderer.<br>The scene renderer is what you can see, and the hit graph renderer is a special hidden<br>canvas that’s used for high performance event detection.</p>
 <p>Each layer can contain shapes, groups of shapes, or groups of other groups.<br>The stage, layers, groups, and shapes are virtual nodes, similar to DOM nodes in an HTML page.<br>Here’s an example Node hierarchy:</p>
-<figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line">              Stage</span><br><span class="line">                |<span class="string"></span><br><span class="line">         +------+------+</span><br><span class="line">         </span>|<span class="string">             </span>|</span><br><span class="line">       Layer         Layer</span><br><span class="line">         |<span class="string">             </span>|</span><br><span class="line">   +-----+-----+     Shape</span><br><span class="line">   |<span class="string">           </span>|</span><br><span class="line"> Group       Group</span><br><span class="line">   |<span class="string">           </span>|</span><br><span class="line">   +       +---+---+</span><br><span class="line">   |<span class="string">       </span>|<span class="string">       </span>|</span><br><span class="line">Shape   Group    Shape</span><br><span class="line">           |<span class="string"></span><br><span class="line">           +</span><br><span class="line">           </span>|</span><br><span class="line">         Shape</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">              Stage&#10;                |&#10;         +------+------+&#10;         |             |&#10;       Layer         Layer&#10;         |             |&#10;   +-----+-----+     Shape&#10;   |           |&#10; Group       Group&#10;   |           |&#10;   +       +---+---+&#10;   |       |       |&#10;Shape   Group    Shape&#10;           |&#10;           +&#10;           |&#10;         Shape</span><br></pre></td></tr></table></figure>
 <p>All nodes can be styled and transformed.  Although Konva has prebuilt shapes available,<br>such as rectangles, circles, images, sprites, text, lines, polygons, regular polygons, paths, stars, etc.,<br>you can also create custom shapes by instantiating the Shape class and creating a draw function.</p>
 <p>Once you have a stage set up with layers and shapes,<br>you can bind event listeners, transform nodes, run animations,<br>apply filters, and much more.</p>
 
@@ -213,6 +214,8 @@
       <a href="/docs/events/Event_Delegation.html" class="sidebar-link">Event Delegation</a>
     
       <a href="/docs/events/Fire_Events.html" class="sidebar-link">Fire Events</a>
+    
+      <a href="/docs/events/Stage_Events.html" class="sidebar-link">Stage Events</a>
     
   
     <strong class="sidebar-title">Drag and Drop</strong>

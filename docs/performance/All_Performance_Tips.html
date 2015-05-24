@@ -43,7 +43,8 @@ Shape Caching
 Optimize Animation
 Shape Redraw
 If your shape has only position transformation (x and y, no scale, rotation) set transformsEnabled = &amp;#39;position&amp;#39;">
-<meta property="og:image" content="/logo.png">
+<meta property="og:image" content="http://konvajs.github.io/logo.png">
+<meta property="og:updated_time" content="2015-02-27T03:56:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="All KonvaJS performance tips list">
 <meta name="twitter:description" content="batchDraw method
@@ -114,20 +115,20 @@ If your shape has only position transformation (x and y, no scale, rotation) set
       <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
         <ol>
-<li><a href="http://konvajs.github.io/docs/performance/Batch_Draw.html" target="_blank" rel="external"><code>batchDraw</code> method</a></li>
-<li><a href="http://konvajs.github.io/docs/performance/Layer_Management.html" target="_blank" rel="external">Layer Management</a></li>
-<li><a href="http://konvajs.github.io/docs/performance/Shape_Caching.html" target="_blank" rel="external">Shape Caching</a></li>
-<li><a href="http://konvajs.github.io/docs/performance/Optimize_Animation.html" target="_blank" rel="external">Optimize Animation</a></li>
-<li><a href="http://konvajs.github.io/docs/performance/Shape_Redraw.html" target="_blank" rel="external">Shape Redraw</a></li>
+<li><a href="http://konvajs.github.io/docs/performance/Batch_Draw.html"><code>batchDraw</code> method</a></li>
+<li><a href="http://konvajs.github.io/docs/performance/Layer_Management.html">Layer Management</a></li>
+<li><a href="http://konvajs.github.io/docs/performance/Shape_Caching.html">Shape Caching</a></li>
+<li><a href="http://konvajs.github.io/docs/performance/Optimize_Animation.html">Optimize Animation</a></li>
+<li><a href="http://konvajs.github.io/docs/performance/Shape_Redraw.html">Shape Redraw</a></li>
 <li>If your shape has only position transformation (<code>x</code> and <code>y</code>, no <code>scale</code>, <code>rotation</code>) set <code>transformsEnabled = &#39;position&#39;</code></li>
-<li>If you don’t need event on layer set <code>layer.hitGraphEnabled(false)</code>. Or use <a href="http://konvajs.github.io/api/Konva.Group.html" target="_blank" rel="external">Konva.FastLayer</a>. See <a href="http://konvajs.github.io/docs/sandbox/Animation_Stress_Test.html" target="_blank" rel="external">Demo</a></li>
+<li>If you don’t need event on layer set <code>layer.hitGraphEnabled(false)</code>. Or use <a href="http://konvajs.github.io/api/Konva.Group.html">Konva.FastLayer</a>. See <a href="http://konvajs.github.io/docs/sandbox/Animation_Stress_Test.html">Demo</a></li>
 <li>For mobile application set viewport: <code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=no&quot;&gt;</code></li>
 <li>If you have bad performance on retina devices set <code>Konva.pixelRatio = 1</code>. Make sure that quality of result is ok for you.</li>
 <li>While dragging a node you can move it on separate layer. Then move it back to original layer.</li>
-<li><a href="http://konvajs.github.io/docs/performance/Optimize_Strokes.html" target="_blank" rel="external">Optimize Stroke Drawing</a></li>
-<li>If a shape has fill, stroke and opacity you may set <code>shape.perfectDrawEnabled(false)</code>. See demo for more information <a href="http://konvajs.github.io/docs/performance/Disable_Perfect_Draw.html" target="_blank" rel="external">Disable Perfect Drawing</a>.</li>
-<li>Try set <code>shape.listening(false)</code> where possible. For more info read <a href="http://konvajs.github.io/docs/performance/Listening_False.html" target="_blank" rel="external">Listening false</a>.</li>
-<li><a href="http://konvajs.github.io/docs/performance/Avoid_Memory_Leaks.html" target="_blank" rel="external">Avoid Memory Leaks</a>.</li>
+<li><a href="http://konvajs.github.io/docs/performance/Optimize_Strokes.html">Optimize Stroke Drawing</a></li>
+<li>If a shape has fill, stroke and opacity you may set <code>shape.perfectDrawEnabled(false)</code>. See demo for more information <a href="http://konvajs.github.io/docs/performance/Disable_Perfect_Draw.html">Disable Perfect Drawing</a>.</li>
+<li>Try set <code>shape.listening(false)</code> where possible. For more info read <a href="http://konvajs.github.io/docs/performance/Listening_False.html">Listening false</a>.</li>
+<li><a href="http://konvajs.github.io/docs/performance/Avoid_Memory_Leaks.html">Avoid Memory Leaks</a>.</li>
 </ol>
 
       </div>
@@ -239,6 +240,8 @@ If your shape has only position transformation (x and y, no scale, rotation) set
       <a href="/docs/events/Event_Delegation.html" class="sidebar-link">Event Delegation</a>
     
       <a href="/docs/events/Fire_Events.html" class="sidebar-link">Fire Events</a>
+    
+      <a href="/docs/events/Stage_Events.html" class="sidebar-link">Stage Events</a>
     
   
     <strong class="sidebar-title">Drag and Drop</strong>
