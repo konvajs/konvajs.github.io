@@ -1023,25 +1023,29 @@ a.post-title:hover {
   font-size: 30px;
   padding-bottom: 5px;
   line-height: 1em;
+  text-align: center;
 }
 @media (min-width: 769px) {
   .intro-features {
     margin: 40px;
   }
 }
-.feature {
+.features li {
   margin: 5px 0;
   position: relative;
   font-weight: 200;
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   padding-bottom: 2px;
   line-height: 1em;
 }
 @media (min-width: 769px) {
-  .feature {
+  .features li {
     margin: 4px;
   }
+}
+.features {
+  list-style: initial;
 }
 #intro-btn-wrap {
   text-align: center;
