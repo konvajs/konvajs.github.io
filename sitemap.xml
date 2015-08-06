@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Drag_And_Drop_Multiple_Shapes.html</loc>
+    <lastmod>2015-08-06T10:49:17.411Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://konvajs.github.io/downloads/code/events/Stage_Events.html</loc>
     <lastmod>2015-05-28T06:27:52.269Z</lastmod>
   </url>
@@ -424,11 +429,6 @@
   <url>
     <loc>http://konvajs.github.io/downloads/code/sandbox/Drag_And_Drop_Stress_Test.html</loc>
     <lastmod>2015-05-28T06:27:09.672Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Drag_And_Drop_Multiple_Shapes.html</loc>
-    <lastmod>2015-05-28T06:27:09.328Z</lastmod>
   </url>
   
   <url>
