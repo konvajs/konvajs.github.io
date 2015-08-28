@@ -36,7 +36,7 @@ Konva enables high performance animations, t">
 <meta property="og:description" content="What’s Konva?Konva is an HTML5 Canvas JavaScript framework that extends the 2d contextby enabling canvas interactivity for desktop and mobile applications.
 Konva enables high performance animations, t">
 <meta property="og:image" content="http://konvajs.github.io/logo.png">
-<meta property="og:updated_time" content="2015-05-20T07:22:48.726Z">
+<meta property="og:updated_time" content="2015-08-28T04:16:23.416Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Overview">
 <meta name="twitter:description" content="What’s Konva?Konva is an HTML5 Canvas JavaScript framework that extends the 2d contextby enabling canvas interactivity for desktop and mobile applications.
@@ -67,11 +67,15 @@ Konva enables high performance animations, t">
         <ul id="main-nav-list">
           
             <li class="main-nav-item">
-              <a href="/docs/" class="main-nav-link">Docs</a>
+              <a href="/docs/" class="main-nav-link">Tutorials</a>
             </li>
           
             <li class="main-nav-item">
-              <a href="/api/Konva.html" class="main-nav-link">API</a>
+              <a href="/docs/sandbox" class="main-nav-link">Demos</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="/api/Konva.html" class="main-nav-link">API docs</a>
             </li>
           
             <li class="main-nav-item">
@@ -115,7 +119,7 @@ Konva enables high performance animations, t">
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// first we need to create a stage&#10;var stage = new Konva.Stage(&#123;&#10;  container: &#39;container&#39;,   // id of container &#60;div&#62;&#10;  width: 500,&#10;  height: 500&#10;&#125;);&#10;&#10;// then create layer&#10;var layer = new Konva.Layer();&#10;&#10;// create our shape&#10;var circle = new Konva.Circle(&#123;&#10;  x: stage.getWidth() / 2,&#10;  y: stage.getHeight() / 2,&#10;  radius: 70,&#10;  fill: &#39;red&#39;,&#10;  stroke: &#39;black&#39;,&#10;  strokeWidth: 4&#10;&#125;);&#10;&#10;// add the shape to the layer&#10;layer.add(circle);&#10;&#10;// add the layer to the stage&#10;stage.add(layer);</span><br></pre></td></tr></table></figure>
 <p>Result:<br><img src="http://konvajs.github.io/assets/overview-circle.png" alt="Minimal code demo"></p>
 <h2 id="Basic_shapes">Basic shapes</h2><p>Konva.js supports  shapes: <a href="http://konvajs.github.io/docs/shapes/Rect.html [Circle](http://konvajs.github.io/docs/shapes/Circle.html">Rect</a>, <a href="http://konvajs.github.io/docs/shapes/Ellipse.html">Ellipse</a>, <a href="http://konvajs.github.io/docs/shapes/Line.html">Line</a><br> <a href="http://konvajs.github.io/docs/shapes/Image.html">Image</a>, <a href="http://konvajs.github.io/docs/shapes/Text.html">Text</a>, <a href="http://konvajs.github.io/docs/shapes/TextPath.html">TextPath</a>, <a href="http://konvajs.github.io/docs/shapes/Star.html">Star</a>, <a href="http://konvajs.github.io/docs/shapes/Label.html">Label</a>, <a href="http://konvajs.github.io/docs/shapes/Path.html">SVG Path</a>, <a href="http://konvajs.github.io/docs/shapes/RegularPolygon.html">RegularPolygon</a>.<br> Also you can create <a href="http://konvajs.github.io/docs/shapes/Custom.html">custom shape</a>:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var triangle = new Konva.Shape(&#123;&#10;      drawFunc: function(context) &#123;&#10;        context.beginPath();&#10;        context.moveTo(20, 50);&#10;        context.lineTo(220, 80);&#10;        context.quadraticCurveTo(150, 100, 260, 170);&#10;        context.closePath();&#10;&#10;        // special Konva.js method&#10;        context.fillStrokeShape(this);&#10;      &#125;,&#10;      fill: &#39;#00D2FF&#39;,&#10;      stroke: &#39;black&#39;,&#10;      strokeWidth: 4&#10;&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var triangle = new Konva.Shape(&#123;&#10;      sceneFunc: function(context) &#123;&#10;        context.beginPath();&#10;        context.moveTo(20, 50);&#10;        context.lineTo(220, 80);&#10;        context.quadraticCurveTo(150, 100, 260, 170);&#10;        context.closePath();&#10;&#10;        // special Konva.js method&#10;        context.fillStrokeShape(this);&#10;      &#125;,&#10;      fill: &#39;#00D2FF&#39;,&#10;      stroke: &#39;black&#39;,&#10;      strokeWidth: 4&#10;&#125;);</span><br></pre></td></tr></table></figure>
 <p><img src="http://konvajs.github.io/assets/overview-custom.png" alt="Custom shape"></p>
 <h2 id="Styles">Styles</h2><p>Each shape supports the following style properties:</p>
 <ul>
@@ -160,7 +164,7 @@ Konva enables high performance animations, t">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-05-20T07:22:48.726Z" itemprop="dateModified">Last updated: May 20 2015</time>
+        <time id="page-footer-updated" datetime="2015-08-28T04:16:23.416Z" itemprop="dateModified">Last updated: Aug 28 2015</time>
         <a href="/docs/index.html" id="page-footer-prev" title="Intro">Prev</a><a href="/docs/support.html" id="page-footer-next" title="Support">Next</a>
       </footer>
       
@@ -391,7 +395,7 @@ Konva enables high performance animations, t">
       <a href="/docs/performance/All_Performance_Tips.html" class="sidebar-link">All tips</a>
     
   
-    <strong class="sidebar-title">Sandbox</strong>
+    <strong class="sidebar-title">Demos</strong>
     
       <a href="/docs/sandbox/Free_Drawing.html" class="sidebar-link">Free Drawing</a>
     
