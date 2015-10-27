@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://konvajs.github.io/docs/support.html</loc>
+    <lastmod>2015-10-27T04:46:56.677Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://konvajs.github.io/docs/index.html</loc>
     <lastmod>2015-10-27T03:58:53.618Z</lastmod>
   </url>
@@ -564,11 +569,6 @@
   <url>
     <loc>http://konvajs.github.io/docs/sandbox/index.html</loc>
     <lastmod>2015-08-28T04:08:33.777Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/support.html</loc>
-    <lastmod>2015-05-28T05:01:12.060Z</lastmod>
   </url>
   
   <url>
