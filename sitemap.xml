@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Tween_Filter.html</loc>
+    <lastmod>2015-11-28T15:06:07.310Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Finish_Event.html</loc>
+    <lastmod>2015-11-28T15:06:01.130Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Common_Easing.html</loc>
+    <lastmod>2015-11-28T15:05:42.471Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/tweens/All_Easings.html</loc>
+    <lastmod>2015-11-28T15:05:35.795Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/tweens/All_Controls.html</loc>
+    <lastmod>2015-11-28T15:05:28.003Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Linear_Easing.html</loc>
+    <lastmod>2015-11-28T15:04:55.940Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://konvajs.github.io/docs/support.html</loc>
     <lastmod>2015-10-28T15:00:08.000Z</lastmod>
   </url>
@@ -517,38 +547,8 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/All_Controls.html</loc>
-    <lastmod>2015-10-27T03:58:13.915Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/All_Easings.html</loc>
-    <lastmod>2015-10-27T03:58:11.647Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Common_Easing.html</loc>
-    <lastmod>2015-10-27T03:58:09.799Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://konvajs.github.io/downloads/code/tweens/Complex_Tweening.html</loc>
     <lastmod>2015-10-27T03:58:07.707Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Finish_Event.html</loc>
-    <lastmod>2015-10-27T03:58:06.135Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Linear_Easing.html</loc>
-    <lastmod>2015-10-27T03:58:04.711Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Tween_Filter.html</loc>
-    <lastmod>2015-10-27T03:58:03.375Z</lastmod>
   </url>
   
   <url>
