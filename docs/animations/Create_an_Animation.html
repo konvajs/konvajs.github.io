@@ -27,17 +27,20 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
-  <meta name="description" content="HTML5 Canvas Konva Animation TutorialTo create custom animations with Konva, we can use the Konva.Animationconstructor which takes two arguments, the required update function andan optional layer, or">
+  <meta name="description" content="#HTML5 Canvas Konva Animation Tutorial
+To create custom animations with Konva, we can use the Konva.Animationconstructor which takes two arguments, the required update function andan optional layer, o">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Konva.js - JavaScript 2d canvas framework">
 <meta property="og:url" content="http://konvajs.github.io/docs/animations/Create_an_Animation.html">
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
-<meta property="og:description" content="HTML5 Canvas Konva Animation TutorialTo create custom animations with Konva, we can use the Konva.Animationconstructor which takes two arguments, the required update function andan optional layer, or">
+<meta property="og:description" content="#HTML5 Canvas Konva Animation Tutorial
+To create custom animations with Konva, we can use the Konva.Animationconstructor which takes two arguments, the required update function andan optional layer, o">
 <meta property="og:image" content="http://konvajs.github.io/logo.png">
 <meta property="og:updated_time" content="2015-02-02T09:51:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Konva.js - JavaScript 2d canvas framework">
-<meta name="twitter:description" content="HTML5 Canvas Konva Animation TutorialTo create custom animations with Konva, we can use the Konva.Animationconstructor which takes two arguments, the required update function andan optional layer, or">
+<meta name="twitter:description" content="#HTML5 Canvas Konva Animation Tutorial
+To create custom animations with Konva, we can use the Konva.Animationconstructor which takes two arguments, the required update function andan optional layer, o">
 <meta name="twitter:site" content="@lavrton">
   
 <script>
@@ -100,13 +103,15 @@
     <div class="page-content">
       <!--<div class="toc-wrap">-->
         <!--<strong class="toc-title">Contents</strong>-->
-        <!--<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML5_Canvas_Konva_Animation_Tutorial"><span class="toc-number">1.</span> <span class="toc-text">HTML5 Canvas Konva Animation Tutorial</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML5_Canvas_Konva_Animation_Template"><span class="toc-number">1.1.</span> <span class="toc-text">HTML5 Canvas Konva Animation Template</span></a></li></ol></li></ol>-->
+        <!---->
       <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h1 id="HTML5_Canvas_Konva_Animation_Tutorial">HTML5 Canvas Konva Animation Tutorial</h1><p>To create custom animations with Konva, we can use the <code>Konva.Animation</code><br>constructor which takes two arguments, the required update function and<br>an optional layer, or array of layers, that will be updated with each animation frame.<br>The animation function is passed a <code>frame</code> object which contains a <code>time</code> property which is the number<br>of milliseconds that the animation has been running, a <code>timeDiff</code> property which<br>is the number of milliseconds that have passed since the last frame,<br>and a <code>frameRate</code> property which is the current frame rate in frames per second.</p>
+        <p>#HTML5 Canvas Konva Animation Tutorial</p>
+<p>To create custom animations with Konva, we can use the <code>Konva.Animation</code><br>constructor which takes two arguments, the required update function and<br>an optional layer, or array of layers, that will be updated with each animation frame.<br>The animation function is passed a <code>frame</code> object which contains a <code>time</code> property which is the number<br>of milliseconds that the animation has been running, a <code>timeDiff</code> property which<br>is the number of milliseconds that have passed since the last frame,<br>and a <code>frameRate</code> property which is the current frame rate in frames per second.</p>
 <p>The update function should never redraw the stage or a layer because the animation<br>engine will intelligently handle that for us.<br>The update function should only contain logic that updates Node properties,<br>such as <code>position</code>, <code>rotation</code>, <code>scale</code>, <code>width</code>, <code>height</code>, <code>radius</code>, <code>colors</code>, etc.<br>Once the animation has been created, we can start it at anytime with the <code>start()</code> method.</p>
 <p>For a full list of attributes and methods, check out the <a href="http://konvajs.github.io/api/Konva.Animation.html">Konva.Animation documentation</a>.</p>
-<h2 id="HTML5_Canvas_Konva_Animation_Template">HTML5 Canvas Konva Animation Template</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#60;script&#62;&#10;  var anim = new Konva.Animation(function(frame) &#123;&#10;    var time = frame.time,&#10;        timeDiff = frame.timeDiff,&#10;        frameRate = frame.frameRate;&#10;&#10;    // update stuff&#10;  &#125;, layer);&#10;&#10;  anim.start();&#10;&#60;/script&#62;</span><br></pre></td></tr></table></figure>
+<p>##HTML5 Canvas Konva Animation Template</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#60;script&#62;&#10;  var anim = new Konva.Animation(function(frame) &#123;&#10;    var time = frame.time,&#10;        timeDiff = frame.timeDiff,&#10;        frameRate = frame.frameRate;&#10;&#10;    // update stuff&#10;  &#125;, layer);&#10;&#10;  anim.start();&#10;&#60;/script&#62;</span><br></pre></td></tr></table></figure>
 
       </div>
       <footer id="page-footer">
@@ -401,7 +406,7 @@
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2015 KonvaJS<br>
+        &copy; 2016 KonvaJS<br>
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/lavrton" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>

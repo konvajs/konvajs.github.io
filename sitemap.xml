@@ -2,553 +2,553 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Tween_Filter.html</loc>
-    <lastmod>2015-11-28T15:06:07.310Z</lastmod>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/20000_Nodes.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Finish_Event.html</loc>
-    <lastmod>2015-11-28T15:06:01.130Z</lastmod>
+    <loc>http://konvajs.github.io/downloads/code/filters/Brighten.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Complex_Tweening.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://konvajs.github.io/downloads/code/tweens/Common_Easing.html</loc>
-    <lastmod>2015-11-28T15:05:42.471Z</lastmod>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://konvajs.github.io/downloads/code/tweens/All_Easings.html</loc>
-    <lastmod>2015-11-28T15:05:35.795Z</lastmod>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://konvajs.github.io/downloads/code/tweens/All_Controls.html</loc>
-    <lastmod>2015-11-28T15:05:28.003Z</lastmod>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/styling/Stroke.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/styling/Shadow.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/styling/Opacity.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/styling/Line_Join.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/styling/Hide_and_Show.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/styling/Fill.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/rect.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Wedge.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/TextPath.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Text.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Star.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Sprite.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Ring.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/RegularPolygon.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Path.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Line_-_Spline.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Line_-_Simple_line.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Line_-_Polygon.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Line_-_Blob.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Label.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Image.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Ellipse.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Custom.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Circle.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Arrow.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/shapes/Arc.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/selectors/Select_by_id.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/selectors/Select_by_Type.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/selectors/Select_by_Name.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Zoom_Layer_On_Hover.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Wheel_of_Fortune.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Star_Spinner.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Shape_Tooltips.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Shape_Tango.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Quantum_Squiggle.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Planets_Image_Map.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Physics_Simulator.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Multi-touch_Scale_Stage.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Multi-touch_Scale_Shape.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Modify_Shape_Color_on_Click.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Modify_Curves_with_Anchor_Points.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Interactive_Building_Map.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Image_Resize.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Image_Border_Highlighting.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Free_Drawing.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Expand_Image_On_Hover.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Elastic_Stars.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Drag_And_Drop_Stress_Test.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Drag_And_Drop_Multiple_Shapes.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Animation_Stress_Test.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Animals_on_the_Beach_Game.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Finish_Event.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/10000_Shapes_With_Tooltip.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/performance/Shape_Redraw.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/performance/Shape_Caching.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/performance/Optimize_Strokes.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/performance/Optimize_Animation.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/performance/Listening_False.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/performance/Layer_Management.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/performance/Disable_Perfect_Draw.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/performance/BatchDraw.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/groups_and_layers/Layering.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/groups_and_layers/Groups.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/groups_and_layers/Clipping_Regions.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/groups_and_layers/Change_Containers.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Tween_Filter.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/filters/Multiple_Filters.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/filters/Kaleidoscope.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/filters/Invert.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/filters/Grayscale.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://konvajs.github.io/downloads/code/tweens/Linear_Easing.html</loc>
-    <lastmod>2015-11-28T15:04:55.940Z</lastmod>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/filters/Blur.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Stage_Events.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Remove_by_Name.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Remove_Event.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Multi_Event.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Mobile_Events.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Listen_for_Events.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Image_Events.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Fire_Events.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Event_Delegation.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Desktop_and_Mobile.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Custom_Hit_Region.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Cancel_Propagation.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/events/Binding_Events.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Simple_Drag_Bounds.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drop_Events.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_and_Drop.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_an_Image.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_Events.html</loc>
+    <lastmod>2016-01-16T09:06:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/animations/Scaling.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_a_Line.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_a_Stage.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Complex_Drag_and_Drop.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/data_&_serialization/Stage_Data_URL.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/data_&_serialization/Simple_Load.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/data_&_serialization/Serialize_a_Stage.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/data_&_serialization/Complex_Load.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/animations/Stop_Animation.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_a_Group.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/animations/Rotation.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/animations/Moving.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/index.html</loc>
+    <lastmod>2016-01-16T09:06:42.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://konvajs.github.io/docs/support.html</loc>
     <lastmod>2015-10-28T15:00:08.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/index.html</loc>
-    <lastmod>2015-10-27T03:58:53.618Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/RegularPolygon.html</loc>
-    <lastmod>2015-10-27T03:58:47.407Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Path.html</loc>
-    <lastmod>2015-10-27T03:58:47.359Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Line_-_Spline.html</loc>
-    <lastmod>2015-10-27T03:58:47.335Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Line_-_Simple_line.html</loc>
-    <lastmod>2015-10-27T03:58:47.299Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Line_-_Polygon.html</loc>
-    <lastmod>2015-10-27T03:58:47.275Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Line_-_Blob.html</loc>
-    <lastmod>2015-10-27T03:58:47.247Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Label.html</loc>
-    <lastmod>2015-10-27T03:58:47.215Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Image.html</loc>
-    <lastmod>2015-10-27T03:58:47.183Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Ellipse.html</loc>
-    <lastmod>2015-10-27T03:58:47.151Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Custom.html</loc>
-    <lastmod>2015-10-27T03:58:47.115Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Circle.html</loc>
-    <lastmod>2015-10-27T03:58:47.099Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Arrow.html</loc>
-    <lastmod>2015-10-27T03:58:47.071Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Arc.html</loc>
-    <lastmod>2015-10-27T03:58:47.043Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/selectors/Select_by_id.html</loc>
-    <lastmod>2015-10-27T03:58:47.019Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/selectors/Select_by_Type.html</loc>
-    <lastmod>2015-10-27T03:58:46.991Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/selectors/Select_by_Name.html</loc>
-    <lastmod>2015-10-27T03:58:46.959Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Zoom_Layer_On_Hover.html</loc>
-    <lastmod>2015-10-27T03:58:46.939Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Wheel_of_Fortune.html</loc>
-    <lastmod>2015-10-27T03:58:46.907Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Star_Spinner.html</loc>
-    <lastmod>2015-10-27T03:58:46.871Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Shape_Tooltips.html</loc>
-    <lastmod>2015-10-27T03:58:46.839Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Shape_Tango.html</loc>
-    <lastmod>2015-10-27T03:58:46.811Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Quantum_Squiggle.html</loc>
-    <lastmod>2015-10-27T03:58:46.763Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Planets_Image_Map.html</loc>
-    <lastmod>2015-10-27T03:58:46.711Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Physics_Simulator.html</loc>
-    <lastmod>2015-10-27T03:58:46.679Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Multi-touch_Scale_Stage.html</loc>
-    <lastmod>2015-10-27T03:58:46.643Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Multi-touch_Scale_Shape.html</loc>
-    <lastmod>2015-10-27T03:58:46.607Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Modify_Shape_Color_on_Click.html</loc>
-    <lastmod>2015-10-27T03:58:46.575Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Modify_Curves_with_Anchor_Points.html</loc>
-    <lastmod>2015-10-27T03:58:46.543Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Interactive_Building_Map.html</loc>
-    <lastmod>2015-10-27T03:58:46.511Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Image_Resize.html</loc>
-    <lastmod>2015-10-27T03:58:46.479Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Image_Border_Highlighting.html</loc>
-    <lastmod>2015-10-27T03:58:46.439Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Free_Drawing.html</loc>
-    <lastmod>2015-10-27T03:58:46.399Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Expand_Image_On_Hover.html</loc>
-    <lastmod>2015-10-27T03:58:46.367Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Elastic_Stars.html</loc>
-    <lastmod>2015-10-27T03:58:46.335Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Drag_And_Drop_Stress_Test.html</loc>
-    <lastmod>2015-10-27T03:58:46.283Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Drag_And_Drop_Multiple_Shapes.html</loc>
-    <lastmod>2015-10-27T03:58:46.255Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Animation_Stress_Test.html</loc>
-    <lastmod>2015-10-27T03:58:46.219Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Animals_on_the_Beach_Game.html</loc>
-    <lastmod>2015-10-27T03:58:46.159Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/20000_Nodes.html</loc>
-    <lastmod>2015-10-27T03:58:46.131Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/10000_Shapes_With_Tooltip.html</loc>
-    <lastmod>2015-10-27T03:58:46.099Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/performance/Shape_Redraw.html</loc>
-    <lastmod>2015-10-27T03:58:46.079Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/performance/Shape_Caching.html</loc>
-    <lastmod>2015-10-27T03:58:46.035Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/performance/Optimize_Strokes.html</loc>
-    <lastmod>2015-10-27T03:58:45.983Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/performance/Optimize_Animation.html</loc>
-    <lastmod>2015-10-27T03:58:45.947Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/performance/Listening_False.html</loc>
-    <lastmod>2015-10-27T03:58:45.919Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/performance/Layer_Management.html</loc>
-    <lastmod>2015-10-27T03:58:45.879Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/performance/Disable_Perfect_Draw.html</loc>
-    <lastmod>2015-10-27T03:58:45.843Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/performance/BatchDraw.html</loc>
-    <lastmod>2015-10-27T03:58:45.815Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/groups_and_layers/Layering.html</loc>
-    <lastmod>2015-10-27T03:58:45.787Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/groups_and_layers/Groups.html</loc>
-    <lastmod>2015-10-27T03:58:45.751Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/groups_and_layers/Clipping_Regions.html</loc>
-    <lastmod>2015-10-27T03:58:45.703Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/groups_and_layers/Change_Containers.html</loc>
-    <lastmod>2015-10-27T03:58:45.647Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/filters/Multiple_Filters.html</loc>
-    <lastmod>2015-10-27T03:58:45.607Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/filters/Kaleidoscope.html</loc>
-    <lastmod>2015-10-27T03:58:45.567Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/filters/Invert.html</loc>
-    <lastmod>2015-10-27T03:58:45.527Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/filters/Grayscale.html</loc>
-    <lastmod>2015-10-27T03:58:45.503Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/filters/Brighten.html</loc>
-    <lastmod>2015-10-27T03:58:45.479Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/filters/Blur.html</loc>
-    <lastmod>2015-10-27T03:58:45.447Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Stage_Events.html</loc>
-    <lastmod>2015-10-27T03:58:45.419Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Remove_by_Name.html</loc>
-    <lastmod>2015-10-27T03:58:45.371Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Remove_Event.html</loc>
-    <lastmod>2015-10-27T03:58:45.331Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Multi_Event.html</loc>
-    <lastmod>2015-10-27T03:58:45.259Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Mobile_Events.html</loc>
-    <lastmod>2015-10-27T03:58:45.223Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Listen_for_Events.html</loc>
-    <lastmod>2015-10-27T03:58:45.183Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Image_Events.html</loc>
-    <lastmod>2015-10-27T03:58:45.139Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Fire_Events.html</loc>
-    <lastmod>2015-10-27T03:58:45.103Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Event_Delegation.html</loc>
-    <lastmod>2015-10-27T03:58:45.067Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Desktop_and_Mobile.html</loc>
-    <lastmod>2015-10-27T03:58:45.027Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Custom_Hit_Region.html</loc>
-    <lastmod>2015-10-27T03:58:44.999Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Cancel_Propagation.html</loc>
-    <lastmod>2015-10-27T03:58:44.967Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/events/Binding_Events.html</loc>
-    <lastmod>2015-10-27T03:58:44.943Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Simple_Drag_Bounds.html</loc>
-    <lastmod>2015-10-27T03:58:44.911Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drop_Events.html</loc>
-    <lastmod>2015-10-27T03:58:44.891Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_and_Drop.html</loc>
-    <lastmod>2015-10-27T03:58:44.859Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_an_Image.html</loc>
-    <lastmod>2015-10-27T03:58:44.831Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_a_Stage.html</loc>
-    <lastmod>2015-10-27T03:58:44.799Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_a_Line.html</loc>
-    <lastmod>2015-10-27T03:58:44.767Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_a_Group.html</loc>
-    <lastmod>2015-10-27T03:58:44.727Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Drag_Events.html</loc>
-    <lastmod>2015-10-27T03:58:44.679Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/drag_and_drop/Complex_Drag_and_Drop.html</loc>
-    <lastmod>2015-10-27T03:58:44.651Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/data_&_serialization/Stage_Data_URL.html</loc>
-    <lastmod>2015-10-27T03:58:44.599Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/data_&_serialization/Simple_Load.html</loc>
-    <lastmod>2015-10-27T03:58:44.575Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/data_&_serialization/Serialize_a_Stage.html</loc>
-    <lastmod>2015-10-27T03:58:44.539Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/data_&_serialization/Complex_Load.html</loc>
-    <lastmod>2015-10-27T03:58:44.479Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/animations/Stop_Animation.html</loc>
-    <lastmod>2015-10-27T03:58:44.431Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/animations/Scaling.html</loc>
-    <lastmod>2015-10-27T03:58:44.387Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/animations/Rotation.html</loc>
-    <lastmod>2015-10-27T03:58:44.351Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/animations/Moving.html</loc>
-    <lastmod>2015-10-27T03:58:44.303Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Ring.html</loc>
-    <lastmod>2015-10-27T03:58:39.715Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Sprite.html</loc>
-    <lastmod>2015-10-27T03:58:37.247Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Star.html</loc>
-    <lastmod>2015-10-27T03:58:35.971Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Text.html</loc>
-    <lastmod>2015-10-27T03:58:34.439Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/TextPath.html</loc>
-    <lastmod>2015-10-27T03:58:33.147Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/Wedge.html</loc>
-    <lastmod>2015-10-27T03:58:31.151Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/shapes/rect.html</loc>
-    <lastmod>2015-10-27T03:58:29.075Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/styling/Fill.html</loc>
-    <lastmod>2015-10-27T03:58:25.011Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/styling/Hide_and_Show.html</loc>
-    <lastmod>2015-10-27T03:58:22.263Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/styling/Line_Join.html</loc>
-    <lastmod>2015-10-27T03:58:20.339Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/styling/Opacity.html</loc>
-    <lastmod>2015-10-27T03:58:18.859Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/styling/Shadow.html</loc>
-    <lastmod>2015-10-27T03:58:17.359Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/styling/Stroke.html</loc>
-    <lastmod>2015-10-27T03:58:15.959Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Complex_Tweening.html</loc>
-    <lastmod>2015-10-27T03:58:07.707Z</lastmod>
   </url>
   
   <url>

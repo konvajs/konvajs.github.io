@@ -103,8 +103,8 @@
         <!--<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Deleting_shape"><span class="toc-number">1.</span> <span class="toc-text">Deleting shape</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tweening"><span class="toc-number">2.</span> <span class="toc-text">Tweening</span></a></li></ol>-->
       <!--</div>-->
       <div class="page-entry" itemprop="articleBody">
-        <h3 id="Deleting_shape">Deleting shape</h3><p>There are two very close methods <code>remove()</code> and <code>destroy()</code>. If you need to completely delete node you need to use <code>destroy()</code> method.<br>If you are going to reuse node you should <code>remove()</code> it then later you may add it again to any container.<br>Don’t reuse node after <code>destroy()</code>. As <code>destroy()</code> delete all references to node from KonvaJS engine.</p>
-<h3 id="Tweening">Tweening</h3><p>When you are using <code>Konva.Tween</code> instance you have to destroy it after usage.</p>
+        <h3 id="Deleting_shape"><a href="#Deleting_shape" class="headerlink" title="Deleting shape"></a>Deleting shape</h3><p>There are two very close methods <code>remove()</code> and <code>destroy()</code>. If you need to completely delete node you need to use <code>destroy()</code> method.<br>If you are going to reuse node you should <code>remove()</code> it then later you may add it again to any container.<br>Don’t reuse node after <code>destroy()</code>. As <code>destroy()</code> delete all references to node from KonvaJS engine.</p>
+<h3 id="Tweening"><a href="#Tweening" class="headerlink" title="Tweening"></a>Tweening</h3><p>When you are using <code>Konva.Tween</code> instance you have to destroy it after usage.</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> tween = <span class="keyword">new</span> Konva.Tween(&#123;</span><br><span class="line">    node : circle,</span><br><span class="line">    x : <span class="number">0</span>,</span><br><span class="line">    duration : <span class="number">0.5</span>,</span><br><span class="line">    onFinish : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// remove all references from Konva</span></span><br><span class="line">        tween.destroy();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">tween.play();</span><br></pre></td></tr></table></figure>
 <p>Or if you don’t need to reuse tween you may use new <code>to()</code> method:<br><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// tween will be automatically started and destroyed on finish</span></span><br><span class="line">circle.to(&#123;</span><br><span class="line">    x : <span class="number">0</span>,</span><br><span class="line">    duration : <span class="number">0.5</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 
@@ -401,7 +401,7 @@
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2015 KonvaJS<br>
+        &copy; 2016 KonvaJS<br>
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/lavrton" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
