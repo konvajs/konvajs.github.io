@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/20000_Nodes.html</loc>
+    <loc>http://konvajs.github.io/docs/sandbox/index.html</loc>
+    <lastmod>2016-01-17T14:14:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/Animals_on_the_Beach_Game.html</loc>
     <lastmod>2016-01-16T09:47:46.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/filters/Brighten.html</loc>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Finish_Event.html</loc>
     <lastmod>2016-01-16T09:47:46.000Z</lastmod>
   </url>
   
@@ -282,12 +287,12 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/sandbox/Animals_on_the_Beach_Game.html</loc>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Linear_Easing.html</loc>
     <lastmod>2016-01-16T09:47:46.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Finish_Event.html</loc>
+    <loc>http://konvajs.github.io/downloads/code/sandbox/20000_Nodes.html</loc>
     <lastmod>2016-01-16T09:47:46.000Z</lastmod>
   </url>
   
@@ -357,7 +362,7 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/index.html</loc>
+    <loc>http://konvajs.github.io/downloads/code/tweens/Tween_Filter.html</loc>
     <lastmod>2016-01-16T09:47:46.000Z</lastmod>
   </url>
   
@@ -382,7 +387,7 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Linear_Easing.html</loc>
+    <loc>http://konvajs.github.io/downloads/code/filters/Brighten.html</loc>
     <lastmod>2016-01-16T09:47:46.000Z</lastmod>
   </url>
   
@@ -542,7 +547,12 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/downloads/code/tweens/Tween_Filter.html</loc>
+    <loc>http://konvajs.github.io/docs/sandbox/Star_Spinner.html</loc>
+    <lastmod>2016-01-16T09:47:46.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/index.html</loc>
     <lastmod>2016-01-16T09:47:46.000Z</lastmod>
   </url>
   
@@ -564,11 +574,6 @@
   <url>
     <loc>http://konvajs.github.io/docs/overview.html</loc>
     <lastmod>2015-08-28T04:16:23.416Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/sandbox/index.html</loc>
-    <lastmod>2015-08-28T04:08:33.777Z</lastmod>
   </url>
   
   <url>
@@ -652,17 +657,17 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/shapes/TextPath.html</loc>
-    <lastmod>2015-02-24T23:11:51.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://konvajs.github.io/docs/shapes/Arrow.html</loc>
     <lastmod>2015-02-24T23:11:51.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://konvajs.github.io/docs/shapes/Sprite.html</loc>
+    <lastmod>2015-02-24T23:11:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/shapes/TextPath.html</loc>
     <lastmod>2015-02-24T23:11:51.000Z</lastmod>
   </url>
   
@@ -712,6 +717,11 @@
   </url>
   
   <url>
+    <loc>http://konvajs.github.io/docs/styling/Shadow.html</loc>
+    <lastmod>2015-02-02T10:29:54.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://konvajs.github.io/docs/styling/Opacity.html</loc>
     <lastmod>2015-02-02T10:29:54.000Z</lastmod>
   </url>
@@ -722,17 +732,12 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/styling/Hide_and_Show.html</loc>
-    <lastmod>2015-02-02T10:29:54.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/styling/Shadow.html</loc>
-    <lastmod>2015-02-02T10:29:54.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://konvajs.github.io/docs/styling/Fill.html</loc>
+    <lastmod>2015-02-02T10:29:54.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/styling/Hide_and_Show.html</loc>
     <lastmod>2015-02-02T10:29:54.000Z</lastmod>
   </url>
   
@@ -767,32 +772,17 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/shapes/Wedge.html</loc>
-    <lastmod>2015-02-02T09:51:35.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://konvajs.github.io/docs/shapes/Circle.html</loc>
     <lastmod>2015-02-02T09:51:35.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/animations/Scaling.html</loc>
-    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
+    <loc>http://konvajs.github.io/docs/shapes/Wedge.html</loc>
+    <lastmod>2015-02-02T09:51:35.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/shapes/Path.html</loc>
-    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/animations/Rotation.html</loc>
-    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/animations/Stop_Animation.html</loc>
+    <loc>http://konvajs.github.io/docs/tweens/Linear_Easing.html</loc>
     <lastmod>2015-02-02T09:51:34.000Z</lastmod>
   </url>
   
@@ -807,27 +797,22 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/tweens/Linear_Easing.html</loc>
+    <loc>http://konvajs.github.io/docs/animations/Rotation.html</loc>
     <lastmod>2015-02-02T09:51:34.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/shapes/RegularPolygon.html</loc>
-    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/filters/Brighten.html</loc>
-    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/filters/Grayscale.html</loc>
+    <loc>http://konvajs.github.io/docs/animations/Scaling.html</loc>
     <lastmod>2015-02-02T09:51:34.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://konvajs.github.io/docs/shapes/Image.html</loc>
+    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/animations/Stop_Animation.html</loc>
     <lastmod>2015-02-02T09:51:34.000Z</lastmod>
   </url>
   
@@ -842,7 +827,32 @@
   </url>
   
   <url>
+    <loc>http://konvajs.github.io/docs/shapes/Path.html</loc>
+    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/filters/Brighten.html</loc>
+    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/filters/Grayscale.html</loc>
+    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/shapes/RegularPolygon.html</loc>
+    <lastmod>2015-02-02T09:51:34.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://konvajs.github.io/docs/filters/Kaleidoscope.html</loc>
+    <lastmod>2015-02-02T09:51:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/filters/Blur.html</loc>
     <lastmod>2015-02-02T09:51:33.000Z</lastmod>
   </url>
   
@@ -858,11 +868,6 @@
   
   <url>
     <loc>http://konvajs.github.io/docs/animations/Create_an_Animation.html</loc>
-    <lastmod>2015-02-02T09:51:33.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/filters/Blur.html</loc>
     <lastmod>2015-02-02T09:51:33.000Z</lastmod>
   </url>
   
@@ -922,12 +927,12 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/drag_and_drop/Drop_Events.html</loc>
+    <loc>http://konvajs.github.io/docs/drag_and_drop/Simple_Drag_Bounds.html</loc>
     <lastmod>2015-02-02T09:00:55.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/drag_and_drop/Simple_Drag_Bounds.html</loc>
+    <loc>http://konvajs.github.io/docs/drag_and_drop/Drop_Events.html</loc>
     <lastmod>2015-02-02T09:00:55.000Z</lastmod>
   </url>
   
@@ -1047,11 +1052,6 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/sandbox/Star_Spiner.html</loc>
-    <lastmod>2015-01-31T05:49:53.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://konvajs.github.io/docs/sandbox/Zoom_Layer_On_hover.html</loc>
     <lastmod>2015-01-31T05:32:19.000Z</lastmod>
   </url>
@@ -1062,17 +1062,7 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/events/Cancel_Propagation.html</loc>
-    <lastmod>2015-01-31T05:14:33.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/events/Desktop_and_Mobile.html</loc>
-    <lastmod>2015-01-31T05:14:33.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/events/Event_Delegation.html</loc>
+    <loc>http://konvajs.github.io/docs/events/Image_Events.html</loc>
     <lastmod>2015-01-31T05:14:33.000Z</lastmod>
   </url>
   
@@ -1082,7 +1072,12 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/events/Image_Events.html</loc>
+    <loc>http://konvajs.github.io/docs/events/Event_Delegation.html</loc>
+    <lastmod>2015-01-31T05:14:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/events/Desktop_and_Mobile.html</loc>
     <lastmod>2015-01-31T05:14:33.000Z</lastmod>
   </url>
   
@@ -1092,12 +1087,7 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/events/Mobile_Events.html</loc>
-    <lastmod>2015-01-31T05:14:33.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://konvajs.github.io/docs/events/Multi_Event.html</loc>
+    <loc>http://konvajs.github.io/docs/events/Cancel_Propagation.html</loc>
     <lastmod>2015-01-31T05:14:33.000Z</lastmod>
   </url>
   
@@ -1107,7 +1097,17 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/tweens/All_Controls.html</loc>
+    <loc>http://konvajs.github.io/docs/events/Multi_Event.html</loc>
+    <lastmod>2015-01-31T05:14:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/events/Mobile_Events.html</loc>
+    <lastmod>2015-01-31T05:14:33.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://konvajs.github.io/docs/tweens/Tween_Filter.html</loc>
     <lastmod>2015-01-30T23:44:10.000Z</lastmod>
   </url>
   
@@ -1117,17 +1117,17 @@
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/tweens/Tween_Filter.html</loc>
+    <loc>http://konvajs.github.io/docs/tweens/All_Controls.html</loc>
     <lastmod>2015-01-30T23:44:10.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/selectors/Select_by_Type.html</loc>
+    <loc>http://konvajs.github.io/docs/selectors/Select_by_Name.html</loc>
     <lastmod>2015-01-30T22:55:15.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://konvajs.github.io/docs/selectors/Select_by_Name.html</loc>
+    <loc>http://konvajs.github.io/docs/selectors/Select_by_Type.html</loc>
     <lastmod>2015-01-30T22:55:15.000Z</lastmod>
   </url>
   
