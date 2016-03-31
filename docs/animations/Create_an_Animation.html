@@ -23,10 +23,10 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
-  <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework">
   <meta name="description" content="#HTML5 Canvas Konva Animation Tutorial
 To create custom animations with Konva, we can use the Konva.Animationconstructor which takes two arguments, the required update function andan optional layer, o">
 <meta property="og:type" content="website">
@@ -36,11 +36,12 @@ To create custom animations with Konva, we can use the Konva.Animationconstructo
 <meta property="og:description" content="#HTML5 Canvas Konva Animation Tutorial
 To create custom animations with Konva, we can use the Konva.Animationconstructor which takes two arguments, the required update function andan optional layer, o">
 <meta property="og:image" content="http://konvajs.github.io/logo.png">
-<meta property="og:updated_time" content="2015-02-02T09:51:33.000Z">
+<meta property="og:updated_time" content="2016-03-31T03:13:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Konva.js - JavaScript 2d canvas framework">
 <meta name="twitter:description" content="#HTML5 Canvas Konva Animation Tutorial
 To create custom animations with Konva, we can use the Konva.Animationconstructor which takes two arguments, the required update function andan optional layer, o">
+<meta name="twitter:image" content="http://konvajs.github.io/logo.png">
 <meta name="twitter:site" content="@lavrton">
   
 <script>
@@ -111,11 +112,11 @@ To create custom animations with Konva, we can use the Konva.Animationconstructo
 <p>The update function should never redraw the stage or a layer because the animation<br>engine will intelligently handle that for us.<br>The update function should only contain logic that updates Node properties,<br>such as <code>position</code>, <code>rotation</code>, <code>scale</code>, <code>width</code>, <code>height</code>, <code>radius</code>, <code>colors</code>, etc.<br>Once the animation has been created, we can start it at anytime with the <code>start()</code> method.</p>
 <p>For a full list of attributes and methods, check out the <a href="http://konvajs.github.io/api/Konva.Animation.html">Konva.Animation documentation</a>.</p>
 <p>##HTML5 Canvas Konva Animation Template</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#60;script&#62;&#10;  var anim = new Konva.Animation(function(frame) &#123;&#10;    var time = frame.time,&#10;        timeDiff = frame.timeDiff,&#10;        frameRate = frame.frameRate;&#10;&#10;    // update stuff&#10;  &#125;, layer);&#10;&#10;  anim.start();&#10;&#60;/script&#62;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  var anim = new Konva.Animation(function(frame) &#123;</span><br><span class="line">    var time = frame.time,</span><br><span class="line">        timeDiff = frame.timeDiff,</span><br><span class="line">        frameRate = frame.frameRate;</span><br><span class="line"></span><br><span class="line">    // update stuff</span><br><span class="line">  &#125;, layer);</span><br><span class="line"></span><br><span class="line">  anim.start();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-02-02T09:51:33.000Z" itemprop="dateModified">Last updated: Feb 2 2015</time>
+        <time id="page-footer-updated" datetime="2016-03-31T03:13:56.000Z" itemprop="dateModified">Last updated: Mar 31 2016</time>
         <a href="/docs/tweens,Complex_Tweening.html" id="page-footer-prev" title="Complex Tweening">Prev</a><a href="/docs/animations/Moving.html" id="page-footer-next" title="Moving">Next</a>
       </footer>
       
@@ -451,8 +452,8 @@ var Swiftype = window.Swiftype || {};
 }());
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="/js/retina.min.js" type="text/javascript"></script>
-<script src="/js/script.js" type="text/javascript"></script>
+<script src="/js/retina.min.js"></script>
+<script src="/js/script.js"></script>
 <!-- Google+ -->
 <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 <!-- Twitter -->

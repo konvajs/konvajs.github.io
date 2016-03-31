@@ -23,10 +23,10 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
-  <link rel="alternative" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="Konva.js - JavaScript 2d canvas framework">
   <meta name="description" content="Konva stages are made up of user defined layers.Each layer has two canvas renderers, a scene renderer and a hit graph renderer.The scene renderer is what you can see, and the hit graph renderer is a s">
 <meta property="og:type" content="website">
 <meta property="og:title" content="How It Works">
@@ -34,10 +34,11 @@
 <meta property="og:site_name" content="Konva.js - JavaScript 2d canvas framework">
 <meta property="og:description" content="Konva stages are made up of user defined layers.Each layer has two canvas renderers, a scene renderer and a hit graph renderer.The scene renderer is what you can see, and the hit graph renderer is a s">
 <meta property="og:image" content="http://konvajs.github.io/logo.png">
-<meta property="og:updated_time" content="2015-01-27T21:17:32.000Z">
+<meta property="og:updated_time" content="2016-03-31T03:13:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How It Works">
 <meta name="twitter:description" content="Konva stages are made up of user defined layers.Each layer has two canvas renderers, a scene renderer and a hit graph renderer.The scene renderer is what you can see, and the hit graph renderer is a s">
+<meta name="twitter:image" content="http://konvajs.github.io/logo.png">
 <meta name="twitter:site" content="@lavrton">
   
 <script>
@@ -105,13 +106,13 @@
       <div class="page-entry" itemprop="articleBody">
         <p>Konva stages are made up of user defined layers.<br>Each layer has two canvas renderers, a scene renderer and a hit graph renderer.<br>The scene renderer is what you can see, and the hit graph renderer is a special hidden<br>canvas that’s used for high performance event detection.</p>
 <p>Each layer can contain shapes, groups of shapes, or groups of other groups.<br>The stage, layers, groups, and shapes are virtual nodes, similar to DOM nodes in an HTML page.<br>Here’s an example Node hierarchy:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">              Stage&#10;                |&#10;         +------+------+&#10;         |             |&#10;       Layer         Layer&#10;         |             |&#10;   +-----+-----+     Shape&#10;   |           |&#10; Group       Group&#10;   |           |&#10;   +       +---+---+&#10;   |       |       |&#10;Shape   Group    Shape&#10;           |&#10;           +&#10;           |&#10;         Shape</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">              Stage</span><br><span class="line">                |</span><br><span class="line">         +------+------+</span><br><span class="line">         |             |</span><br><span class="line">       Layer         Layer</span><br><span class="line">         |             |</span><br><span class="line">   +-----+-----+     Shape</span><br><span class="line">   |           |</span><br><span class="line"> Group       Group</span><br><span class="line">   |           |</span><br><span class="line">   +       +---+---+</span><br><span class="line">   |       |       |</span><br><span class="line">Shape   Group    Shape</span><br><span class="line">           |</span><br><span class="line">           +</span><br><span class="line">           |</span><br><span class="line">         Shape</span><br></pre></td></tr></table></figure>
 <p>All nodes can be styled and transformed.  Although Konva has prebuilt shapes available,<br>such as rectangles, circles, images, sprites, text, lines, polygons, regular polygons, paths, stars, etc.,<br>you can also create custom shapes by instantiating the Shape class and creating a draw function.</p>
 <p>Once you have a stage set up with layers and shapes,<br>you can bind event listeners, transform nodes, run animations,<br>apply filters, and much more.</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2015-01-27T21:17:32.000Z" itemprop="dateModified">Last updated: Jan 28 2015</time>
+        <time id="page-footer-updated" datetime="2016-03-31T03:13:56.000Z" itemprop="dateModified">Last updated: Mar 31 2016</time>
         <a href="/docs/index.html" id="page-footer-next" title="Intro">Next</a>
       </footer>
       
@@ -447,8 +448,8 @@ var Swiftype = window.Swiftype || {};
 }());
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="/js/retina.min.js" type="text/javascript"></script>
-<script src="/js/script.js" type="text/javascript"></script>
+<script src="/js/retina.min.js"></script>
+<script src="/js/script.js"></script>
 <!-- Google+ -->
 <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 <!-- Twitter -->
