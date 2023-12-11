@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+<title>
+   How to change the zIndex of nodes with svelte-konva? | Konva - JavaScript 2d canvas
+  library
+</title>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5"
+/>
+<link rel="canonical" href="https://konvajs.org/docs/svelte/zIndex.html" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff" /> 
+<link rel="stylesheet" href="/css/style.css">
+
+<link
+  href="//fonts.googleapis.com/css?family=Lato:300,700"
+  rel="stylesheet"
+  type="text/css"
+/>
+<link
+  href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700"
+  rel="stylesheet"
+  type="text/css"
+/>
+<script
+  async
+  defer
+  data-domain="konvajs.org"
+  src="https://plausible.io/js/plausible.js"
+></script>
+<link rel="alternate" href="/atom.xml" title="Konva.js - JavaScript 2d canvas library"> <meta name="description" content="When working with other Konva-Wrappers like vue-konva or react-konva you might be used to the data order representing the drawing order of the components on the canvas. In svelte-konva such a function">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How to change the zIndex of nodes with svelte-konva?">
+<meta property="og:url" content="https://konvajs.org/docs/svelte/zIndex.html">
+<meta property="og:site_name" content="Konva.js - JavaScript 2d canvas library">
+<meta property="og:description" content="When working with other Konva-Wrappers like vue-konva or react-konva you might be used to the data order representing the drawing order of the components on the canvas. In svelte-konva such a function">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://konvajs.org/logo.png">
+<meta property="article:published_time" content="2023-08-31T14:58:36.032Z">
+<meta property="article:modified_time" content="2023-08-31T14:58:36.032Z">
+<meta property="article:author" content="Anton Lavrenov">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://konvajs.org/logo.png">
+<meta name="twitter:site" content="@lavrton"> 
+
+  </head>
+  <body>
+    <header id="header">
+  <div class="outer">
+    <div class="inner">
+      <div id="logo-wrap">
+        <a href="/" id="logo">Konva</a>
+        <a id="main-nav-toggle"></a>
+      </div>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+          <li class="main-nav-item">
+            <a href="/docs/index.html" class="main-nav-link">
+              Tutorials
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/sandbox/index.html" class="main-nav-link">
+              Demos
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/api/Konva.html" class="main-nav-link">
+              API docs
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/react/Intro.html" class="main-nav-link">
+              React
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/vue/index.html" class="main-nav-link">
+              Vue
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/svelte/index.html" class="main-nav-link">
+              Svelte
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/donate.html" class="main-nav-link">
+              ❤️ Support Konva
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/support.html" class="main-nav-link">
+              Need help?
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <div id="search-container" />
+          </li>
+          <li class="main-nav-item">
+            <a
+              href="https://lavrton.com/consulting"
+              title="Consulting"
+              target="_blank"
+              class="main-nav-link"
+              style="
+                color: white;
+                background: #078c34;
+                padding: 10px;
+                border-radius: 10px;
+              "
+              >Consulting</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="https://github.com/konvajs/konva"
+          id="github-btn"
+          title="GitHub"
+          target="_blank"
+        ></a>
+        <a
+          href="https://twitter.com/lavrton"
+          id="twitter-btn"
+          title="Twitter"
+          target="_blank"
+        ></a>
+        <!--
+          <a id="search-btn" class="st-search-launcher" title="Search"></a>
+        -->
+      </nav>
+    </div>
+  </div>
+</header>
+ <article class="page" itemscope itemtype="http://schema.org/Article">
+  <header id="page-banner">
+    <div class="outer">
+      <div id="page-banner-inner">
+        <h1 id="page-title" itemprop="name">How to change the zIndex of nodes with svelte-konva?</h1>
+        <a
+          href="https://github.com/konvajs/site/blob/master/source/docs/svelte/zIndex.md"
+          title="Improve this doc"
+          id="page-edit-link"
+        ></a>
+      </div>
+      <!-- Begin Mailchimp Signup Form -->
+
+<!-- <iframe
+  class="mj-w-res-iframe"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://app.mailjet.com/widget/iframe/7P23/MU3"
+  style="height: 70px; margin: auto; width: 450px"
+></iframe> -->
+
+<!-- <script
+  type="text/javascript"
+  src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
+></script> -->
+
+<!--End mc_embed_signup-->
+
+    </div>
+  </header>
+
+  <div class="outer">
+    <div id="mobile-menu-wrap"></div>
+    <aside id="sidebar">
+  
+  <strong class="sidebar-title"> Getting Started with Svelte </strong>
+  
+  <a
+    href="/docs/svelte/index.html"
+    class="sidebar-link"
+  >
+    Intro
+  </a>
+  
+  <a
+    href="/docs/svelte/Shapes.html"
+    class="sidebar-link"
+  >
+    Basic shapes
+  </a>
+  
+  <a
+    href="/docs/svelte/Custom_Shape.html"
+    class="sidebar-link"
+  >
+    Custom shape
+  </a>
+  
+  <a
+    href="/docs/svelte/Events.html"
+    class="sidebar-link"
+  >
+    Events
+  </a>
+  
+  <a
+    href="/docs/svelte/Images.html"
+    class="sidebar-link"
+  >
+    Images
+  </a>
+  
+  <a
+    href="/docs/svelte/Filters.html"
+    class="sidebar-link"
+  >
+    Filters
+  </a>
+  
+  <a
+    href="/docs/svelte/Save_Load.html"
+    class="sidebar-link"
+  >
+    Save/Load
+  </a>
+  
+  <a
+    href="/docs/svelte/Drag_And_Drop.html"
+    class="sidebar-link"
+  >
+    Drag and Drop
+  </a>
+  
+  <a
+    href="/docs/svelte/Konva_Node.html"
+    class="sidebar-link"
+  >
+    Konva Node
+  </a>
+  
+  <a
+    href="/docs/svelte/Transformer.html"
+    class="sidebar-link"
+  >
+    Transformer
+  </a>
+  
+  <a
+    href="/docs/svelte/Bindings.html"
+    class="sidebar-link"
+  >
+    Bindings
+  </a>
+  
+  <a
+    href="/docs/svelte/Simple_Animations.html"
+    class="sidebar-link"
+  >
+    Simple Animations
+  </a>
+  
+  <a
+    href="/docs/svelte/Cache.html"
+    class="sidebar-link"
+  >
+    Cache
+  </a>
+  
+  <a
+    href="/docs/svelte/Labels.html"
+    class="sidebar-link"
+  >
+    Labels
+  </a>
+  
+  <a
+    href="/docs/svelte/zIndex.html"
+    class="sidebar-link current"
+  >
+    Changing zIndex
+  </a>
+  
+  <a
+    href="/docs/svelte/SvelteKit.html"
+    class="sidebar-link"
+  >
+    SvelteKit
+  </a>
+   
+</aside>
+
+    <div class="page-content">
+      <!--<div class="toc-wrap">-->
+      <!--<strong class="toc-title">Contents</strong>-->
+      <!--<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Using-if-blocks"><span class="toc-number">1.</span> <span class="toc-text">Using if-blocks</span></a></li></ol>-->
+      <!--</div>-->
+      <div class="page-entry" itemprop="articleBody"><p>When working with other Konva-Wrappers like <code>vue-konva</code> or <code>react-konva</code> you might be used to the data order representing the drawing order of the components on the canvas. In svelte-konva such a functionality is currently not implemented as it is not possible to implement in Svelte 3 right now.</p>
+<p>Instead you should use the Konva native functions to perform dynamic reordering of components on the canvas like <code>node.zIndex(5)</code>, <code>node.moveToTop()</code>, etc. <a href="/docs/groups_and_layers/Layering.html">Tutorial</a>.</p>
+<h3 id="Using-if-blocks"><a href="#Using-if-blocks" class="headerlink" title="Using if-blocks"></a>Using if-blocks</h3><p>svelte-konva will follow the initial ordering of the components to draw the shapes on the canvas. This works fine in cases where you do not need to change the ordering dynamically during runtime. When using Svelte if-blocks to show/hide certain components you should know the following caveat. Consider the following example:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;Stage bind:config&#x3D;&#123;stageConfig&#125;&gt;</span><br><span class="line">    &lt;Layer&gt;</span><br><span class="line">        &lt;Rect bind:config&#x3D;&#123;rectConfig&#125; &#x2F;&gt;</span><br><span class="line">        &#123;#if showRing&#125;</span><br><span class="line">            &lt;Ring bind:config&#x3D;&#123;ringConfig&#125;&#x2F;&gt;</span><br><span class="line">        &#123;&#x2F;if&#125;</span><br><span class="line">        &lt;Circle bind:config&#x3D;&#123;circleConfig&#125; &#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;Layer&gt;</span><br><span class="line">&lt;&#x2F;Stage&gt;</span><br></pre></td></tr></table></figure>
+<p>Based on the ordering one would expect to see the circle drawn on the top of the canvas, followed by the ring and then the rect shapes. However, due to the if-block the ring might end up at the top of the canvas depending on the initial value and changes of <code>showRing</code>. This is caused by Svelte mounting/unmounting components inside if-blocks and svelte-konva drawing the shapes during mounting at the top of the canvas. If you want to avoid this behavior you should avoid Svelte if-blocks and use the <code>visible</code> config property to control whether a shape is visible or not. This way the component is not mounted/unmounted and maintains its initial drawing order on the canvas.</p>
+<p>Instructions: Try to drag a circle. See how it goes to the top. This is done by calling <code>moveToTop()</code> on the dragged shape handle.</p>
+<iframe src="https://codesandbox.io/p/sandbox/github/konvajs/site/tree/master/svelte-demos/zIndex?file=/src/App.svelte" style="width:100%; height:800px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+</div>
+      <footer id="page-footer"><a href="/docs/index.html" id="page-footer-next" title="Intro">Next</a></footer>
+      <div style="padding: 30px; font-size: 18px; text-align: center; color: grey">
+  Enjoying Konva? Please consider to
+  <a href="/docs/donate.html">support</a> the project.
+</div>
+
+<section id="comments" style="margin-top: 50px">
+  <div id="disqus_thread">
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="//disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+  </div>
+</section>
+
+
+    </div>
+  </div>
+</article>
+ <footer id="footer">
+  <div class="outer">
+      <div class="inner">
+          <!-- Begin Mailchimp Signup Form -->
+
+<!-- <iframe
+  class="mj-w-res-iframe"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://app.mailjet.com/widget/iframe/7P23/MU3"
+  style="height: 70px; margin: auto; width: 450px"
+></iframe> -->
+
+<!-- <script
+  type="text/javascript"
+  src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
+></script> -->
+
+<!--End mc_embed_signup-->
+
+        </div>
+    <div class="inner">
+      <div class="footer-resources">
+        <h3>Docs</h3>
+        <ul>
+          <li><a href="/docs">Tutorials</a></li>
+          <li><a href="/docs/overview.html">General Overview</a></li>
+          <li><a href="/api/Konva.html">API doc</a></li>
+
+          <li><a href="/docs/sandbox/index.html">Demos</a></li>
+          <li><a href="/docs/react/index.html">Usage with React</a></li>
+          <li><a href="/docs/vue/index.html">Usage with Vue</a></li>
+          <li>
+            <a href="https://github.com/konvajs/konva/blob/master/CHANGELOG.md"
+              >Changelog</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-resources">
+        <h3>CHANNELS</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/konvajs/konva" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://stackoverflow.com/questions/tagged/konvajs"
+              target="_blank"
+              >StackOverflow</a
+            >
+          </li>
+          <li><a href="https://discord.gg/8FqZwVT" target="_blank">Discord chat</a></li>
+          <li>
+            <a href="https://github.com/konvajs/konva/blob/master/CHANGELOG.md" target="_blank"
+              >Changelog</a
+            >
+          </li>
+        </ul>
+        
+      </div>
+      <div class="footer-resources">
+          <h3>More</h3>
+          <ul>
+            <li>
+              <a href="/docs/support.html"
+                >Need help?</a
+              >
+            </li>
+            <li>
+              <a
+                href="/docs/donate.html"
+                target="_blank"
+                >Donate</a>
+            </li>
+            <li>
+              <a
+                href="https://polotno.com/"
+                target="_blank"
+                >Design Editor SDK</a>
+            </li>
+          </ul>
+    </div>
+    <div class="inner">
+        <div id="footer-copyright">
+            &copy; 2023 KonvaJS<br />
+          </div>
+      <div id="footer-links">
+        <a
+          href="https://twitter.com/lavrton"
+          id="footer-link-twitter"
+          class="footer-link"
+          target="_blank"
+          ><span>Twitter</span></a
+        >
+        <a
+          href="https://github.com/konvajs/konva"
+          id="footer-link-github"
+          class="footer-link"
+          target="_blank"
+          ><span>GitHub</span></a
+        >
+      </div>
+    </div>
+  
+  </div>
+
+  <a class="chat-button" href="https://discord.gg/8FqZwVT" target="_blank" rel="noopener">Join discord chat</a>
+  
+  <!-- <iframe src="https://discord.com/widget?id=753274212814422176&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
+ 
+</footer>
+ 
+<!-- Disqus -->
+<script>
+  var disqus_shortname = 'konvajs';
+  
+  var disqus_url = 'https://konvajs.org/docs/svelte/zIndex.html';
+  
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.defer = true;
+      dsq.src = '//go.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha"
+/>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"
+></script>
+<script type="text/javascript">
+  docsearch({
+    apiKey: '79bc02f9230d7d4c985e6f543a0a6427',
+    appId: '8J5ZKQ6RXR',
+    indexName: 'konvajs',
+    container: '#search-container',
+    algoliaOptions: {
+      hitsPerPage: 10,
+      // See https://www.algolia.com/doc/api-reference/api-parameters/
+    },
+    // transformData: function (suggestions) {
+    //   // Transform the list of suggestions, and the return the updated list
+    //   suggestions.sort(function (a, b) {
+    //     if (a.url.indexOf('/api/') >= 0) {
+    //       return 1;
+    //     } else {
+    //       return -1;
+    //     }
+    //   });
+    //   return suggestions.slice(0, 10);
+    // },
+    debug: false, // Set debug to true if you want to inspect the dropdown
+  });
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="/js/retina.min.js"></script>
+ 
+<script src="/js/script.js"></script>
+
+<!-- Google+ -->
+<!-- <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script> -->
+<!-- Twitter -->
+<!-- <script>
+  !(function(d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  })(document, 'script', 'twitter-wjs');
+</script> -->
+
+  </body>
+</html>

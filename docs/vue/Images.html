@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+<title>
+   How to draw image on canvas with Vue? | Konva - JavaScript 2d canvas
+  library
+</title>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5"
+/>
+<link rel="canonical" href="https://konvajs.org/docs/vue/Images.html" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff" /> 
+<link rel="stylesheet" href="/css/style.css">
+
+<link
+  href="//fonts.googleapis.com/css?family=Lato:300,700"
+  rel="stylesheet"
+  type="text/css"
+/>
+<link
+  href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700"
+  rel="stylesheet"
+  type="text/css"
+/>
+<script
+  async
+  defer
+  data-domain="konvajs.org"
+  src="https://plausible.io/js/plausible.js"
+></script>
+<link rel="alternate" href="/atom.xml" title="Konva.js - JavaScript 2d canvas library"> <meta name="description" content="For images you need manually create native window.Image instance or canvas element and use it as image attribute of v-image component.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How to draw image on canvas with Vue?">
+<meta property="og:url" content="https://konvajs.org/docs/vue/Images.html">
+<meta property="og:site_name" content="Konva.js - JavaScript 2d canvas library">
+<meta property="og:description" content="For images you need manually create native window.Image instance or canvas element and use it as image attribute of v-image component.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://konvajs.org/logo.png">
+<meta property="article:published_time" content="2023-07-18T15:31:00.130Z">
+<meta property="article:modified_time" content="2023-07-18T15:31:00.130Z">
+<meta property="article:author" content="Anton Lavrenov">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://konvajs.org/logo.png">
+<meta name="twitter:site" content="@lavrton"> 
+
+  </head>
+  <body>
+    <header id="header">
+  <div class="outer">
+    <div class="inner">
+      <div id="logo-wrap">
+        <a href="/" id="logo">Konva</a>
+        <a id="main-nav-toggle"></a>
+      </div>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+          <li class="main-nav-item">
+            <a href="/docs/index.html" class="main-nav-link">
+              Tutorials
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/sandbox/index.html" class="main-nav-link">
+              Demos
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/api/Konva.html" class="main-nav-link">
+              API docs
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/react/Intro.html" class="main-nav-link">
+              React
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/vue/index.html" class="main-nav-link">
+              Vue
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/svelte/index.html" class="main-nav-link">
+              Svelte
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/donate.html" class="main-nav-link">
+              ❤️ Support Konva
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/support.html" class="main-nav-link">
+              Need help?
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <div id="search-container" />
+          </li>
+          <li class="main-nav-item">
+            <a
+              href="https://lavrton.com/consulting"
+              title="Consulting"
+              target="_blank"
+              class="main-nav-link"
+              style="
+                color: white;
+                background: #078c34;
+                padding: 10px;
+                border-radius: 10px;
+              "
+              >Consulting</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="https://github.com/konvajs/konva"
+          id="github-btn"
+          title="GitHub"
+          target="_blank"
+        ></a>
+        <a
+          href="https://twitter.com/lavrton"
+          id="twitter-btn"
+          title="Twitter"
+          target="_blank"
+        ></a>
+        <!--
+          <a id="search-btn" class="st-search-launcher" title="Search"></a>
+        -->
+      </nav>
+    </div>
+  </div>
+</header>
+ <article class="page" itemscope itemtype="http://schema.org/Article">
+  <header id="page-banner">
+    <div class="outer">
+      <div id="page-banner-inner">
+        <h1 id="page-title" itemprop="name">How to draw image on canvas with Vue?</h1>
+        <a
+          href="https://github.com/konvajs/site/blob/master/source/docs/vue/Images.md"
+          title="Improve this doc"
+          id="page-edit-link"
+        ></a>
+      </div>
+      <!-- Begin Mailchimp Signup Form -->
+
+<!-- <iframe
+  class="mj-w-res-iframe"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://app.mailjet.com/widget/iframe/7P23/MU3"
+  style="height: 70px; margin: auto; width: 450px"
+></iframe> -->
+
+<!-- <script
+  type="text/javascript"
+  src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
+></script> -->
+
+<!--End mc_embed_signup-->
+
+    </div>
+  </header>
+
+  <div class="outer">
+    <div id="mobile-menu-wrap"></div>
+    <aside id="sidebar">
+  
+    <strong class="sidebar-title">
+      Getting Started with Vue
+    </strong>
+    
+      <a href="/docs/vue/index.html" class="sidebar-link">
+        Intro
+      </a>
+      
+      <a href="/docs/vue/Shapes.html" class="sidebar-link">
+        Basic shapes
+      </a>
+      
+      <a href="/docs/vue/Custom_Shape.html" class="sidebar-link">
+        Custom shape
+      </a>
+      
+      <a href="/docs/vue/Events.html" class="sidebar-link">
+        Events
+      </a>
+      
+      <a href="/docs/vue/Images.html" class="sidebar-link current">
+        Images
+      </a>
+      
+      <a href="/docs/vue/Filters.html" class="sidebar-link">
+        Filters
+      </a>
+      
+      <a href="/docs/vue/Save-Load.html" class="sidebar-link">
+        Save/Load
+      </a>
+      
+      <a href="/docs/vue/Drag_And_Drop.html" class="sidebar-link">
+        Drag and Drop
+      </a>
+      
+      <a href="/docs/vue/Transformer.html" class="sidebar-link">
+        Transformer
+      </a>
+      
+      <a href="/docs/vue/Simple_Animations.html" class="sidebar-link">
+        Simple Animations
+      </a>
+      
+      <a href="/docs/vue/Cache.html" class="sidebar-link">
+        Cache
+      </a>
+      
+      <a href="/docs/vue/zIndex.html" class="sidebar-link">
+        Changing zIndex
+      </a>
+      
+        
+</aside>
+    <div class="page-content">
+      <!--<div class="toc-wrap">-->
+      <!--<strong class="toc-title">Contents</strong>-->
+      <!---->
+      <!--</div>-->
+      <div class="page-entry" itemprop="articleBody">
+        <p>For images you need manually create native window.Image instance or <code>canvas</code> element and use it as image attribute of <code>v-image</code> component.</p>
+<iframe src="https://codesandbox.io/embed/github/konvajs/site/tree/master/vue-demos/images?hidenavigation=1&view=split&fontsize=10&file=/src/App.vue" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+      </div>
+      <footer id="page-footer">
+        <a href="/docs/vue/Events.html" id="page-footer-prev" title="Events">Prev</a><a href="/docs/vue/Filters.html" id="page-footer-next" title="Filters">Next</a>
+      </footer>
+      <div style="padding: 30px; font-size: 18px; text-align: center; color: grey">
+  Enjoying Konva? Please consider to
+  <a href="/docs/donate.html">support</a> the project.
+</div>
+
+<section id="comments" style="margin-top: 50px">
+  <div id="disqus_thread">
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="//disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+  </div>
+</section>
+
+
+    </div>
+  </div>
+</article>
+ <footer id="footer">
+  <div class="outer">
+      <div class="inner">
+          <!-- Begin Mailchimp Signup Form -->
+
+<!-- <iframe
+  class="mj-w-res-iframe"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://app.mailjet.com/widget/iframe/7P23/MU3"
+  style="height: 70px; margin: auto; width: 450px"
+></iframe> -->
+
+<!-- <script
+  type="text/javascript"
+  src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
+></script> -->
+
+<!--End mc_embed_signup-->
+
+        </div>
+    <div class="inner">
+      <div class="footer-resources">
+        <h3>Docs</h3>
+        <ul>
+          <li><a href="/docs">Tutorials</a></li>
+          <li><a href="/docs/overview.html">General Overview</a></li>
+          <li><a href="/api/Konva.html">API doc</a></li>
+
+          <li><a href="/docs/sandbox/index.html">Demos</a></li>
+          <li><a href="/docs/react/index.html">Usage with React</a></li>
+          <li><a href="/docs/vue/index.html">Usage with Vue</a></li>
+          <li>
+            <a href="https://github.com/konvajs/konva/blob/master/CHANGELOG.md"
+              >Changelog</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-resources">
+        <h3>CHANNELS</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/konvajs/konva" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://stackoverflow.com/questions/tagged/konvajs"
+              target="_blank"
+              >StackOverflow</a
+            >
+          </li>
+          <li><a href="https://discord.gg/8FqZwVT" target="_blank">Discord chat</a></li>
+          <li>
+            <a href="https://github.com/konvajs/konva/blob/master/CHANGELOG.md" target="_blank"
+              >Changelog</a
+            >
+          </li>
+        </ul>
+        
+      </div>
+      <div class="footer-resources">
+          <h3>More</h3>
+          <ul>
+            <li>
+              <a href="/docs/support.html"
+                >Need help?</a
+              >
+            </li>
+            <li>
+              <a
+                href="/docs/donate.html"
+                target="_blank"
+                >Donate</a>
+            </li>
+            <li>
+              <a
+                href="https://polotno.com/"
+                target="_blank"
+                >Design Editor SDK</a>
+            </li>
+          </ul>
+    </div>
+    <div class="inner">
+        <div id="footer-copyright">
+            &copy; 2023 KonvaJS<br />
+          </div>
+      <div id="footer-links">
+        <a
+          href="https://twitter.com/lavrton"
+          id="footer-link-twitter"
+          class="footer-link"
+          target="_blank"
+          ><span>Twitter</span></a
+        >
+        <a
+          href="https://github.com/konvajs/konva"
+          id="footer-link-github"
+          class="footer-link"
+          target="_blank"
+          ><span>GitHub</span></a
+        >
+      </div>
+    </div>
+  
+  </div>
+
+  <a class="chat-button" href="https://discord.gg/8FqZwVT" target="_blank" rel="noopener">Join discord chat</a>
+  
+  <!-- <iframe src="https://discord.com/widget?id=753274212814422176&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
+ 
+</footer>
+ 
+<!-- Disqus -->
+<script>
+  var disqus_shortname = 'konvajs';
+  
+  var disqus_url = 'https://konvajs.org/docs/vue/Images.html';
+  
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.defer = true;
+      dsq.src = '//go.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha"
+/>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"
+></script>
+<script type="text/javascript">
+  docsearch({
+    apiKey: '79bc02f9230d7d4c985e6f543a0a6427',
+    appId: '8J5ZKQ6RXR',
+    indexName: 'konvajs',
+    container: '#search-container',
+    algoliaOptions: {
+      hitsPerPage: 10,
+      // See https://www.algolia.com/doc/api-reference/api-parameters/
+    },
+    // transformData: function (suggestions) {
+    //   // Transform the list of suggestions, and the return the updated list
+    //   suggestions.sort(function (a, b) {
+    //     if (a.url.indexOf('/api/') >= 0) {
+    //       return 1;
+    //     } else {
+    //       return -1;
+    //     }
+    //   });
+    //   return suggestions.slice(0, 10);
+    // },
+    debug: false, // Set debug to true if you want to inspect the dropdown
+  });
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="/js/retina.min.js"></script>
+ 
+<script src="/js/script.js"></script>
+
+<!-- Google+ -->
+<!-- <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script> -->
+<!-- Twitter -->
+<!-- <script>
+  !(function(d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  })(document, 'script', 'twitter-wjs');
+</script> -->
+
+  </body>
+</html>
