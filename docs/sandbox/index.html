@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+<title>
+   Framework Demos | Konva - JavaScript 2d canvas
+  library
+</title>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5"
+/>
+<link rel="canonical" href="https://konvajs.org/docs/sandbox/index.html" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff" /> 
+<link rel="stylesheet" href="/css/style.css">
+
+<link
+  href="//fonts.googleapis.com/css?family=Lato:300,700"
+  rel="stylesheet"
+  type="text/css"
+/>
+<link
+  href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700"
+  rel="stylesheet"
+  type="text/css"
+/>
+<script
+  async
+  defer
+  data-domain="konvajs.org"
+  src="https://plausible.io/js/plausible.js"
+></script>
+<link rel="alternate" href="/atom.xml" title="Konva.js - JavaScript 2d canvas library"> <meta name="description" content="Demos and samples of Konva framework">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Framework Demos">
+<meta property="og:url" content="https://konvajs.org/docs/sandbox/index.html">
+<meta property="og:site_name" content="Konva.js - JavaScript 2d canvas library">
+<meta property="og:description" content="Demos and samples of Konva framework">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://konvajs.org/logo.png">
+<meta property="article:published_time" content="2024-12-23T14:29:37.840Z">
+<meta property="article:modified_time" content="2024-12-23T14:29:37.840Z">
+<meta property="article:author" content="Anton Lavrenov">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://konvajs.org/logo.png">
+<meta name="twitter:site" content="@lavrton"> 
+
+  </head>
+  <body>
+    <header id="header">
+  <div class="outer">
+    <div class="inner">
+      <div id="logo-wrap">
+        <a href="/" id="logo">Konva</a>
+        <a id="main-nav-toggle"></a>
+      </div>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+          <li class="main-nav-item">
+            <a href="/docs/index.html" class="main-nav-link">
+              Tutorials
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/sandbox/index.html" class="main-nav-link">
+              Demos
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/api/Konva.html" class="main-nav-link">
+              API docs
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/react/Intro.html" class="main-nav-link">
+              React
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/vue/index.html" class="main-nav-link">
+              Vue
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/svelte/index.html" class="main-nav-link">
+              Svelte
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/donate.html" class="main-nav-link">
+              ❤️ Support Konva
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/support.html" class="main-nav-link">
+              Need help?
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <div id="search-container" />
+          </li>
+          <li class="main-nav-item">
+            <a
+              href="https://lavrton.com/consulting"
+              title="Consulting"
+              target="_blank"
+              class="main-nav-link"
+              style="
+                color: white;
+                background: #078c34;
+                padding: 10px;
+                border-radius: 10px;
+              "
+              >Consulting</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="https://github.com/konvajs/konva"
+          id="github-btn"
+          title="GitHub"
+          target="_blank"
+        ></a>
+        <a
+          href="https://twitter.com/lavrton"
+          id="twitter-btn"
+          title="Twitter"
+          target="_blank"
+        ></a>
+        <!--
+          <a id="search-btn" class="st-search-launcher" title="Search"></a>
+        -->
+      </nav>
+    </div>
+  </div>
+</header>
+ <article class="page" itemscope itemtype="http://schema.org/Article">
+  <div id="mobile-menu-wrap"></div>
+  <header id="page-banner">
+    <div class="outer">
+      <div id="page-banner-inner" class="inner">
+        <h1 id="page-title" itemprop="name">Framework Demos</h1>
+        <a
+          href="https://github.com/konvajs/site/blob/master/source/docs/sandbox/index.md"
+          title="Improve this doc"
+          id="page-edit-link"
+        ></a>
+      </div>
+      <!-- Begin Mailchimp Signup Form -->
+
+<!-- <iframe
+  class="mj-w-res-iframe"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://app.mailjet.com/widget/iframe/7P23/MU3"
+  style="height: 70px; margin: auto; width: 450px"
+></iframe> -->
+
+<!-- <script
+  type="text/javascript"
+  src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
+></script> -->
+
+<!--End mc_embed_signup-->
+
+    </div>
+  </header>
+  
+  <div class="demo-into">There are some demos of the Konva Framework. But also we have a lot of <a href="/docs/">tutorials</a> for almost every aspect of the framework.</div>
+  <div class="outer">
+  
+    <h2 class="section-title">
+      CAD Systems
+    </h2>
+    <div class="grid-container"></div>
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Canvas_Editor.html">
+              <div class="preview" style="background-image: url(/assets/demos/polotno.jpg);"></div>
+              <div class="description">
+                <h4>Canvas Editor</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Simple_Window_Frame.html">
+              <div class="preview" style="background-image: url(/assets/demos/simple-window.png);"></div>
+              <div class="description">
+                <h4>Simple Window Frame</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Window_Frame_Designer.html">
+              <div class="preview" style="background-image: url(/assets/demos/window.png);"></div>
+              <div class="description">
+                <h4>Window Frame Designer</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Seats_Reservation.html">
+              <div class="preview" style="background-image: url(/assets/demos/seats-reservation.jpg);"></div>
+              <div class="description">
+                <h4>Seats Reservation</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Image_Labeling.html">
+              <div class="preview" style="background-image: url(/assets/demos/annotate.jpg);"></div>
+              <div class="description">
+                <h4>Drawing Labels on Image</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Interactive_Building_Map.html">
+              <div class="preview" style="background-image: url(/assets/demos/building_map-min.png);"></div>
+              <div class="description">
+                <h4>Interactive Building Map</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+  
+  
+    <h2 class="section-title">
+      Games and Apps
+    </h2>
+    <div class="grid-container"></div>
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Wheel_of_Fortune.html">
+              <div class="preview" style="background-image: url(/assets/demos/wheel-of-fortune-min.png);"></div>
+              <div class="description">
+                <h4>Wheel of Fortune</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Free_Drawing.html">
+              <div class="preview" style="background-image: url(/assets/demos/free-drawing-min.png);"></div>
+              <div class="description">
+                <h4>Free Drawing</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Animals_on_the_Beach_Game.html">
+              <div class="preview" style="background-image: url(/assets/demos/animals-min.png);"></div>
+              <div class="description">
+                <h4>Animals on the Beach Game</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Planets_Image_Map.html">
+              <div class="preview" style="background-image: url(/assets/demos/planet-min.png);"></div>
+              <div class="description">
+                <h4>Planets Image Map</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Physics_Simulator.html">
+              <div class="preview" style="background-image: url(/assets/demos/simulator-min.png);"></div>
+              <div class="description">
+                <h4>Physics Simulator</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+  
+  
+    <h2 class="section-title">
+      Common use cases
+    </h2>
+    <div class="grid-container"></div>
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Editable_Text.html">
+              <div class="preview" style="background-image: url(/assets/demos/editable_text-min.png);"></div>
+              <div class="description">
+                <h4>Editable Text</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Rich_Text.html">
+              <div class="preview" style="background-image: url(/assets/demos/rich-text.jpg);"></div>
+              <div class="description">
+                <h4>Rich Text rendering</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Canvas_Scrolling.html">
+              <div class="preview" style="background-image: url(/assets/demos/scroll.png);"></div>
+              <div class="description">
+                <h4>Canvas Scrolling</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Scroll_By_Edge_Drag.html">
+              <div class="preview" style="background-image: url(/assets/demos/scroll.png);"></div>
+              <div class="description">
+                <h4>Scroll by Edge Drag</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/GIF_On_Canvas.html">
+              <div class="preview" style="background-image: url(/assets/demos/gif.jpg);"></div>
+              <div class="description">
+                <h4>Gif Animation</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Video_On_Canvas.html">
+              <div class="preview" style="background-image: url(/assets/demos/video.jpg);"></div>
+              <div class="description">
+                <h4>Display Video</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/SVG_On_Canvas.html">
+              <div class="preview" style="background-image: url(/assets/demos/svg_on_canvas.jpg);"></div>
+              <div class="description">
+                <h4>SVG on Canvas</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Canvas_Background.html">
+              <div class="preview" style="background-image: url(/assets/demos/canvas-background.jpg);"></div>
+              <div class="description">
+                <h4>Canvas Background</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Transparent_Group.html">
+              <div class="preview" style="background-image: url(/assets/demos/transparent-group.jpg);"></div>
+              <div class="description">
+                <h4>Transparent Group</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Mirror_Canvas_Shape.html">
+              <div class="preview" style="background-image: url(/assets/demos/mirror-shape.jpg);"></div>
+              <div class="description">
+                <h4>Mirror/Flip Shape</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Canvas_to_PDF.html">
+              <div class="preview" style="background-image: url(/assets/demos/pdf.jpg);"></div>
+              <div class="description">
+                <h4>Canvas to PDF</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Custom_Font.html">
+              <div class="preview" style="background-image: url(/assets/demos/custom-font.png);"></div>
+              <div class="description">
+                <h4>Custom Font</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Relative_Pointer_Position.html">
+              <div class="preview" style="background-image: url(/assets/demos/pointer.png);"></div>
+              <div class="description">
+                <h4>Relative Pointer Position</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Drop_DOM_Element.html">
+              <div class="preview" style="background-image: url(/assets/demos/drop.png);"></div>
+              <div class="description">
+                <h4>Drop DOM Element</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Objects_Snapping.html">
+              <div class="preview" style="background-image: url(/assets/demos/objects_snapping.png);"></div>
+              <div class="description">
+                <h4>Objects Snapping</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Zooming_Relative_To_Pointer.html">
+              <div class="preview" style="background-image: url(/assets/demos/relative_zoom-min.png);"></div>
+              <div class="description">
+                <h4>Zoom Relative To Pointer</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Canvas_Context_Menu.html">
+              <div class="preview" style="background-image: url(/assets/demos/context.jpg);"></div>
+              <div class="description">
+                <h4>Context Menu</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Scale_Image_To_Fit.html">
+              <div class="preview" style="background-image: url(/assets/demos/fit-image.jpg);"></div>
+              <div class="description">
+                <h4>Image Scale To Fit</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Limited_Drag_And_Resize.html">
+              <div class="preview" style="background-image: url(/assets/demos/resize-limit.jpg);"></div>
+              <div class="description">
+                <h4>Limit Resize and Drag</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+  
+  
+    <h2 class="section-title">
+      Performance tests
+    </h2>
+    <div class="grid-container"></div>
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Drag_and_Drop_Stress_Test.html">
+              <div class="preview" style="background-image: url(/assets/demos/drag_stress-min.png);"></div>
+              <div class="description">
+                <h4>Drag and Drop Stress Test</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Animation_Stress_Test.html">
+              <div class="preview" style="background-image: url(/assets/demos/animation_stress-min.png);"></div>
+              <div class="description">
+                <h4>Animation Stress Test</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Jumping_Bunnies.html">
+              <div class="preview" style="background-image: url(/assets/demos/bunnies.jpg);"></div>
+              <div class="description">
+                <h4>Bunnies Stress Test</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/10000_Shapes_with_Tooltip.html">
+              <div class="preview" style="background-image: url(/assets/demos/tooltip_stress-min.png);"></div>
+              <div class="description">
+                <h4>10000 Shapes with Tooltip</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/20000_Nodes.html">
+              <div class="preview" style="background-image: url(/assets/demos/2000_nodes-min.png);"></div>
+              <div class="description">
+                <h4>20000 Nodes</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Resizing_Stress_Test.html">
+              <div class="preview" style="background-image: url(/assets/demos/resize_stress.jpg);"></div>
+              <div class="description">
+                <h4>Resizing Stress Test</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Quantum_Squiggle.html">
+              <div class="preview" style="background-image: url(/assets/demos/squiggle-min.png);"></div>
+              <div class="description">
+                <h4>Quantum Squiggle</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+  
+  
+    <h2 class="section-title">
+      Other random demos
+    </h2>
+    <div class="grid-container"></div>
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Web_Worker.html">
+              <div class="preview" style="background-image: url(/assets/demos/offscreen.jpg);"></div>
+              <div class="description">
+                <h4>Web Worker</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Star_Spinner.html">
+              <div class="preview" style="background-image: url(/assets/demos/spinner-min.png);"></div>
+              <div class="description">
+                <h4>Star Spinner</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Connected_Objects.html">
+              <div class="preview" style="background-image: url(/assets/demos/connected-objects.png);"></div>
+              <div class="description">
+                <h4>Connected Objects</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Image_Resize.html">
+              <div class="preview" style="background-image: url(/assets/demos/image-resize-min.png);"></div>
+              <div class="description">
+                <h4>Manual Image Resize</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Stage_Preview.html">
+              <div class="preview" style="background-image: url(/assets/demos/preview.jpg);"></div>
+              <div class="description">
+                <h4>Stage Preview</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Modify_Curves_with_Anchor_Points.html">
+              <div class="preview" style="background-image: url(/assets/demos/modify-line-min.png);"></div>
+              <div class="description">
+                <h4>Modify Curves with Anchor Points</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Image_Border.html">
+              <div class="preview" style="background-image: url(/assets/demos/border.jpg);"></div>
+              <div class="description">
+                <h4>Image Border</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Collision_Detection.html">
+              <div class="preview" style="background-image: url(/assets/demos/collision-min.png);"></div>
+              <div class="description">
+                <h4>Collision Detection</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Elastic_Stars.html">
+              <div class="preview" style="background-image: url(/assets/demos/stars-min.png);"></div>
+              <div class="description">
+                <h4>Elastic Stars</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Shape_Tango.html">
+              <div class="preview" style="background-image: url(/assets/demos/tango-min.png);"></div>
+              <div class="description">
+                <h4>Shape Tango</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Image_Border_Highlighting.html">
+              <div class="preview" style="background-image: url(/assets/demos/border-min.png);"></div>
+              <div class="description">
+                <h4>Image Border Highlighting</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Zoom_Layer_On_hover.html">
+              <div class="preview" style="background-image: url(/assets/demos/hover_zoom-min.png);"></div>
+              <div class="description">
+                <h4>Zoom Layer On hover</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Responsive_Canvas.html">
+              <div class="preview" style="background-image: url(/assets/demos/responsive-min.png);"></div>
+              <div class="description">
+                <h4>Responsive Canvas Stage</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Gestures.html">
+              <div class="preview" style="background-image: url(/assets/demos/gestures.jpg);"></div>
+              <div class="description">
+                <h4>Touch Gestures</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Multi-touch_Scale_Shape.html">
+              <div class="preview" style="background-image: url(/assets/demos/multitouch-min.png);"></div>
+              <div class="description">
+                <h4>Multi-touch Scale Shape</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Multi-touch_Scale_Stage.html">
+              <div class="preview" style="background-image: url(/assets/demos/multitouch-min.png);"></div>
+              <div class="description">
+                <h4>Multi-touch Scale Stage</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Modify_Shape_Color_on_Click.html">
+              <div class="preview" style="background-image: url(/assets/demos/color_click-min.png);"></div>
+              <div class="description">
+                <h4>Modify Shape Color on Click</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Expand_Images_on_Hover.html">
+              <div class="preview" style="background-image: url(/assets/demos/hover_expand-min.png);"></div>
+              <div class="description">
+                <h4>Expand Images on Hover</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Shape_Tooltips.html">
+              <div class="preview" style="background-image: url(/assets/demos/shape_tooltip-min.png);"></div>
+              <div class="description">
+                <h4>Shape Tooltip</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+        
+          <div class="grid-item small">
+            <a href="/docs/sandbox/Drag_and_Drop_Multiple_Shapes.html">
+              <div class="preview" style="background-image: url(/assets/demos/drag_multiple-min.png);"></div>
+              <div class="description">
+                <h4>Drag and Drop Multiple Shapes</h4>
+              </div>
+            </a>
+          </div>
+        
+    
+  
+  
+</div>
+</div>
+</article>
+ <footer id="footer">
+  <div class="outer">
+      <div class="inner">
+          <!-- Begin Mailchimp Signup Form -->
+
+<!-- <iframe
+  class="mj-w-res-iframe"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://app.mailjet.com/widget/iframe/7P23/MU3"
+  style="height: 70px; margin: auto; width: 450px"
+></iframe> -->
+
+<!-- <script
+  type="text/javascript"
+  src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
+></script> -->
+
+<!--End mc_embed_signup-->
+
+        </div>
+    <div class="inner">
+      <div class="footer-resources">
+        <h3>Docs</h3>
+        <ul>
+          <li><a href="/docs">Tutorials</a></li>
+          <li><a href="/docs/overview.html">General Overview</a></li>
+          <li><a href="/api/Konva.html">API doc</a></li>
+
+          <li><a href="/docs/sandbox/index.html">Demos</a></li>
+          <li><a href="/docs/react/index.html">Usage with React</a></li>
+          <li><a href="/docs/vue/index.html">Usage with Vue</a></li>
+          <li>
+            <a href="https://github.com/konvajs/konva/blob/master/CHANGELOG.md"
+              >Changelog</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-resources">
+        <h3>CHANNELS</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/konvajs/konva" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://stackoverflow.com/questions/tagged/konvajs"
+              target="_blank"
+              >StackOverflow</a
+            >
+          </li>
+          <li><a href="https://discord.gg/8FqZwVT" target="_blank">Discord chat</a></li>
+          <li>
+            <a href="https://github.com/konvajs/konva/blob/master/CHANGELOG.md" target="_blank"
+              >Changelog</a
+            >
+          </li>
+        </ul>
+        
+      </div>
+      <div class="footer-resources">
+          <h3>More</h3>
+          <ul>
+            <li>
+              <a href="/docs/support.html"
+                >Need help?</a
+              >
+            </li>
+            <li>
+              <a
+                href="/docs/donate.html"
+                target="_blank"
+                >Donate</a>
+            </li>
+            <li>
+              <a
+                href="https://polotno.com/"
+                target="_blank"
+                >Design Editor SDK</a>
+            </li>
+          </ul>
+    </div>
+    <div class="inner">
+        <div id="footer-copyright">
+            &copy; 2025 KonvaJS<br />
+          </div>
+      <div id="footer-links">
+        <a
+          href="https://twitter.com/lavrton"
+          id="footer-link-twitter"
+          class="footer-link"
+          target="_blank"
+          ><span>Twitter</span></a
+        >
+        <a
+          href="https://github.com/konvajs/konva"
+          id="footer-link-github"
+          class="footer-link"
+          target="_blank"
+          ><span>GitHub</span></a
+        >
+      </div>
+    </div>
+  
+  </div>
+
+  <a class="chat-button" href="https://discord.gg/8FqZwVT" target="_blank" rel="noopener">Join discord chat</a>
+  
+  <!-- <iframe src="https://discord.com/widget?id=753274212814422176&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
+ 
+</footer>
+ 
+<!-- Disqus -->
+<script>
+  var disqus_shortname = 'konvajs';
+  
+  var disqus_url = 'https://konvajs.org/docs/sandbox/index.html';
+  
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.defer = true;
+      dsq.src = '//go.disqus.com/count.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha"
+/>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"
+></script>
+<script type="text/javascript">
+  docsearch({
+    apiKey: '79bc02f9230d7d4c985e6f543a0a6427',
+    appId: '8J5ZKQ6RXR',
+    indexName: 'konvajs',
+    container: '#search-container',
+    algoliaOptions: {
+      hitsPerPage: 10,
+      // See https://www.algolia.com/doc/api-reference/api-parameters/
+    },
+    // transformData: function (suggestions) {
+    //   // Transform the list of suggestions, and the return the updated list
+    //   suggestions.sort(function (a, b) {
+    //     if (a.url.indexOf('/api/') >= 0) {
+    //       return 1;
+    //     } else {
+    //       return -1;
+    //     }
+    //   });
+    //   return suggestions.slice(0, 10);
+    // },
+    debug: false, // Set debug to true if you want to inspect the dropdown
+  });
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="/js/retina.min.js"></script>
+ 
+<script src="/js/script.js"></script>
+
+<!-- Google+ -->
+<!-- <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script> -->
+<!-- Twitter -->
+<!-- <script>
+  !(function(d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  })(document, 'script', 'twitter-wjs');
+</script> -->
+
+  </body>
+  <script type="text/javascript">
+    !(function (e, t) {
+      ((e = t.createElement('script')).src =
+        'https://cdn.convertbox.com/convertbox/js/embed.js'),
+        (e.id = 'app-convertbox-script'),
+        (e.async = true),
+        (e.dataset.uuid = 'db9e320b-6d6c-49c4-ba5c-b29e6d5fc91c'),
+        document.getElementsByTagName('head')[0].appendChild(e);
+    })(window, document);
+  </script>
+</html>

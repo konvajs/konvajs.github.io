@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+<title>
+   How to use custom font for HTML5 canvas? | Konva - JavaScript 2d canvas
+  library
+</title>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5"
+/>
+<link rel="canonical" href="https://konvajs.org/docs/sandbox/Custom_Font.html" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff" /> 
+<link rel="stylesheet" href="/css/style.css">
+
+<link
+  href="//fonts.googleapis.com/css?family=Lato:300,700"
+  rel="stylesheet"
+  type="text/css"
+/>
+<link
+  href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700"
+  rel="stylesheet"
+  type="text/css"
+/>
+<script
+  async
+  defer
+  data-domain="konvajs.org"
+  src="https://plausible.io/js/plausible.js"
+></script>
+<link rel="alternate" href="/atom.xml" title="Konva.js - JavaScript 2d canvas library"> <meta name="description" content="How to draw external font on html5 canvas?If you want to use custom font for Konva.Text you just need to:  Add font style to your page Set fontFamily attribute to required font-face.  But there is one">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How to use custom font for HTML5 canvas?">
+<meta property="og:url" content="https://konvajs.org/docs/sandbox/Custom_Font.html">
+<meta property="og:site_name" content="Konva.js - JavaScript 2d canvas library">
+<meta property="og:description" content="How to draw external font on html5 canvas?If you want to use custom font for Konva.Text you just need to:  Add font style to your page Set fontFamily attribute to required font-face.  But there is one">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://konvajs.org/logo.png">
+<meta property="article:published_time" content="2024-12-23T14:29:37.837Z">
+<meta property="article:modified_time" content="2024-12-23T14:29:37.837Z">
+<meta property="article:author" content="Anton Lavrenov">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://konvajs.org/logo.png">
+<meta name="twitter:site" content="@lavrton"> 
+
+  </head>
+  <body>
+    <header id="header">
+  <div class="outer">
+    <div class="inner">
+      <div id="logo-wrap">
+        <a href="/" id="logo">Konva</a>
+        <a id="main-nav-toggle"></a>
+      </div>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+          <li class="main-nav-item">
+            <a href="/docs/index.html" class="main-nav-link">
+              Tutorials
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/sandbox/index.html" class="main-nav-link">
+              Demos
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/api/Konva.html" class="main-nav-link">
+              API docs
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/react/Intro.html" class="main-nav-link">
+              React
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/vue/index.html" class="main-nav-link">
+              Vue
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/svelte/index.html" class="main-nav-link">
+              Svelte
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/donate.html" class="main-nav-link">
+              ❤️ Support Konva
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/support.html" class="main-nav-link">
+              Need help?
+            </a>
+          </li>
+          
+          <li class="main-nav-item">
+            <div id="search-container" />
+          </li>
+          <li class="main-nav-item">
+            <a
+              href="https://lavrton.com/consulting"
+              title="Consulting"
+              target="_blank"
+              class="main-nav-link"
+              style="
+                color: white;
+                background: #078c34;
+                padding: 10px;
+                border-radius: 10px;
+              "
+              >Consulting</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="https://github.com/konvajs/konva"
+          id="github-btn"
+          title="GitHub"
+          target="_blank"
+        ></a>
+        <a
+          href="https://twitter.com/lavrton"
+          id="twitter-btn"
+          title="Twitter"
+          target="_blank"
+        ></a>
+        <!--
+          <a id="search-btn" class="st-search-launcher" title="Search"></a>
+        -->
+      </nav>
+    </div>
+  </div>
+</header>
+ <article class="page" itemscope itemtype="http://schema.org/Article">
+  <header id="page-banner">
+    <div class="outer">
+      <div id="page-banner-inner">
+        <h1 id="page-title" itemprop="name">How to use custom font for HTML5 canvas?</h1>
+        <a
+          href="https://github.com/konvajs/site/blob/master/source/docs/sandbox/Custom_Font.md"
+          title="Improve this doc"
+          id="page-edit-link"
+        ></a>
+      </div>
+      <!-- Begin Mailchimp Signup Form -->
+
+<!-- <iframe
+  class="mj-w-res-iframe"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://app.mailjet.com/widget/iframe/7P23/MU3"
+  style="height: 70px; margin: auto; width: 450px"
+></iframe> -->
+
+<!-- <script
+  type="text/javascript"
+  src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
+></script> -->
+
+<!--End mc_embed_signup-->
+
+    </div>
+  </header>
+
+  <div class="outer">
+    <div id="mobile-menu-wrap"></div>
+    <aside id="sidebar">
+  
+    <strong class="sidebar-title">
+      CAD Systems
+    </strong>
+    
+      <a href="/docs/sandbox/Canvas_Editor.html" class="sidebar-link">
+        Canvas Editor
+      </a>
+      
+      <a href="/docs/sandbox/Simple_Window_Frame.html" class="sidebar-link">
+        Simple Window Frame
+      </a>
+      
+      <a href="/docs/sandbox/Window_Frame_Designer.html" class="sidebar-link">
+        Window Frame Designer
+      </a>
+      
+      <a href="/docs/sandbox/Seats_Reservation.html" class="sidebar-link">
+        Seats Reservation
+      </a>
+      
+      <a href="/docs/sandbox/Image_Labeling.html" class="sidebar-link">
+        Drawing Labels on Image
+      </a>
+      
+      <a href="/docs/sandbox/Interactive_Building_Map.html" class="sidebar-link">
+        Interactive Building Map
+      </a>
+      
+        
+    <strong class="sidebar-title">
+      Games and Apps
+    </strong>
+    
+      <a href="/docs/sandbox/Wheel_of_Fortune.html" class="sidebar-link">
+        Wheel of Fortune
+      </a>
+      
+      <a href="/docs/sandbox/Free_Drawing.html" class="sidebar-link">
+        Free Drawing
+      </a>
+      
+      <a href="/docs/sandbox/Animals_on_the_Beach_Game.html" class="sidebar-link">
+        Animals on the Beach Game
+      </a>
+      
+      <a href="/docs/sandbox/Planets_Image_Map.html" class="sidebar-link">
+        Planets Image Map
+      </a>
+      
+      <a href="/docs/sandbox/Physics_Simulator.html" class="sidebar-link">
+        Physics Simulator
+      </a>
+      
+        
+    <strong class="sidebar-title">
+      Common use cases
+    </strong>
+    
+      <a href="/docs/sandbox/Editable_Text.html" class="sidebar-link">
+        Editable Text
+      </a>
+      
+      <a href="/docs/sandbox/Rich_Text.html" class="sidebar-link">
+        Rich Text rendering
+      </a>
+      
+      <a href="/docs/sandbox/Canvas_Scrolling.html" class="sidebar-link">
+        Canvas Scrolling
+      </a>
+      
+      <a href="/docs/sandbox/Scroll_By_Edge_Drag.html" class="sidebar-link">
+        Scroll by Edge Drag
+      </a>
+      
+      <a href="/docs/sandbox/GIF_On_Canvas.html" class="sidebar-link">
+        Gif Animation
+      </a>
+      
+      <a href="/docs/sandbox/Video_On_Canvas.html" class="sidebar-link">
+        Display Video
+      </a>
+      
+      <a href="/docs/sandbox/SVG_On_Canvas.html" class="sidebar-link">
+        SVG on Canvas
+      </a>
+      
+      <a href="/docs/sandbox/Canvas_Background.html" class="sidebar-link">
+        Canvas Background
+      </a>
+      
+      <a href="/docs/sandbox/Transparent_Group.html" class="sidebar-link">
+        Transparent Group
+      </a>
+      
+      <a href="/docs/sandbox/Mirror_Canvas_Shape.html" class="sidebar-link">
+        Mirror/Flip Shape
+      </a>
+      
+      <a href="/docs/sandbox/Canvas_to_PDF.html" class="sidebar-link">
+        Canvas to PDF
+      </a>
+      
+      <a href="/docs/sandbox/Custom_Font.html" class="sidebar-link current">
+        Custom Font
+      </a>
+      
+      <a href="/docs/sandbox/Relative_Pointer_Position.html" class="sidebar-link">
+        Relative Pointer Position
+      </a>
+      
+      <a href="/docs/sandbox/Drop_DOM_Element.html" class="sidebar-link">
+        Drop DOM Element
+      </a>
+      
+      <a href="/docs/sandbox/Objects_Snapping.html" class="sidebar-link">
+        Objects Snapping
+      </a>
+      
+      <a href="/docs/sandbox/Zooming_Relative_To_Pointer.html" class="sidebar-link">
+        Zoom Relative To Pointer
+      </a>
+      
+      <a href="/docs/sandbox/Canvas_Context_Menu.html" class="sidebar-link">
+        Context Menu
+      </a>
+      
+      <a href="/docs/sandbox/Scale_Image_To_Fit.html" class="sidebar-link">
+        Image Scale To Fit
+      </a>
+      
+      <a href="/docs/sandbox/Limited_Drag_And_Resize.html" class="sidebar-link">
+        Limit Resize and Drag
+      </a>
+      
+        
+    <strong class="sidebar-title">
+      Performance tests
+    </strong>
+    
+      <a href="/docs/sandbox/Drag_and_Drop_Stress_Test.html" class="sidebar-link">
+        Drag and Drop Stress Test
+      </a>
+      
+      <a href="/docs/sandbox/Animation_Stress_Test.html" class="sidebar-link">
+        Animation Stress Test
+      </a>
+      
+      <a href="/docs/sandbox/Jumping_Bunnies.html" class="sidebar-link">
+        Bunnies Stress Test
+      </a>
+      
+      <a href="/docs/sandbox/10000_Shapes_with_Tooltip.html" class="sidebar-link">
+        10000 Shapes with Tooltip
+      </a>
+      
+      <a href="/docs/sandbox/20000_Nodes.html" class="sidebar-link">
+        20000 Nodes
+      </a>
+      
+      <a href="/docs/sandbox/Resizing_Stress_Test.html" class="sidebar-link">
+        Resizing Stress Test
+      </a>
+      
+      <a href="/docs/sandbox/Quantum_Squiggle.html" class="sidebar-link">
+        Quantum Squiggle
+      </a>
+      
+        
+    <strong class="sidebar-title">
+      Other random demos
+    </strong>
+    
+      <a href="/docs/sandbox/Web_Worker.html" class="sidebar-link">
+        Web Worker
+      </a>
+      
+      <a href="/docs/sandbox/Star_Spinner.html" class="sidebar-link">
+        Star Spinner
+      </a>
+      
+      <a href="/docs/sandbox/Connected_Objects.html" class="sidebar-link">
+        Connected Objects
+      </a>
+      
+      <a href="/docs/sandbox/Image_Resize.html" class="sidebar-link">
+        Manual Image Resize
+      </a>
+      
+      <a href="/docs/sandbox/Stage_Preview.html" class="sidebar-link">
+        Stage Preview
+      </a>
+      
+      <a href="/docs/sandbox/Modify_Curves_with_Anchor_Points.html" class="sidebar-link">
+        Modify Curves with Anchor Points
+      </a>
+      
+      <a href="/docs/sandbox/Image_Border.html" class="sidebar-link">
+        Image Border
+      </a>
+      
+      <a href="/docs/sandbox/Collision_Detection.html" class="sidebar-link">
+        Collision Detection
+      </a>
+      
+      <a href="/docs/sandbox/Elastic_Stars.html" class="sidebar-link">
+        Elastic Stars
+      </a>
+      
+      <a href="/docs/sandbox/Shape_Tango.html" class="sidebar-link">
+        Shape Tango
+      </a>
+      
+      <a href="/docs/sandbox/Image_Border_Highlighting.html" class="sidebar-link">
+        Image Border Highlighting
+      </a>
+      
+      <a href="/docs/sandbox/Zoom_Layer_On_hover.html" class="sidebar-link">
+        Zoom Layer On hover
+      </a>
+      
+      <a href="/docs/sandbox/Responsive_Canvas.html" class="sidebar-link">
+        Responsive Canvas Stage
+      </a>
+      
+      <a href="/docs/sandbox/Gestures.html" class="sidebar-link">
+        Touch Gestures
+      </a>
+      
+      <a href="/docs/sandbox/Multi-touch_Scale_Shape.html" class="sidebar-link">
+        Multi-touch Scale Shape
+      </a>
+      
+      <a href="/docs/sandbox/Multi-touch_Scale_Stage.html" class="sidebar-link">
+        Multi-touch Scale Stage
+      </a>
+      
+      <a href="/docs/sandbox/Modify_Shape_Color_on_Click.html" class="sidebar-link">
+        Modify Shape Color on Click
+      </a>
+      
+      <a href="/docs/sandbox/Expand_Images_on_Hover.html" class="sidebar-link">
+        Expand Images on Hover
+      </a>
+      
+      <a href="/docs/sandbox/Shape_Tooltips.html" class="sidebar-link">
+        Shape Tooltip
+      </a>
+      
+      <a href="/docs/sandbox/Drag_and_Drop_Multiple_Shapes.html" class="sidebar-link">
+        Drag and Drop Multiple Shapes
+      </a>
+      
+        
+</aside>
+    <div class="page-content">
+      <!--<div class="toc-wrap">-->
+      <!--<strong class="toc-title">Contents</strong>-->
+      <!--<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-draw-external-font-on-html5-canvas"><span class="toc-number">1.</span> <span class="toc-text">How to draw external font on html5 canvas?</span></a></li></ol>-->
+      <!--</div>-->
+      <div class="page-entry" itemprop="articleBody">
+        <h2 id="How-to-draw-external-font-on-html5-canvas"><a href="#How-to-draw-external-font-on-html5-canvas" class="headerlink" title="How to draw external font on html5 canvas?"></a>How to draw external font on html5 canvas?</h2><p>If you want to use custom font for <code>Konva.Text</code> you just need to:</p>
+<ol>
+<li>Add font style to your page</li>
+<li>Set <code>fontFamily</code> attribute to required font-face.</li>
+</ol>
+<p>But there is one important thing here. When you set font for DOM elements (like <code>div</code> or <code>span</code>) browsers will automatically update that elements when font is loaded. But it doesn’t work the same for canvas text. You need to redraw canvas again.</p>
+<p>To detect that font is loaded you can use something like <a href="https://fontfaceobserver.com/" target="_blank" rel="noopener">FontObserver</a>.</p>
+<p>But for the demo I will use simpler font loading detection. It work ok for many fonts and much smaller in size.</p>
+<p>Is even simpler solution you can redraw after delay with <code>setTimeout</code>, but it doesn’t guarantee that font is loaded.</p>
+<iframe src="/downloads/code/sandbox/Custom_Font.html" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<figure class="highlight html"><figcaption><span>Konva Custom Font</span><a href="/downloads/code/sandbox/Custom_Font.html">view raw</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://unpkg.com/konva@9.3.19/konva.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Konva Custom font loading Demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">      body {</span><br><span class="line">        margin: 0;</span><br><span class="line">        padding: 0;</span><br><span class="line">        overflow: hidden;</span><br><span class="line"><span class="css">        <span class="selector-tag">background-color</span>: <span class="selector-id">#f0f0f0</span>;</span></span><br><span class="line">      }</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- CUSTOM FONT STYLES --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">      <span class="attr">href</span>=<span class="string">"https://fonts.googleapis.com/css?family=Kavivanar"</span></span></span><br><span class="line"><span class="tag">      <span class="attr">rel</span>=<span class="string">"stylesheet"</span></span></span><br><span class="line"><span class="tag">    /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">      <span class="comment">// FONT LOADING DETECTION CODE:</span></span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> canvas = <span class="built_in">document</span>.createElement(<span class="string">'canvas'</span>);</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> ctx = canvas.getContext(<span class="string">'2d'</span>);</span></span><br><span class="line"><span class="actionscript">      ctx.font = <span class="string">'normal 20px Kavivanar'</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> isFontLoaded = <span class="literal">false</span>;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> TEXT_TEXT = <span class="string">'Some test text;'</span>;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> initialMeasure = ctx.measureText(TEXT_TEXT);</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> initialWidth = initialMeasure.width;</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">      <span class="comment">// here is how the function works</span></span></span><br><span class="line"><span class="actionscript">      <span class="comment">// different fontFamily may have different width of symbols</span></span></span><br><span class="line"><span class="actionscript">      <span class="comment">// when font is not loaded a browser will use startard font as a fallback</span></span></span><br><span class="line"><span class="actionscript">      <span class="comment">// probably Arial</span></span></span><br><span class="line"><span class="actionscript">      <span class="comment">// when font is loaded measureText will return another width</span></span></span><br><span class="line"><span class="actionscript">      <span class="function"><span class="keyword">function</span> <span class="title">whenFontIsLoaded</span><span class="params">(callback, attemptCount)</span> </span>{</span></span><br><span class="line"><span class="actionscript">        <span class="keyword">if</span> (attemptCount === <span class="literal">undefined</span>) {</span></span><br><span class="line">          attemptCount = 0;</span><br><span class="line">        }</span><br><span class="line">        if (attemptCount &gt;= 20) {</span><br><span class="line">          callback();</span><br><span class="line"><span class="actionscript">          <span class="keyword">return</span>;</span></span><br><span class="line">        }</span><br><span class="line">        if (isFontLoaded) {</span><br><span class="line">          callback();</span><br><span class="line"><span class="actionscript">          <span class="keyword">return</span>;</span></span><br><span class="line">        }</span><br><span class="line"><span class="actionscript">        <span class="keyword">const</span> metrics = ctx.measureText(TEXT_TEXT);</span></span><br><span class="line"><span class="actionscript">        <span class="keyword">const</span> width = metrics.width;</span></span><br><span class="line">        if (width !== initialWidth) {</span><br><span class="line"><span class="actionscript">          isFontLoaded = <span class="literal">true</span>;</span></span><br><span class="line">          callback();</span><br><span class="line"><span class="actionscript">        } <span class="keyword">else</span> {</span></span><br><span class="line"><span class="actionscript">          setTimeout(<span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>{</span></span><br><span class="line">            whenFontIsLoaded(callback, attemptCount + 1);</span><br><span class="line">          }, 1000);</span><br><span class="line">        }</span><br><span class="line">      }</span><br><span class="line"></span><br><span class="line"><span class="actionscript">      <span class="comment">// NOW build our stage</span></span></span><br><span class="line"></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> width = <span class="built_in">window</span>.innerWidth;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> height = <span class="built_in">window</span>.innerHeight;</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> stage = <span class="keyword">new</span> Konva.Stage({</span></span><br><span class="line"><span class="actionscript">        container: <span class="string">'container'</span>,</span></span><br><span class="line">        width: width,</span><br><span class="line">        height: height,</span><br><span class="line">      });</span><br><span class="line"></span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> layer = <span class="keyword">new</span> Konva.Layer();</span></span><br><span class="line">      stage.add(layer);</span><br><span class="line"><span class="actionscript">      <span class="keyword">var</span> text = <span class="keyword">new</span> Konva.Text({</span></span><br><span class="line">        x: 50,</span><br><span class="line">        y: 50,</span><br><span class="line">        fontSize: 40,</span><br><span class="line"><span class="actionscript">        text: <span class="string">'A text with custom font.'</span>,</span></span><br><span class="line">        width: 250,</span><br><span class="line">      });</span><br><span class="line"></span><br><span class="line">      layer.add(text);</span><br><span class="line"></span><br><span class="line"><span class="actionscript">      whenFontIsLoaded(<span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>{</span></span><br><span class="line"><span class="actionscript">        <span class="comment">// set font style when font is loaded</span></span></span><br><span class="line"><span class="actionscript">        <span class="comment">// so Konva will recalculate text wrapping if it has limited width</span></span></span><br><span class="line"><span class="actionscript">        text.fontFamily(<span class="string">'Kavivanar'</span>);</span></span><br><span class="line">      });</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+      </div>
+      <footer id="page-footer">
+        <a href="/docs/index.html" id="page-footer-next" title="Intro">Next</a>
+      </footer>
+      <div style="padding: 30px; font-size: 18px; text-align: center; color: grey">
+  Enjoying Konva? Please consider to
+  <a href="/docs/donate.html">support</a> the project.
+</div>
+
+<section id="comments" style="margin-top: 50px">
+  <div id="disqus_thread">
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="//disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+  </div>
+</section>
+
+
+    </div>
+  </div>
+</article>
+ <footer id="footer">
+  <div class="outer">
+      <div class="inner">
+          <!-- Begin Mailchimp Signup Form -->
+
+<!-- <iframe
+  class="mj-w-res-iframe"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://app.mailjet.com/widget/iframe/7P23/MU3"
+  style="height: 70px; margin: auto; width: 450px"
+></iframe> -->
+
+<!-- <script
+  type="text/javascript"
+  src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
+></script> -->
+
+<!--End mc_embed_signup-->
+
+        </div>
+    <div class="inner">
+      <div class="footer-resources">
+        <h3>Docs</h3>
+        <ul>
+          <li><a href="/docs">Tutorials</a></li>
+          <li><a href="/docs/overview.html">General Overview</a></li>
+          <li><a href="/api/Konva.html">API doc</a></li>
+
+          <li><a href="/docs/sandbox/index.html">Demos</a></li>
+          <li><a href="/docs/react/index.html">Usage with React</a></li>
+          <li><a href="/docs/vue/index.html">Usage with Vue</a></li>
+          <li>
+            <a href="https://github.com/konvajs/konva/blob/master/CHANGELOG.md"
+              >Changelog</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-resources">
+        <h3>CHANNELS</h3>
+        <ul>
+          <li>
+            <a href="https://github.com/konvajs/konva" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://stackoverflow.com/questions/tagged/konvajs"
+              target="_blank"
+              >StackOverflow</a
+            >
+          </li>
+          <li><a href="https://discord.gg/8FqZwVT" target="_blank">Discord chat</a></li>
+          <li>
+            <a href="https://github.com/konvajs/konva/blob/master/CHANGELOG.md" target="_blank"
+              >Changelog</a
+            >
+          </li>
+        </ul>
+        
+      </div>
+      <div class="footer-resources">
+          <h3>More</h3>
+          <ul>
+            <li>
+              <a href="/docs/support.html"
+                >Need help?</a
+              >
+            </li>
+            <li>
+              <a
+                href="/docs/donate.html"
+                target="_blank"
+                >Donate</a>
+            </li>
+            <li>
+              <a
+                href="https://polotno.com/"
+                target="_blank"
+                >Design Editor SDK</a>
+            </li>
+          </ul>
+    </div>
+    <div class="inner">
+        <div id="footer-copyright">
+            &copy; 2025 KonvaJS<br />
+          </div>
+      <div id="footer-links">
+        <a
+          href="https://twitter.com/lavrton"
+          id="footer-link-twitter"
+          class="footer-link"
+          target="_blank"
+          ><span>Twitter</span></a
+        >
+        <a
+          href="https://github.com/konvajs/konva"
+          id="footer-link-github"
+          class="footer-link"
+          target="_blank"
+          ><span>GitHub</span></a
+        >
+      </div>
+    </div>
+  
+  </div>
+
+  <a class="chat-button" href="https://discord.gg/8FqZwVT" target="_blank" rel="noopener">Join discord chat</a>
+  
+  <!-- <iframe src="https://discord.com/widget?id=753274212814422176&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
+ 
+</footer>
+ 
+<!-- Disqus -->
+<script>
+  var disqus_shortname = 'konvajs';
+  
+  var disqus_url = 'https://konvajs.org/docs/sandbox/Custom_Font.html';
+  
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.defer = true;
+      dsq.src = '//go.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha"
+/>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"
+></script>
+<script type="text/javascript">
+  docsearch({
+    apiKey: '79bc02f9230d7d4c985e6f543a0a6427',
+    appId: '8J5ZKQ6RXR',
+    indexName: 'konvajs',
+    container: '#search-container',
+    algoliaOptions: {
+      hitsPerPage: 10,
+      // See https://www.algolia.com/doc/api-reference/api-parameters/
+    },
+    // transformData: function (suggestions) {
+    //   // Transform the list of suggestions, and the return the updated list
+    //   suggestions.sort(function (a, b) {
+    //     if (a.url.indexOf('/api/') >= 0) {
+    //       return 1;
+    //     } else {
+    //       return -1;
+    //     }
+    //   });
+    //   return suggestions.slice(0, 10);
+    // },
+    debug: false, // Set debug to true if you want to inspect the dropdown
+  });
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="/js/retina.min.js"></script>
+ 
+<script src="/js/script.js"></script>
+
+<!-- Google+ -->
+<!-- <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script> -->
+<!-- Twitter -->
+<!-- <script>
+  !(function(d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  })(document, 'script', 'twitter-wjs');
+</script> -->
+
+  </body>
+  <script type="text/javascript">
+    !(function (e, t) {
+      ((e = t.createElement('script')).src =
+        'https://cdn.convertbox.com/convertbox/js/embed.js'),
+        (e.id = 'app-convertbox-script'),
+        (e.async = true),
+        (e.dataset.uuid = 'db9e320b-6d6c-49c4-ba5c-b29e6d5fc91c'),
+        document.getElementsByTagName('head')[0].appendChild(e);
+    })(window, document);
+  </script>
+</html>

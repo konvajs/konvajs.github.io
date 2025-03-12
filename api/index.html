@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Konva Index</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+
+</head>
+
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<header id="header">
+  <div class="outer">
+    <div class="inner">
+      <div id="logo-wrap">
+        <a href="/" id="logo">Konva</a>
+        <a id="main-nav-toggle"></a>
+      </div>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+          <li class="main-nav-item">
+            <a href="/docs/" class="main-nav-link">
+              Tutorials
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/sandbox" class="main-nav-link">
+              Demos
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/api/Konva.html" class="main-nav-link">
+              API docs
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/react/index.html" class="main-nav-link">
+              React
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/vue/index.html" class="main-nav-link">
+              Vue
+            </a>
+
+          </li>
+
+					<li class="main-nav-item">
+            <a href="/docs/svelte/index.html" class="main-nav-link">
+              Svelte
+            </a>
+
+          </li>
+
+					<li class="main-nav-item">
+            <a href="/docs/donate.html" class="main-nav-link">
+              Support Konva
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/support.html" class="main-nav-link">
+              Need help?
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+						<div id="search-container" />
+					</li>
+          <li class="main-nav-item">
+            <a href="https://lavrton.com/consulting" title="Consulting" target="_blank" class="main-nav-link" style="color: white;background: #0bad42;padding: 10px;border-radius: 10px;">Consulting</a>
+          </li>
+        
+
+				<li class="main-nav-item">
+            <a href="https://github.com/konvajs/konva" class="main-nav-link">
+              GitHub
+            </a>
+
+          </li>
+					</ul>
+
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="container">
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Konva.html">Konva</a></li><li><a href="Konva.Easings.html">Konva.Easings</a></li><li><a href="Konva.Filters.html">Konva.Filters</a></li><li><a href="Konva.Util.html">Konva.Util</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Konva.Animation.html">Konva.Animation</a></li><li><a href="Konva.Arc.html">Konva.Arc</a></li><li><a href="Konva.Arrow.html">Konva.Arrow</a></li><li><a href="Konva.Canvas.html">Konva.Canvas</a></li><li><a href="Konva.Circle.html">Konva.Circle</a></li><li><a href="Konva.Container.html">Konva.Container</a></li><li><a href="Konva.Context.html">Konva.Context</a></li><li><a href="Konva.Ellipse.html">Konva.Ellipse</a></li><li><a href="Konva.FastLayer.html">Konva.FastLayer</a></li><li><a href="Konva.Group.html">Konva.Group</a></li><li><a href="Konva.Image.html">Konva.Image</a></li><li><a href="Konva.Label.html">Konva.Label</a></li><li><a href="Konva.Layer.html">Konva.Layer</a></li><li><a href="Konva.Line.html">Konva.Line</a></li><li><a href="Konva.Node.html">Konva.Node</a></li><li><a href="Konva.Path.html">Konva.Path</a></li><li><a href="Konva.Rect.html">Konva.Rect</a></li><li><a href="Konva.RegularPolygon.html">Konva.RegularPolygon</a></li><li><a href="Konva.Ring.html">Konva.Ring</a></li><li><a href="Konva.Shape.html">Konva.Shape</a></li><li><a href="Konva.Sprite.html">Konva.Sprite</a></li><li><a href="Konva.Stage.html">Konva.Stage</a></li><li><a href="Konva.Star.html">Konva.Star</a></li><li><a href="Konva.Tag.html">Konva.Tag</a></li><li><a href="Konva.Text.html">Konva.Text</a></li><li><a href="Konva.TextPath.html">Konva.TextPath</a></li><li><a href="Konva.Transform.html">Konva.Transform</a></li><li><a href="Konva.Transformer.html">Konva.Transformer</a></li><li><a href="Konva.Tween.html">Konva.Tween</a></li><li><a href="Konva.Wedge.html">Konva.Wedge</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+    <section class="readme-section">
+        <article><p align="center">
+  <img src="https://konvajs.org/android-chrome-192x192.png" alt="Konva logo" height="180" />
+</p>
+<h1 align="center">Konva</h1>
+<p><a href="https://opencollective.com/konva"><img src="https://opencollective.com/konva/all/badge.svg?label=financial+contributors" alt="Financial Contributors on Open Collective"></a><br>
+<a href="http://badge.fury.io/js/konva"><img src="https://badge.fury.io/js/konva.svg" alt="npm version"></a><br>
+<a href="https://github.com/konvajs/konva/actions/workflows/test-browser.ym"><img src="https://github.com/konvajs/konva/actions/workflows/test-browser.yml/badge.svg" alt="Build Status"></a><br>
+<a href="https://github.com/konvajs/konva/actions/workflows/test-node.ym"><img src="https://github.com/konvajs/konva/actions/workflows/test-node.yml/badge.svg" alt="Build Status"></a><a href="https://cdnjs.com/libraries/konva"><img src="https://img.shields.io/cdnjs/v/konva.svg" alt="CDNJS version"></a></p>
+<p>Konva is an HTML5 Canvas JavaScript framework that enables high performance animations, transitions, node nesting, layering, filtering, caching, event handling for desktop and mobile applications, and much more.</p>
+<p>You can draw things onto the stage, add event listeners to them, move them, scale them, and rotate them independently from other shapes to support high performance animations, even if your application uses thousands of shapes. Served hot with a side of awesomeness.</p>
+<p>This repository began as a GitHub fork of <a href="https://github.com/ericdrowell/KineticJS">ericdrowell/KineticJS</a>.</p>
+<ul>
+<li><strong>Visit:</strong> The <a href="http://konvajs.org/">Home Page</a> and follow on <a href="https://twitter.com/lavrton">Twitter</a></li>
+<li><strong>Discover:</strong> <a href="http://konvajs.org/docs">Tutorials</a>, <a href="http://konvajs.org/api">API Documentation</a></li>
+<li><strong>Help:</strong> <a href="http://stackoverflow.com/questions/tagged/konvajs">StackOverflow</a>, <a href="https://discord.gg/8FqZwVT">Discord Chat</a></li>
+</ul>
+<h1>Quick Look</h1>
+<pre class="prettyprint source lang-html"><code>&lt;script src=&quot;https://unpkg.com/konva@9/konva.min.js&quot;>&lt;/script>
+&lt;div id=&quot;container&quot;>&lt;/div>
+&lt;script>
+  var stage = new Konva.Stage({
+    container: 'container',
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  // add canvas element
+  var layer = new Konva.Layer();
+  stage.add(layer);
+
+  // create shape
+  var box = new Konva.Rect({
+    x: 50,
+    y: 50,
+    width: 100,
+    height: 50,
+    fill: '#00D2FF',
+    stroke: 'black',
+    strokeWidth: 4,
+    draggable: true,
+  });
+  layer.add(box);
+
+  // add cursor styling
+  box.on('mouseover', function () {
+    document.body.style.cursor = 'pointer';
+  });
+  box.on('mouseout', function () {
+    document.body.style.cursor = 'default';
+  });
+&lt;/script>
+</code></pre>
+<h1>Browsers support</h1>
+<p>Konva works in all modern mobile and desktop browsers. A browser need to be capable to run javascript code from ES2015 spec. For older browsers you may need polyfills for missing functions.</p>
+<p>At the current moment <code>Konva</code> doesn't work in IE11 directly. To make it work you just need to provide some polyfills such as <code>Array.prototype.find</code>, <code>String.prototype.trimLeft</code>, <code>String.prototype.trimRight</code>, <code>Array.from</code>.</p>
+<h1>Debugging</h1>
+<p>The Chrome inspector simply shows the canvas element.  To see the Konva objects and their details, install the konva-dev extension at https://github.com/konvajs/konva-devtool.</p>
+<h1>Loading and installing Konva</h1>
+<p>Konva supports UMD loading. So you can use all possible variants to load the framework into your project:</p>
+<h3>Load Konva via classical <code>&lt;script&gt;</code> tag from CDN:</h3>
+<pre class="prettyprint source lang-html"><code>&lt;script src=&quot;https://unpkg.com/konva@9/konva.min.js&quot;>&lt;/script>
+</code></pre>
+<h3>Install with npm:</h3>
+<pre class="prettyprint source lang-bash"><code>npm install konva --save
+</code></pre>
+<pre class="prettyprint source lang-javascript"><code>// The modern way (e.g. an ES6-style import for webpack, parcel)
+import Konva from 'konva';
+</code></pre>
+<h4>Typescript usage</h4>
+<p>Add DOM definitions into your <code>tsconfig.json</code>:</p>
+<pre class="prettyprint source"><code>{
+  &quot;compilerOptions&quot;: {
+    &quot;lib&quot;: [
+        &quot;es6&quot;,
+        &quot;dom&quot;
+    ]
+  }
+}
+</code></pre>
+<h3>3 Minimal bundle</h3>
+<pre class="prettyprint source lang-javascript"><code>import Konva from 'konva/lib/Core';
+// Now you have a Konva object with Stage, Layer, FastLayer, Group, Shape and some additional utils function.
+// Also core currently already have support for drag&drop and animations.
+// BUT there are no shapes (rect, circle, etc), no filters.
+
+// but you can simply add anything you need:
+import { Rect } from 'konva/lib/shapes/Rect';
+// importing a shape will automatically inject it into Konva object
+
+var rect1 = new Rect();
+// or:
+var shape = new Konva.Rect();
+
+// for filters you can use this:
+import { Blur } from 'konva/lib/filters/Blur';
+</code></pre>
+<h3>4 NodeJS env</h3>
+<p>In order to run <code>konva</code> in nodejs environment you also need to install <code>canvas</code> package manually. Konva will use it for 2d canvas API.</p>
+<pre class="prettyprint source lang-bash"><code>npm install konva canvas
+</code></pre>
+<p>Then you can use the same Konva API and all Konva demos will work just fine. You just don't need to use <code>container</code> attribute in your stage.</p>
+<pre class="prettyprint source lang-js"><code>import Konva from 'konva';
+
+const stage = new Konva.Stage({
+  width: 500,
+  height: 500,
+});
+// then all regular Konva code will work
+</code></pre>
+<h1>Backers</h1>
+<p><img src="https://avatars.githubusercontent.com/u/99720652?s=200&amp;v=4" alt="https://simpleshow.com" title="https://simpleshow.com"><br>
+<img src="https://avatars.githubusercontent.com/u/80046841?s=200&amp;v=4" alt="https://www.notably.ai/" title="https://www.notably.ai/"></p>
+<ul>
+<li><a href="https://www.myposter.de/">myposter GmbH</a></li>
+<li><a href="https://queue.gg/">queue.gg</a></li>
+</ul>
+<h1>Change log</h1>
+<p>See <a href="https://github.com/konvajs/konva/blob/master/CHANGELOG.md">CHANGELOG.md</a>.</p>
+<h2>Building the Konva Framework</h2>
+<p>To make a full build run <code>npm run build</code>. The command will compile all typescript files, combine then into one bundle and run minifier.</p>
+<h2>Testing</h2>
+<p>Konva uses Mocha for testing.</p>
+<ul>
+<li>If you need run test only one time run <code>npm run test</code>.</li>
+<li>While developing it is easy to use <code>npm start</code>. Just run it and go to <a href="http://localhost:1234/unit-tests.html">http://localhost:1234/unit-tests.html</a>. The watcher will rebuild the bundle on any change.</li>
+</ul>
+<p>Konva is covered with hundreds of tests and well over a thousand assertions.<br>
+Konva uses TDD (test driven development) which means that every new feature or bug fix is accompanied with at least one new test.</p>
+<h2>Generate documentation</h2>
+<p>Run <code>npx gulp api</code> which will build the documentation files and place them in the <code>api</code> folder.</p>
+<h1>Pull Requests</h1>
+<p>I'd be happy to review any pull requests that may better the Konva project,<br>
+in particular if you have a bug fix, enhancement, or a new shape (see <code>src/shapes</code> for examples). Before doing so, please first make sure that all of the tests pass (<code>npm run test</code>).</p>
+<h2>Contributors</h2>
+<h3>Financial Contributors</h3>
+<p>Become a financial contributor and help us sustain our community. [<a href="https://opencollective.com/konva/contribute">Contribute</a>]</p>
+<h4>Individuals</h4>
+<p><a href="https://opencollective.com/konva"><img src="https://opencollective.com/konva/individuals.svg?width=890"></a></p>
+<h4>Organizations</h4>
+<p>Support this project with your organization. Your logo will show up here with a link to your website. [<a href="https://opencollective.com/konva/contribute">Contribute</a>]</p>
+<p><a href="https://opencollective.com/konva/organization/0/website"><img src="https://opencollective.com/konva/organization/0/avatar.svg"></a><br>
+<a href="https://opencollective.com/konva/organization/1/website"><img src="https://opencollective.com/konva/organization/1/avatar.svg"></a><br>
+<a href="https://opencollective.com/konva/organization/2/website"><img src="https://opencollective.com/konva/organization/2/avatar.svg"></a><br>
+<a href="https://opencollective.com/konva/organization/3/website"><img src="https://opencollective.com/konva/organization/3/avatar.svg"></a><br>
+<a href="https://opencollective.com/konva/organization/4/website"><img src="https://opencollective.com/konva/organization/4/avatar.svg"></a><br>
+<a href="https://opencollective.com/konva/organization/5/website"><img src="https://opencollective.com/konva/organization/5/avatar.svg"></a><br>
+<a href="https://opencollective.com/konva/organization/6/website"><img src="https://opencollective.com/konva/organization/6/avatar.svg"></a><br>
+<a href="https://opencollective.com/konva/organization/7/website"><img src="https://opencollective.com/konva/organization/7/avatar.svg"></a><br>
+<a href="https://opencollective.com/konva/organization/8/website"><img src="https://opencollective.com/konva/organization/8/avatar.svg"></a><br>
+<a href="https://opencollective.com/konva/organization/9/website"><img src="https://opencollective.com/konva/organization/9/avatar.svg"></a></p></article>
+    </section>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	Konva Copyright © 2020 The contributors to the Konva project.
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a>
+	
+		on Wed Mar 12th 2025
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<script
+  async
+  defer
+  data-domain="konvajs.org"
+  src="https://plausible.io/js/plausible.js"
+></script>
+<!--Google Analytics-->
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
+<script type="text/javascript"> docsearch({
+    apiKey: '79bc02f9230d7d4c985e6f543a0a6427',
+		appId: '8J5ZKQ6RXR',
+    indexName: 'konvajs',
+    container: '#search-container',
+    algoliaOptions: {
+      hitsPerPage: 10,
+      // See https://www.algolia.com/doc/api-reference/api-parameters/
+    },
+    // transformData: function (suggestions) {
+    //   // Transform the list of suggestions, and the return the updated list
+    //   suggestions.sort(function (a, b) {
+    //     if (a.url.indexOf('/api/') >= 0) {
+    //       return 1;
+    //     } else {
+    //       return -1;
+    //     }
+    //   });
+    //   return suggestions.slice(0, 10);
+    // },
+    debug: false // Set debug to true if you want to inspect the dropdown
+  }); 
+</script>
+
+</body>
+</html>

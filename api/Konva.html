@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Konva Namespace: Konva</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+
+</head>
+
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<header id="header">
+  <div class="outer">
+    <div class="inner">
+      <div id="logo-wrap">
+        <a href="/" id="logo">Konva</a>
+        <a id="main-nav-toggle"></a>
+      </div>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+          <li class="main-nav-item">
+            <a href="/docs/" class="main-nav-link">
+              Tutorials
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/sandbox" class="main-nav-link">
+              Demos
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/api/Konva.html" class="main-nav-link">
+              API docs
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/react/index.html" class="main-nav-link">
+              React
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/vue/index.html" class="main-nav-link">
+              Vue
+            </a>
+
+          </li>
+
+					<li class="main-nav-item">
+            <a href="/docs/svelte/index.html" class="main-nav-link">
+              Svelte
+            </a>
+
+          </li>
+
+					<li class="main-nav-item">
+            <a href="/docs/donate.html" class="main-nav-link">
+              Support Konva
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+            <a href="/docs/support.html" class="main-nav-link">
+              Need help?
+            </a>
+
+          </li>
+          
+          <li class="main-nav-item">
+						<div id="search-container" />
+					</li>
+          <li class="main-nav-item">
+            <a href="https://lavrton.com/consulting" title="Consulting" target="_blank" class="main-nav-link" style="color: white;background: #0bad42;padding: 10px;border-radius: 10px;">Consulting</a>
+          </li>
+        
+
+				<li class="main-nav-item">
+            <a href="https://github.com/konvajs/konva" class="main-nav-link">
+              GitHub
+            </a>
+
+          </li>
+					</ul>
+
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="container">
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Konva.html">Konva</a></li><li><a href="Konva.Easings.html">Konva.Easings</a></li><li><a href="Konva.Filters.html">Konva.Filters</a></li><li><a href="Konva.Util.html">Konva.Util</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Konva.Animation.html">Konva.Animation</a></li><li><a href="Konva.Arc.html">Konva.Arc</a></li><li><a href="Konva.Arrow.html">Konva.Arrow</a></li><li><a href="Konva.Canvas.html">Konva.Canvas</a></li><li><a href="Konva.Circle.html">Konva.Circle</a></li><li><a href="Konva.Container.html">Konva.Container</a></li><li><a href="Konva.Context.html">Konva.Context</a></li><li><a href="Konva.Ellipse.html">Konva.Ellipse</a></li><li><a href="Konva.FastLayer.html">Konva.FastLayer</a></li><li><a href="Konva.Group.html">Konva.Group</a></li><li><a href="Konva.Image.html">Konva.Image</a></li><li><a href="Konva.Label.html">Konva.Label</a></li><li><a href="Konva.Layer.html">Konva.Layer</a></li><li><a href="Konva.Line.html">Konva.Line</a></li><li><a href="Konva.Node.html">Konva.Node</a></li><li><a href="Konva.Path.html">Konva.Path</a></li><li><a href="Konva.Rect.html">Konva.Rect</a></li><li><a href="Konva.RegularPolygon.html">Konva.RegularPolygon</a></li><li><a href="Konva.Ring.html">Konva.Ring</a></li><li><a href="Konva.Shape.html">Konva.Shape</a></li><li><a href="Konva.Sprite.html">Konva.Sprite</a></li><li><a href="Konva.Stage.html">Konva.Stage</a></li><li><a href="Konva.Star.html">Konva.Star</a></li><li><a href="Konva.Tag.html">Konva.Tag</a></li><li><a href="Konva.Text.html">Konva.Text</a></li><li><a href="Konva.TextPath.html">Konva.TextPath</a></li><li><a href="Konva.Transform.html">Konva.Transform</a></li><li><a href="Konva.Transformer.html">Konva.Transformer</a></li><li><a href="Konva.Tween.html">Konva.Tween</a></li><li><a href="Konva.Wedge.html">Konva.Wedge</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Namespace: Konva</h1>
+<section>
+
+<header>
+    
+        <h2>
+        Konva
+        </h2>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="Konva.Animation.html">Animation</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Arc.html">Arc</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Arrow.html">Arrow</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Canvas.html">Canvas</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Circle.html">Circle</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Container.html">Container</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Context.html">Context</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Ellipse.html">Ellipse</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.FastLayer.html">FastLayer</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Group.html">Group</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Image.html">Image</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Label.html">Label</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Layer.html">Layer</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Line.html">Line</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Node.html">Node</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Path.html">Path</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Rect.html">Rect</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.RegularPolygon.html">RegularPolygon</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Ring.html">Ring</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Shape.html">Shape</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Sprite.html">Sprite</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Stage.html">Stage</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Star.html">Star</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Tag.html">Tag</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Text.html">Text</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.TextPath.html">TextPath</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Transform.html">Transform</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Transformer.html">Transformer</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Tween.html">Tween</a></dt>
+            <dd></dd>
+        
+            <dt><a href="Konva.Wedge.html">Wedge</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Namespaces</h3>
+
+        <dl>
+            <dt><a href="namespaces.html#Konva.Easings"><a href="Konva.Easings.html">Easings</a></a></dt>
+            <dd></dd>
+        
+            <dt><a href="namespaces.html#Konva.Filters"><a href="Konva.Filters.html">Filters</a></a></dt>
+            <dd></dd>
+        
+            <dt><a href="namespaces.html#Konva.Util"><a href="Konva.Util.html">Util</a></a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<hr>
+<dt class="name" id=".angleDeg">
+    <h4 id=".angleDeg"><span class="type-signature">&lt;static> </span>angleDeg<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Use degree values for angle properties. You may set this property to false if you want to use radian values.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>angleDeg</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>true</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">node.rotation(45); // 45 degrees
+Konva.angleDeg = false;
+node.rotation(Math.PI / 2); // PI/2 radian</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".autoDrawEnabled">
+    <h4 id=".autoDrawEnabled"><span class="type-signature">&lt;static> </span>autoDrawEnabled<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Should Konva automatically update canvas on any changes. Default is true.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>autoDrawEnabled</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>true</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">Konva.autoDrawEnabled = true;</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".capturePointerEventsEnabled">
+    <h4 id=".capturePointerEventsEnabled"><span class="type-signature">&lt;static> </span>capturePointerEventsEnabled<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Should we capture touch events and bind them to the touchstart target? That is how it works on DOM elements.<br>
+The case: we touchstart on div1, then touchmove out of that element into another element div2.<br>
+DOM will continue trigger touchmove events on div1 (not div2). Because events are &quot;captured&quot; into initial target.<br>
+By default Konva do not do that and will trigger touchmove on another element, while pointer is moving.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>capturePointerEventsEnabled</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>false</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">Konva.capturePointerEventsEnabled = true;</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".dragButtons">
+    <h4 id=".dragButtons"><span class="type-signature">&lt;static> </span>dragButtons<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Configure what mouse buttons can be used for drag and drop.<br>
+Default value is [0] - only left mouse button.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dragButtons</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>true</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">// enable left and right mouse buttons
+Konva.dragButtons = [0, 2];</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".dragDistance">
+    <h4 id=".dragDistance"><span class="type-signature">&lt;static> </span>dragDistance<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Drag distance property. If you start to drag a node you may want to wait until pointer is moved to some distance from start point,<br>
+only then start dragging. Default is 3px.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dragDistance</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>0</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">Konva.dragDistance = 10;</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".hitOnDragEnabled">
+    <h4 id=".hitOnDragEnabled"><span class="type-signature">&lt;static> </span>hitOnDragEnabled<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Should we enable hit detection while dragging? For performance reasons, by default it is false.<br>
+But on some rare cases you want to see hit graph and check intersections. Just set it to true.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>hitOnDragEnabled</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>false</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">Konva.hitOnDragEnabled = true;</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".pixelRatio">
+    <h4 id=".pixelRatio"><span class="type-signature">&lt;static> </span>pixelRatio<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Global pixel ratio configuration. KonvaJS automatically detect pixel ratio of current device.<br>
+But you may override such property, if you want to use your value. Set this value before any components initializations.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pixelRatio</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>undefined</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">// before any Konva code:
+Konva.pixelRatio = 1;</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".releaseCanvasOnDestroy">
+    <h4 id=".releaseCanvasOnDestroy"><span class="type-signature">&lt;static> </span>releaseCanvasOnDestroy<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Should Konva release canvas elements on destroy. Default is true.<br>
+Useful to avoid memory leak issues in Safari on macOS/iOS.</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>releaseCanvasOnDestroy</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>true</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">Konva.releaseCanvasOnDestroy = true;</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt class="name" id=".showWarnings">
+    <h4 id=".showWarnings"><span class="type-signature">&lt;static> </span>showWarnings<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Show different warnings about errors or wrong API usage</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>showWarnings</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-default method-doc-label method-doc-details-label">Default Value:</dt>
+	<dd class="tag-default">
+		<ul class="dummy">
+			<li>true</li>
+		</ul>
+	</dd>
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">Konva.showWarnings = false;</pre>
+
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id=".isDragging"><span class="type-signature">&lt;static> </span>isDragging()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>returns whether or not drag and drop is currently active</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".isDragReady"><span class="type-signature">&lt;static> </span>isDragReady()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>returns whether or not a drag and drop operation is ready, but may<br>
+not necessarily have started</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		konva.js
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	Konva Copyright © 2020 The contributors to the Konva project.
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a>
+	
+		on Wed Mar 12th 2025
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<script
+  async
+  defer
+  data-domain="konvajs.org"
+  src="https://plausible.io/js/plausible.js"
+></script>
+<!--Google Analytics-->
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
+<script type="text/javascript"> docsearch({
+    apiKey: '79bc02f9230d7d4c985e6f543a0a6427',
+		appId: '8J5ZKQ6RXR',
+    indexName: 'konvajs',
+    container: '#search-container',
+    algoliaOptions: {
+      hitsPerPage: 10,
+      // See https://www.algolia.com/doc/api-reference/api-parameters/
+    },
+    // transformData: function (suggestions) {
+    //   // Transform the list of suggestions, and the return the updated list
+    //   suggestions.sort(function (a, b) {
+    //     if (a.url.indexOf('/api/') >= 0) {
+    //       return 1;
+    //     } else {
+    //       return -1;
+    //     }
+    //   });
+    //   return suggestions.slice(0, 10);
+    // },
+    debug: false // Set debug to true if you want to inspect the dropdown
+  }); 
+</script>
+
+</body>
+</html>
